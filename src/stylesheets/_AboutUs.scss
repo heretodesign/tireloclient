@@ -1,0 +1,131 @@
+
+  @mixin phone {
+    @media (max-width: 768px) { @content; }
+  }
+  
+  @mixin tablet {
+    @media (min-width: 769px) { @content; }
+  }
+  
+  @mixin desktop {
+    @media (min-width: 1024px) { @content; }
+  }
+  
+  @mixin widescreen {
+    @media (min-width: 1216px) { @content; }
+  }
+  
+  @mixin fullhd {
+    @media (min-width: 1408px) { @content; }
+  }
+  
+  #btmFooter {
+  
+    @include tablet {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      justify-content: center;
+      align-items:center;
+    }
+  
+    @include phone {
+      margin-top: 1px;
+      margin-bottom: 5px;
+      justify-content: center;
+      align-items:center;
+    }
+  }
+  
+  #aboutPage {
+    background-color: #001240;
+    // background: #ffa500;
+    align-items: center;
+    card-color: transparent;
+
+    #contAboutPage {
+        padding-bottom: 130px;
+        padding-top: 100px;
+    }
+
+     #contentSide {
+        padding-left: 42px;
+        padding-right: 0;
+        align-self: center;
+    }
+
+    #headingAbout {
+        color: white;
+        margin-bottom: 32px;
+        line-height: 42px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    #headTitle {
+        color: #9aa8bd;
+        font-size: 14px;
+        letter-spacing: 1.2px;
+        
+    }
+
+    #headPara {
+        color: #9aa8bd;
+        line-height: 28px;
+        
+    }
+  }
+
+ 
+
+  #cardpara {
+      text-align: center;
+      font-size: 1em;
+      font-weight: 400;
+  }
+
+  #cardtitle {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#imgCover {
+  border-bottom-right-radius: 25%;
+}
+
+#servicesPage {
+  align-items: center;
+    card-color: transparent;
+
+    #contAboutPage {
+        padding-bottom: 130px;
+        padding-top: 100px;
+    }
+
+     #contentSide {
+        padding-left: 42px;
+        padding-right: 0;
+        align-self: center;
+    }
+
+    #headingAbout {
+        color: white;
+        margin-bottom: 32px;
+        line-height: 42px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    #headTitle {
+        color: #9aa8bd;
+        font-size: 14px;
+        letter-spacing: 1.2px;
+        
+    }
+
+    #headPara {
+        color: #9aa8bd;
+        line-height: 28px;
+        
+    }
+}

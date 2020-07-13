@@ -1,0 +1,53 @@
+  @mixin phone {
+    @media (max-width: 768px) { @content; }
+  }
+  
+  @mixin tablet {
+    @media (min-width: 769px) { @content; }
+  }
+  
+  @mixin desktop {
+    @media (min-width: 1024px) { @content; }
+  }
+  
+  @mixin widescreen {
+    @media (min-width: 1216px) { @content; }
+  }
+  
+  @mixin fullhd {
+    @media (min-width: 1408px) { @content; }
+  }
+  
+  #btmFooter {
+  
+    @include tablet {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      justify-content: center;
+      align-items:center;
+    }
+  
+    @include phone {
+      margin-top: 1px;
+      margin-bottom: 5px;
+      justify-content: center;
+      align-items:center;
+    }
+  }
+  
+  #icard {
+    background-color: #ffa500;
+    card-color: transparent;
+  }
+
+  #cardpara {
+      text-align: center;
+      font-size: 1em;
+      font-weight: 400;
+  }
+
+  #cardtitle {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
