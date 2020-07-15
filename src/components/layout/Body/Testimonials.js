@@ -14,10 +14,19 @@ const Testimonials = () => {
         <div className="container grid is-large">
             <div className="firstsection">
                 <div className="content">
-                  <h4 className="subtitle is-3 has-text-left has-text-weight-semibold" id="headingTestimonials">
-                    Markets
-                  </h4>
-                  <p className="subtitle is-6 has-text-left has-text-weight-semibold" id="marketSub">Our valued customer and clients spread across the southern hemisphere, in these following industry sectors</p>
+                <div class="columns">
+                        <div class="column">
+                            <div className="content" id="contentSide">
+                                <p className="subtitle has-text-centered is-2" style={colorStyle}>Markets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <p className="has-text-left" style={paragraphStyle}>
+                      Our valued customer and clients spread across the southern hemisphere, in these following industry sectors
+                      Our valued customer and clients spread across the southern hemisphere, in these following industry sectors
+                      Our valued customer and clients spread across the southern hemisphere, in these following industry sectors
+                    </p>
                 </div>
                 <div className="content">
                   <div class="columns">
@@ -86,6 +95,20 @@ const Testimonials = () => {
   );
 }
 
+const headerStyle = {
+  fontSize: '2.6rem',
+  marginTop: '80px',
+  color: '#011240'
+}
 
+const paragraphStyle = {
+  fontSize: '1.2rem',
+  color: '#011240',
+  marginBottom: '100px'
+}
+
+const colorStyle = {
+  color: '#011240'
+}
 
 export default Testimonials;

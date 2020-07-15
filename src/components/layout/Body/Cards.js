@@ -38,4 +38,13 @@ const Cards = () => {
   );
 }
 
+const paragraphStyle = {
+  fontSize: '1.2rem',
+  color: '#011240'
+}
+
+const colorStyle = {
+  color: '#011240'
+}
+
 export default Cards;

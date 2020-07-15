@@ -65,7 +65,7 @@
         color: #9aa8bd;
         font-size: 14px;
         letter-spacing: 1.2px;
-        
+        margin-bottom: 5px;
     }
 
     #headPara {
@@ -120,7 +120,7 @@
         color: #9aa8bd;
         font-size: 14px;
         letter-spacing: 1.2px;
-        
+        margin-bottom: 5px;
     }
 
     #headPara {
@@ -142,4 +142,11 @@
 
 #market-section {
   color: #011240;
+}
+
+#founderImg {
+  background-image: url('../assets/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jpg');
+  background-position: left center;
+  background-repeat:  no-repeat;
+  background-size:  cover;
 }

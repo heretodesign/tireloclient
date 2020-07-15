@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
         <Route>
           <Home path="/" />
-          <Careers path="/careers" />
+          {/* <Careers path="/careers" /> */}
         </Route>
         <Footer />
       </div>

@@ -13,7 +13,7 @@ const NavbarHero = () => {
             <div className="container-fluid grid">
                 <div className="firstsection">
                     <p className="subtitl is-5 has-text-centered isdata">
-                    <strong className="">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth
+                    <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth
                     </p>
                  </div>
             </div>
@@ -46,7 +46,7 @@ const NavbarHero = () => {
                     Logistics Knowledge
                   </a>
                   <span className="navbar-item">
-                  <a className="button is-info" id="navBtn">
+                  <a className="button is-info is-outlined">
                     Talk to us
                   </a>
                   </span>
@@ -62,8 +62,12 @@ const NavbarHero = () => {
               <div className="content">
                 <div className="columns">
                   <div className="column is-half">
-                    <h1 className="title has-text-left has-text-weight-light" id="titleBlack">Seth Resources Petroleum – Specializing in Petroleum Transportation
-                    </h1>
+                    <p className="subtitle has-text-left is-2" style={colorStyle}>
+                      Seth Resources Petroleum – Specializing in Petroleum Transportation
+                    </p>
+
+                    {/* <h1 className="title has-text-left has-text-weight-light" id="titleBlack">Seth Resources Petroleum – Specializing in Petroleum Transportation
+                    </h1> */}
                   </div>
                   <div className="column"></div>
                 </div>
@@ -94,6 +98,23 @@ const NavbarHero = () => {
       </section>
     </>
   );
+}
+
+const headerStyle = {
+  fontSize: '2.6rem',
+  marginTop: '80px',
+  color: '#011240'
+}
+
+const paragraphStyle = {
+  fontSize: '1.2rem',
+  color: '#011240'
+}
+
+const colorStyle = {
+  color: '#fff',
+  fontSize: '2.8rem',
+  fontWeight: 'bolder'
 }
 
 export default NavbarHero;

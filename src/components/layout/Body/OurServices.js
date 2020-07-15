@@ -22,11 +22,10 @@ const OurServices = () => {
                   <div class="column">
                     <div className="content" id="contentSide">
                       <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">About The Company</h3>
-                      <h4 className="subtitle is-6 has-text-left has-text-grey has-text-weight-semibold" id="headingAbout">
-                        Why do you think you are the right candidate for the position?
-                      </h4>
-                      <p className="subtitle is-6 has-text-left has-text-weight-semibold" id="headPara">
-                        Imagine a workplace which encourages you to take on responsibility 
+                      <p className="subtitle has-text-left is-2" style={colorStyle}>Why do you think you are the right candidate for the position?</p>
+
+                      <p className="has-text-left" style={paragraphStyle}>
+                      Imagine a workplace which encourages you to take on responsibility 
                         and where your ideas will be heard and implemented. Imagine a fast-paced 
                         environment where your performance makes the difference. 
                       </p>
@@ -42,6 +41,21 @@ const OurServices = () => {
       </section>
     </>
   );
+}
+
+const headerStyle = {
+  fontSize: '2.6rem',
+  marginTop: '80px',
+  color: '#011240'
+}
+
+const paragraphStyle = {
+  fontSize: '1.2rem',
+  color: '#011240'
+}
+
+const colorStyle = {
+  color: '#011240'
 }
 
 export default OurServices;
