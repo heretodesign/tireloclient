@@ -15,14 +15,14 @@ const NavbarHero = () => {
                     <p className="subtitl is-5 has-text-centered isdata">
                     <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth
                     </p>
-                 </div>
+                </div>
             </div>
         </div>
         <div className="hero-head">
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand" id="logoStyle">
-                <a className="navbar-item" href="https://freighthub.com/en/">
+                <a className="navbar-item" href="https://sethresourcespetroleum.com/">
                   Seth Resources | Petroleum
                 </a>
                 <span className="navbar-burger burger" data-target="navbarMenuHeroA">

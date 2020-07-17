@@ -1,25 +1,23 @@
-import React, { Component, Suspense, lazy } from 'react';
+import React, { Component } from 'react';
 import './App.scss';
 import { Route, Link, Switch } from "react-router-dom"
-
-import Header from './components/layout/Header/Header'
 import Careers from './pages/Careers'
 import Home from './pages/HomePage'
 import Footer from './components/layout/Footer/Footer'
+import Apply from './pages/Apply';
 
-class App extends Component {
+const App = () => {
 
-  render() {
-    return (
-      <div className="App">
-        <Route>
-          <Home path="/" />
-          {/* <Careers path="/careers" /> */}
-        </Route>
-        <Footer />
-      </div>
-    );
-  }
+  return (
+    <div className="App">
+      <Switch>
+        <Route exact path="/" component={Home}  />
+        <Route exact path="/careers-at-srp" component={Careers} />
+        <Route exact path="/apply-for-this-job" component={Apply} />
+      </Switch>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

@@ -1,16 +1,15 @@
 import React from 'react'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
-// import imgOffice from '../../../assets/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg'
+import Navbar from '../components/layout/Header/Navbar'
 import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
-// import imgOffice from '../../../assets/josue-isai-ramos-figueroa-n2NBgIx3A28-unsplash.jpg'
 import newD from '../assets/jay-skyler-4vkqO73C7O8-unsplash.jpg'
 import mine from '../assets/robin-sommer-wnOJ83k8r4w-unsplash.jpg'
-import buyer from '../assets/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jpg'
 
 const Careers = () => {
   return (
     <>
+      <Navbar />
       <section className="section is-paddingless-horizontal" id="foundersSection">
         <div className="container grid is-large" id="founderWords">
           <div className="firstsection">
@@ -185,7 +184,7 @@ const Careers = () => {
                     </p>
                   </div>
                   <div class="column is-one-fifth">
-                    <a className="button is-small is-info has-test-small is-fullwidth is-uppercase" id="landBtn"><strong>APPLY</strong></a>
+                    <Link to="/apply-for-this-job" className="button is-small has-text-small is-fullwidth is-uppercase" style={bkStyle}><strong>APPLY</strong></Link>
                   </div>
                 </div>
                 <div class="columns">
@@ -195,7 +194,7 @@ const Careers = () => {
                     </p>
                   </div>
                   <div class="column is-one-fifth">
-                    <a className="button is-info is-outlined is-small is-info has-test-small is-fullwidth is-uppercase" id="landBtn"><strong>APPLY</strong></a>
+                    <Link to="/apply-for-this-job" className="button is-small has-text-small is-fullwidth is-uppercase" style={bkStyle}><strong>APPLY</strong></Link>
                   </div>
                 </div>
                 <div class="columns">
@@ -205,7 +204,7 @@ const Careers = () => {
                     </p>
                   </div>
                   <div class="column is-one-fifth">
-                    <a className="button is-small is-info has-test-small is-fullwidth is-uppercase" id="landBtn"><strong>APPLY</strong></a>
+                    <Link to="/apply-for-this-job" className="button is-small has-text-small is-fullwidth is-uppercase" style={bkStyle}><strong>APPLY</strong></Link>
                   </div>
                 </div>
                 <div className="content">
@@ -218,7 +217,7 @@ const Careers = () => {
                     </p>
                   </div>
                   <div class="column is-one-fifth">
-                    <a className="button is-small is-info has-test-small is-fullwidth is-uppercase" id="landBtn"><strong>APPLY</strong></a>
+                    <Link to="/apply-for-this-job" className="button is-small has-text-small is-fullwidth is-uppercase" style={bkStyle}><strong>APPLY</strong></Link>
                   </div>
                 </div>
                 <div class="columns">
@@ -228,7 +227,7 @@ const Careers = () => {
                     </p>
                   </div>
                   <div class="column is-one-fifth">
-                    <a className="button is-small is-info has-test-small is-fullwidth is-uppercase" id="landBtn"><strong>APPLY</strong></a>
+                    <Link to="/apply-for-this-job" className="button is-small has-text-small is-fullwidth is-uppercase" style={bkStyle}><strong>APPLY</strong></Link>
                   </div>
                 </div>
                 <div class="columns">
@@ -238,7 +237,7 @@ const Careers = () => {
                     </p>
                   </div>
                   <div class="column is-one-fifth">
-                    <a className="button is-small is-info has-test-small is-fullwidth is-uppercase" id="landBtn"><strong>APPLY</strong></a>
+                    <Link to="/apply-for-this-job" className="button is-small has-text-small is-fullwidth is-uppercase" style={bkStyle}><strong>APPLY</strong></Link>
                   </div>
                 </div>
                 <div className="content">
@@ -251,7 +250,7 @@ const Careers = () => {
                     </p>
                   </div>
                   <div class="column is-one-fifth">
-                    <a className="button is-small is-info has-test-small is-fullwidth is-uppercase" id="landBtn"><strong>APPLY</strong></a>
+                    <Link to="/apply-for-this-job" className="button is-small has-text-small is-fullwidth is-uppercase" style={bkStyle}><strong>APPLY</strong></Link>
                   </div>
                 </div>
                 <div className="content">
@@ -264,7 +263,7 @@ const Careers = () => {
                     </p>
                   </div>
                   <div class="column is-one-fifth">
-                    <a className="button is-small is-info has-test-small is-fullwidth is-uppercase" id="landBtn"><strong>APPLY</strong></a>
+                    <Link to="/apply-for-this-job" className="button is-small has-text-small is-fullwidth is-uppercase" style={bkStyle}><strong>APPLY</strong></Link>
                   </div>
                 </div>
               </div>
@@ -286,6 +285,11 @@ const paragraphStyle = {
 }
 const colorStyle = {
   color: '#011240'
+}
+
+const bkStyle = {
+  background: '#011240',
+  color: 'white'
 }
 
 export default Careers;

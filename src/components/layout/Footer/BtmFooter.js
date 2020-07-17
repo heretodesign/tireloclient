@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { columns, column } from "react-bulma-components/full"
+import { Link } from "react-router-dom"
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 
 
@@ -36,7 +36,7 @@ const BtmFooter = () => {
                 </div>
                 <div className="column is-3">
                     <div className="firstFooter">
-                    <h1 className="title is-4 has-text-weight-bold has-text-left  is-uppercase" id="mainFooter">Careers <button className="is-small hiring-btn is-active">we're hiring</button></h1>
+                    <h1 className="title is-4 has-text-weight-bold has-text-left  is-uppercase" id="mainFooter">Careers <Link to="/careers-at-srp" className="is-small hiring-btn is-active">we're hiring</Link></h1>
                     </div>
                 </div>
               </div>

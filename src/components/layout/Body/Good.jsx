@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faAddressCard, faPhone, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 const Good = () => {
     return (
         <>
@@ -17,25 +18,25 @@ const Good = () => {
                     <br />
                     <div className="content">
                     <div class="columns">
-                        <div class="column is-one-third">
+                        <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-left" style={paragraphStyle}>
-                                <span></span><strong>Secure by design</strong>
+                                <span><FontAwesomeIcon icon={faShieldAlt} /></span>{' '} <strong>Secure by design</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
                                 The company, was conceived and born in the hearts of these 3 pioneers.
                             </p>
                         </div>
-                        <div class="column is-one-third">
+                        <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-left" style={paragraphStyle}>
-                                <span></span><strong>World Class Support</strong>
+                                <span><FontAwesomeIcon icon={faPhone} /></span>{' '}<strong>World Class Support</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
                                 The company, was conceived and born in the hearts of these 3 pioneers.
                             </p>
                         </div>
-                        <div class="column is-one-third">
+                        <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-left" style={paragraphStyle}>
-                                <span></span><strong>Exceptional Logistics</strong>
+                                <span><FontAwesomeIcon icon={faAddressCard} /></span>{' '}<strong>Exceptional Logistics</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
                                 The company, was conceived and born in the hearts of these 3 pioneers.
@@ -64,6 +65,11 @@ const paragraphStyle = {
 
 const colorStyle = {
     color: '#011240'
+}
+
+const cardStyle = {
+    borderStyle: 'outset',
+    borderBottomColor: '#041B61'
 }
 
 
