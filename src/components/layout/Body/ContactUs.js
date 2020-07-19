@@ -29,14 +29,14 @@ const ContactUs = () => {
                     <div className="column is-one-quarter">
                       <div className="field">
                         <div className="control">
-                          <Link to="/pages/detailpage" className="button is-outlined is-medium has-text-link-dark is-info is-fullwidth" id="noticeList">Send us an email</Link>
+                          <Link to="/pages/detailpage" style={outlinedStyle} className="button is-outlined is-medium is-fullwidth" id="noticeList">Send us an email</Link>
                         </div>
                       </div>
                     </div>
                     <div className="column is-one-quarter">
                       <div className="field">
                         <div className="control">
-                          <Link to="/pages/detailpage" className="button is-info is-medium is-fullwidth" id="noticeList">Talk to sales</Link>
+                          <Link to="/pages/detailpage" className="button is-info is-medium is-fullwidth" style={bkStyle}>Talk to sales</Link>
                         </div>
                       </div>
                     </div>
@@ -49,9 +49,9 @@ const ContactUs = () => {
                     </div>
                   </div>
                 </div>
-             </div>
+            </div>
         </div>
-     </section>
+      </section>
     </>
   );
 }
@@ -68,6 +68,16 @@ const paragraphStyle = {
 }
 
 const colorStyle = {
+  color: '#011240'
+}
+
+const bkStyle = {
+  background: '#011240',
+  color: 'white'
+}
+
+const outlinedStyle = {
+  borderColor: '#011240',
   color: '#011240'
 }
 

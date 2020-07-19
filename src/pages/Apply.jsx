@@ -10,9 +10,11 @@ const Apply = () => {
   return (
     <>
     <Navbar />
+    <br />
+    <br />
       <section className="section is-paddingless-horizontal" id="foundersSection">
         <div className="container grid is-large" id="founderWords">
-          <div className="firstsection">
+            <div className="firstsection">
               <div className="content">
                 <div class="columns">
                   <div class="column">
@@ -81,23 +83,23 @@ const Apply = () => {
                         <h3 style={colorStyle}>What are the SRP Perks</h3>
                       </div>
                       <p className="has-text-left" style={paragraphStyle}>
-                         <ul>
-                            <li>
-                                Steep learning curve by taking on responsibility from day one                            
-                            </li>
-                            <li>
-                                Freedom to realize own projects and implement your ideas                            
-                            </li>
-                            <li>
-                                Be part of a team with ground-breaking entrepreneurs, creative minds, and out-of-the-box-thinking colleagues
-                            </li>
-                            <li>
-                                No hierarchical thinking: Be your own leader!
-                            </li>
-                            <li>
-                                Participate in team events, Christmas or summer parties, and cozy barbecues
-                            </li>
-                          </ul>
+                        <ul>
+                          <li>
+                              Steep learning curve by taking on responsibility from day one                            
+                          </li>
+                          <li>
+                              Freedom to realize own projects and implement your ideas                            
+                          </li>
+                          <li>
+                              Be part of a team with ground-breaking entrepreneurs, creative minds, and out-of-the-box-thinking colleagues
+                          </li>
+                          <li>
+                              No hierarchical thinking: Be your own leader!
+                          </li>
+                          <li>
+                              Participate in team events, Christmas or summer parties, and cozy barbecues
+                          </li>
+                        </ul>
                       </p>
                       <p style={paragraphStyle}>Up for the challenge? Then join us and be part of the SRP team!</p>
                     </div>
@@ -133,17 +135,17 @@ const Apply = () => {
                 </div>
                 <div class="columns">
                   <div class="column is-half">
-                  <form>
-                        <div class="field">
-                            <div class="control">
-                                <input class="input" type="text" placeholder="First & Last Name" />
-                            </div>
-                            </div>
-                            <div class="field">
-                            <div class="control">
-                                <input class="input" type="text" placeholder="Email" />
-                            </div>
-                            </div>
+                    <form>
+                      <div class="field">
+                        <div class="control">
+                          <input class="input" type="text" placeholder="First & Last Name" />
+                        </div>
+                      </div>
+                      <div class="field">
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Email" />
+                        </div>
+                      </div>
                             <div class="field">
                                 <div class="control">
                                     <input class="input" type="text" placeholder="Phone" />

@@ -1,8 +1,20 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
         <>
+            <section className="hero is-medium">
+                <div className="is-paddingless-horizontal topNav is-fixed-top">
+                    <div className="container-fluid grid">
+                        <div className="firstsection">
+                            <p className="subtitl is-5 has-text-centered isdata">
+                            <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation" style={bkStyle}>
                 <div className="navbar-brand">
                     <a className="navbar-item" href="https://sethresourcespetroleum.com"  style={fullStyle}>
@@ -19,28 +31,50 @@ const Navbar = () => {
                 <div id="navbarBasicExample" className="navbar-menu">
                         <div className="navbar-end">
                             <div className="navbar-item">
-                            <a className="navbar-item" style={pStyle}>
-                                <strong>Home</strong>
-                            </a>
-                            <a className="navbar-item" style={pStyle}>
+                            <Link 
+                                to="/" 
+                                className="navbar-item has-text-small" 
+                                style={bkStyle}>
+                                Home
+                            </Link>
+                            <Link 
+                                to="/" 
+                                className="navbar-item has-text-small" 
+                                style={bkStyle}>
                                 Solutions
-                            </a>
-                            <a className="navbar-item" style={pStyle}>
+                            </Link>
+                            <Link 
+                                to="/" 
+                                className="navbar-item has-text-small" 
+                                style={bkStyle}>
                                 About Us
-                            </a>
-                            <a className="navbar-item" style={pStyle}>
+                            </Link>
+                            <Link 
+                                to="/" 
+                                className="navbar-item has-text-small" 
+                                style={bkStyle}>
                                 Logistics Knowledge
-                            </a>
-
+                            </Link>
+                            
                             <div className="buttons">
-                                <a className="button is-outlined" style={fullStyle}>
+                                <Link 
+                                    to="/careers-at-srp" 
+                                    className="navbar-item button has-text-small" 
+                                    style={bkStyle}>
+                                    Careers
+                                </Link>
+                                <Link 
+                                    to="/contact-us" 
+                                    className="navbar-item button has-text-small" 
+                                    style={bkStyle}>
                                     Contact Us
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
+            </section>
         </>
     );
 }

@@ -10,6 +10,8 @@ const Careers = () => {
   return (
     <>
       <Navbar />
+      <br />
+      <br />
       <section className="section is-paddingless-horizontal" id="foundersSection">
         <div className="container grid is-large" id="founderWords">
           <div className="firstsection">
