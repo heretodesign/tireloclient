@@ -62,7 +62,7 @@ const Careers = () => {
                         <div class="card-content">
                           <div class="media">
                             <div class="media-content">
-                              <p class="title is-5 has-text-centered">Meet Tirelo</p>
+                              <p class="title is-5 has-text-centered">Meet Brian</p>
                             </div>
                           </div>
                         </div>
@@ -76,7 +76,7 @@ const Careers = () => {
                         <div class="card-content">
                           <div class="media">
                             <div class="media-content">
-                              <p class="title is-5 has-text-centered">Meet Kaone</p>
+                              <p class="title is-5 has-text-centered">Meet Tirelo</p>
                             </div>
                           </div>
                         </div>
@@ -90,7 +90,7 @@ const Careers = () => {
                         <div class="card-content">
                           <div class="media">
                             <div class="media-content">
-                              <p class="title is-5 has-text-centered">Meet Zakes</p>
+                              <p class="title is-5 has-text-centered">Meet Keabetswe</p>
                             </div>
                           </div>
                         </div>
@@ -290,7 +290,7 @@ const colorStyle = {
 }
 
 const bkStyle = {
-  background: '#011240',
+  background: '#1167bf',
   color: 'white'
 }
 

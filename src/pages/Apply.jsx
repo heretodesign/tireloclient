@@ -235,7 +235,7 @@ const pStyle = {
   marginTop: '20px'
 }
 const bkStyle = {
-  background: '#011240',
+  background: '#1167bf',
   color: 'white'
 }
 

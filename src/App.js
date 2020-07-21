@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.scss';
-import { Route, Link, Switch } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import Careers from './pages/Careers'
 import Home from './pages/HomePage'
 import Footer from './components/layout/Footer/Footer'

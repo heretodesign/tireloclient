@@ -91,10 +91,6 @@ const Contact = () => {
                                 <ul style={pStyle}>
                                     <li><p style={pStyle}>Fill in the form </p></li>
                                     <li><p style={pStyle}>Email/Phone conversation </p></li>
-                                    {/* <li><p style={pStyle}>Interviews</p></li>
-                                    <li><p style={pStyle}>On-site day*</p></li>
-                                    <li><p style={pStyle}>Hired</p></li>
-                                    <li><p style={pStyle}>First day of work</p></li> */}
                                 </ul>
                                 </li>
                             </ul>

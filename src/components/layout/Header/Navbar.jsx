@@ -84,7 +84,7 @@ const pStyle = {
 }
 
 const bkStyle = {
-    background: '#011240',
+    background: '#1167bf',
     color: 'white'
 }
 
