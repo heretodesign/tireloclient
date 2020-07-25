@@ -25,7 +25,7 @@ const Vision = () => {
 
                         <p className="has-text-left" style={paragraphStyle}>
                             Our endevour is to establish and entrench Seth Energy Resources as a leading force in the "mid"
-                             and "down-stream" sector of the Oil and Gas industry. Our success has been based on uncompromising honesty, integrity, reliability, flexibility
+                             and "down-stream" sector of the Oil and Gas industry. <br /><br />Our success has been based on uncompromising honesty, integrity, reliability, flexibility
                              , customer orientation, quality, value and timing and we will continue to base our business on these principals going forward. 
                         </p>
                       </div>

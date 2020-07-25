@@ -5,15 +5,15 @@ const Navbar = () => {
     return (
         <>
             <section className="hero is-medium">
-                <div className="is-paddingless-horizontal topNav is-fixed-top">
+                {/* <div className="is-paddingless-horizontal topNav is-fixed-top">
                     <div className="container-fluid grid">
                         <div className="firstsection">
                             <p className="subtitl is-5 has-text-centered isdata">
-                            <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth
+                            <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth and sustainable living
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation" style={bkStyle}>
                 <div className="navbar-brand">
@@ -29,7 +29,7 @@ const Navbar = () => {
                 </div>
 
                 <div id="navbarBasicExample" className="navbar-menu">
-                        <div className="navbar-end">
+                    <div className="navbar-end">
                             <div className="navbar-item">
                             <Link 
                                 to="/" 

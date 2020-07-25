@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Button, Columns, Navbar, Header} from "react-bulma-components/full"
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 // import logo from '../../../assets/logo.png'
+import { Link } from "react-router-dom"
 
 
 const NavbarHero = () => {
@@ -11,9 +12,9 @@ const NavbarHero = () => {
       <section className="hero is-primary is-medium imgLanding">
         <div className="is-paddingless-horizontal topNav">
             <div className="container-fluid grid">
-                <div className="firstsection">
+                <div className="devsection">
                     <p className="subtitl is-5 has-text-centered isdata">
-                    <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth
+                    <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth and sustainable living
                     </p>
                 </div>
             </div>
@@ -33,22 +34,44 @@ const NavbarHero = () => {
               </div>
               <div id="navbarMenuHeroA" className="navbar-menu">
                 <div className="navbar-end">
-                  <a className="navbar-item">
-                    <strong>Why SethResources</strong>
-                  </a>
-                  <a className="navbar-item">
-                    Solutions
-                  </a>
-                  <a className="navbar-item">
-                    About Us
-                  </a>
-                  <a className="navbar-item">
-                    Logistics Knowledge
-                  </a>
+                  <Link 
+                      to="/" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      Home
+                  </Link>
+                  <Link 
+                      to="/" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      Solutions
+                  </Link>
+                  <Link 
+                      to="/" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      About Us
+                  </Link>
+                  <Link 
+                      to="/" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      Logistics Knowledge
+                  </Link>
+                  <Link 
+                      to="/careers-at-srp" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      Careers
+                  </Link>
+         
                   <span className="navbar-item">
-                  <a className="button is-info is-outlined">
-                    Talk to us
-                  </a>
+                    <Link 
+                        to="/contact-us" 
+                        className="navbar-item button has-text-small" 
+                        style={bkStyle}>
+                        Contact Us
+                    </Link>
                   </span>
                 </div>
               </div>
@@ -109,6 +132,11 @@ const headerStyle = {
 const paragraphStyle = {
   fontSize: '1.2rem',
   color: '#011240'
+}
+
+const bkStyle = {
+  background: 'transparent',
+  color: 'white'
 }
 
 const colorStyle = {

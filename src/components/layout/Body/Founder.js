@@ -18,18 +18,16 @@ const Founder = () => {
                 <div class="columns" style={innerStyle}>
                   <div class="column is-two-thrids">
                     <div className="content" id="contentSide" style={parentDiv}>
-                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Our Pioneer</h3>
+                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle" style={textColor}>Our Pioneers Message</h3>
                       <p className="has-text-left" style={paragraphStyle}>
-                        Our vision to resource and supply sufficient petroluem resource in the Southern hemisphere
-                        Our vision to resource and supply sufficient petroluem resource in the Southern hemisphere
-                        Our vision to resource and supply sufficient petroluem resource in the Southern hemisphere
-                        Our vision to resource and supply sufficient petroluem resource in the Southern hemisphere
+                        Our vision has always been and is to resource and supply sufficient oil and petroleum resources to enable our partners and clients throughout the region to function in a time to great stress and uncertainty. 
+                        During the global pandemic season, we've further reiterated our ambition to scale our business and acquire more clients, and therefore create job opportunities for the right talent to join our growing SRP family.  
                       </p>
                       <br />
-                      <p className="has-text-left" style={paragraphStyle}>
+                      <p className="has-text-left" style={colorStyle}>
                         Brian, Tirelo && Keabetswe
                       </p>
-                      <h4 className="subtitle is-6 has-text-left has-text-grey has-text-weight-semibold" style={marginS}>
+                      <h4 className="subtitle is-6 has-text-left has-text-weight-semibold" style={marginS}>
                         The Founding Team
                       </h4>
                     </div>
@@ -57,11 +55,12 @@ const paragraphStyle = {
   color: '#fff'
 }
 const colorStyle = {
-  color: '#011240'
+  color: '#fff'
 }
 
 const marginS = {
-  marginTop: '10px'
+  marginTop: '10px',
+  color: '#ed6d23'
 }
 
 const parentDiv = {
@@ -81,6 +80,10 @@ const founderStyle = {
 
 const innerStyle = {
   height: '500px'
+}
+
+const textColor = {
+  color: '#9aa8bd'
 }
 
 export default Founder;
