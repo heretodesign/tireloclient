@@ -38,7 +38,7 @@ const Testimonials = () => {
                         <div class="card-content">
                           <div class="media">
                             <div class="media-content">
-                              <p class="title is-5 has-text-centered">Government</p>
+                              <p class="title is-5 has-text-centered" style={colorStyle}>Governments</p>
                             </div>
                           </div>
                         </div>
@@ -52,7 +52,7 @@ const Testimonials = () => {
                         <div class="card-content">
                           <div class="media">
                             <div class="media-content">
-                              <p class="title is-5 has-text-centered">Mining</p>
+                              <p class="title is-5 has-text-centered" style={colorStyle}>Mining</p>
                             </div>
                           </div>
                         </div>
@@ -66,7 +66,7 @@ const Testimonials = () => {
                         <div class="card-content">
                           <div class="media">
                             <div class="media-content">
-                              <p class="title is-5 has-text-centered">Commercial</p>
+                              <p class="title is-5 has-text-centered" style={colorStyle}>Commercial</p>
                             </div>
                           </div>
                         </div>
@@ -80,7 +80,7 @@ const Testimonials = () => {
                         <div class="card-content">
                           <div class="media">
                             <div class="media-content">
-                              <p class="title is-5 has-text-centered">Buyers</p>
+                              <p class="title is-5 has-text-centered" style={colorStyle}>Wholesale Buyers</p>
                             </div>
                           </div>
                         </div>
@@ -98,17 +98,17 @@ const Testimonials = () => {
 const headerStyle = {
   fontSize: '2.6rem',
   marginTop: '80px',
-  color: '#011240'
+  color: '#003468'
 }
 
 const paragraphStyle = {
   fontSize: '1.2rem',
-  color: '#011240',
+  color: '#003468',
   marginBottom: '100px'
 }
 
 const colorStyle = {
-  color: '#011240'
+  color: '#003468'
 }
 
 export default Testimonials;

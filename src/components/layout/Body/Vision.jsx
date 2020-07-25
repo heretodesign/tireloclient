@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import imgOffice from '../../../assets/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg'
 
-const AboutUs = () => {
+const Vision = () => {
   return (
     <>
      <section className="section is-paddingless-horizontal" id="aboutPage">
@@ -20,13 +20,13 @@ const AboutUs = () => {
                     </div>
                     <div class="column">
                       <div className="content" id="contentSide">
-                        <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Where we get our supply</h3>
-                        <p className="subtitle has-text-left is-2" style={colorStyle}>Source of Products</p>
+                        <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Why we exist</h3>
+                        <p className="subtitle has-text-left is-2" style={colorStyle}>Our Vision & Mandate</p>
 
                         <p className="has-text-left" style={paragraphStyle}>
-                          Direct product from Refineries in Africa, Russia and the Middle East as well as strategic alliances with selected Crude and Refined Petroleum
-                          Traders across the globe.<br /><br /> As such we are able to ensure that our Clients are supplied timeously, in accordance with their specific requirements,
-                          and at competitive pricing. 
+                            Our endevour is to establish and entrench Seth Energy Resources as a leading force in the "mid"
+                             and "down-stream" sector of the Oil and Gas industry. Our success has been based on uncompromising honesty, integrity, reliability, flexibility
+                             , customer orientation, quality, value and timing and we will continue to base our business on these principals going forward. 
                         </p>
                       </div>
                     </div>
@@ -61,8 +61,7 @@ const parentDiv = {
 
 const founderStyle = {
   padding: '0px 0px',
-  background: '#1167bf',
-  // background: '#001240',
+  background: '#001240',
   // background: '#F6F9FF',
   color: '#011240'
 }
@@ -71,4 +70,4 @@ const innerStyle = {
   height: '500px'
 }
 
-export default AboutUs;
+export default Vision;

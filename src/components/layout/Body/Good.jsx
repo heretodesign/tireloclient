@@ -20,7 +20,7 @@ const Good = () => {
                     <div class="columns">
                         <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-left" style={paragraphStyle}>
-                                <span><FontAwesomeIcon icon={faShieldAlt} /></span>{' '} <strong>Secure by design</strong>
+                                <span><FontAwesomeIcon icon={faShieldAlt} /></span>{' '} <strong style={paragraphStyle}>Secure by design</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
                                 The company, was conceived and born in the hearts of these 3 pioneers.
@@ -28,7 +28,7 @@ const Good = () => {
                         </div>
                         <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-left" style={paragraphStyle}>
-                                <span><FontAwesomeIcon icon={faPhone} /></span>{' '}<strong>World Class Support</strong>
+                                <span><FontAwesomeIcon icon={faPhone} /></span>{' '}<strong style={paragraphStyle}>World Class Support</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
                                 The company, was conceived and born in the hearts of these 3 pioneers.
@@ -36,7 +36,7 @@ const Good = () => {
                         </div>
                         <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-left" style={paragraphStyle}>
-                                <span><FontAwesomeIcon icon={faAddressCard} /></span>{' '}<strong>Exceptional Logistics</strong>
+                                <span><FontAwesomeIcon icon={faAddressCard} /></span>{' '}<strong style={paragraphStyle}>Exceptional Logistics</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
                                 The company, was conceived and born in the hearts of these 3 pioneers.
@@ -55,16 +55,16 @@ const Good = () => {
 const headerStyle = {
     fontSize: '2.6rem',
     marginTop: '80px',
-    color: '#011240'
+    color: '#003468'
 }
 
 const paragraphStyle = {
     fontSize: '1.2rem',
-    color: '#011240'
+    color: '#003468'
 }
 
 const colorStyle = {
-    color: '#011240'
+    color: '#003468'
 }
 
 const cardStyle = {

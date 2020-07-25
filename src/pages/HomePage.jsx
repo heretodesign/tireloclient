@@ -9,6 +9,8 @@ import Market from '../components/layout/Body/Market'
 import AboutUs from '../components/layout/Body/AboutUs'
 import Testimonials from '../components/layout/Body/Testimonials'
 import Header from '../components/layout/Header/Header'
+import Vision from '../components/layout/Body/Vision';
+import Advantages from '../components/layout/Body/Advantages';
 
 const HomePage = () => {
     return (
@@ -16,6 +18,8 @@ const HomePage = () => {
             <Header />
             <Cards />
             <OurServices />
+            <Vision />
+            <Advantages />
             <AboutUs />
             <br />
             <Market />

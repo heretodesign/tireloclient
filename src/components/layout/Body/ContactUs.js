@@ -59,26 +59,26 @@ const ContactUs = () => {
 const headerStyle = {
   fontSize: '2.6rem',
   marginTop: '80px',
-  color: '#011240'
+  color: '#003468'
 }
 
 const paragraphStyle = {
   fontSize: '1.2rem',
-  color: '#011240'
+  color: '#003468'
 }
 
 const colorStyle = {
-  color: '#011240'
+  color: '#003468'
 }
 
 const bkStyle = {
-  background: '#011240',
+  background: '#003468',
   color: 'white'
 }
 
 const outlinedStyle = {
-  borderColor: '#011240',
-  color: '#011240'
+  borderColor: '#003468',
+  color: '#003468'
 }
 
 export default ContactUs;

@@ -34,7 +34,7 @@ const Apply = () => {
             </div>
         </div>
       </section>
-      <section className="section is-paddingless-horizontal" id="foundersSection">
+      <section className="section is-paddingless-horizontal" id="clipPath">
         <div className="container grid is-large" id="founderWords">
           <div className="firstsection">
               <div className="content">

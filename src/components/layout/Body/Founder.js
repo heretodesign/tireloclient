@@ -27,10 +27,10 @@ const Founder = () => {
                       </p>
                       <br />
                       <p className="has-text-left" style={paragraphStyle}>
-                        Tirelo
+                        Brian, Tirelo && Keabetswe
                       </p>
-                      <h4 className="subtitle is-6 has-text-left has-text-grey has-text-weight-semibold">
-                        Founder
+                      <h4 className="subtitle is-6 has-text-left has-text-grey has-text-weight-semibold" style={marginS}>
+                        The Founding Team
                       </h4>
                     </div>
                   </div>
@@ -60,6 +60,10 @@ const colorStyle = {
   color: '#011240'
 }
 
+const marginS = {
+  marginTop: '10px'
+}
+
 const parentDiv = {
   marginTop: '80px',
   marginLeft: '70px',
@@ -68,7 +72,9 @@ const parentDiv = {
 
 const founderStyle = {
   padding: '0px 0px',
-  background: '#001240',
+  // background: '#005fbf',
+  // background: '#084a8c',
+  background: '#003468',
   // background: '#F6F9FF',
   color: '#011240'
 }
