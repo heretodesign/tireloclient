@@ -26,7 +26,7 @@ const NavbarHero = () => {
             <div className="container">
               <div className="navbar-brand" id="logoStyle">
                 <a className="navbar-item" href="https://sethresourcespetroleum.com/">
-                  Seth Resources | Petroleum
+                  <strong className="has-text-white is-2">Seth Resources Petroleum</strong>
                 </a>
                 <span className="navbar-burger burger" data-target="navbarMenuHeroA">
                   <span></span>

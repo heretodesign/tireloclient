@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import imgOffice from '../../../assets/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg'
+import imgOffice from '../../../assets/shaah-shahidh--subrrYxv8A-unsplash.jpg'
 // import imgOffice from '../../../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
 
 import 'react-bulma-components/dist/react-bulma-components.min.css'

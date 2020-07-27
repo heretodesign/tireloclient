@@ -119,13 +119,9 @@ const Apply = () => {
                 <div class="columns">
                   <div class="column">
                     <div className="content" id="contentSide">
-                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Our Pioneer</h3>
-                      <p className="has-text-left" style={paragraphStyle}>
+                      <p className="has-text-left" style={ppStyle}>
                         Move more than just petroleum oil resources. With us you move an entire industry
                         and with it your career to the next level.
-                      </p>
-                      <p className="subtitle is-6 has-text-left has-text-weight-semibold" id="headPara">
-                        Our vision to resource and supply sufficient petroluem resource in the Southern hemisphere
                       </p>
                     </div>
                   </div>
@@ -227,8 +223,13 @@ const paragraphStyle = {
   fontSize: '1.2rem',
   color: '#fff'
 }
-const colorStyle = {
+const ppStyle = {
+  fontSize: '1.2rem',
   color: '#fff'
+}
+
+const colorStyle = {
+  color: '#003468'
 }
 const pStyle = {
   color: '#fff',

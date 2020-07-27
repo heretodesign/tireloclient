@@ -25,7 +25,7 @@ const OurServices = () => {
                       <p className="subtitle has-text-left is-2" style={colorStyle}>Get to know us</p>
 
                       <p className="has-text-left" style={paragraphStyle}>
-                        Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Ptyy) Ltd 
+                        Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Pty) Ltd 
                         established in 2015, whose core business is to Supply and Transport Gas and Liquid Fuels thoughout Africa and the rest of the world.
                         <br />
                         <br />

@@ -46,7 +46,7 @@ const Careers = () => {
                         At Seth Resource Petroleum, the world's best talent and experts move mountains and shape the future of the oil and gas industry.
                       </p>
                       <p className="has-text-left" style={paragraphStyle}>
-                        The company, was conceived and born in the hearts of these 3 pioneers.
+                        {/* The company, was conceived and born in the hearts of these 3 pioneers. */}
                       </p>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ const Careers = () => {
             </div>
         </div>
       </section>
-      <section className="section is-paddingless-horizontal" id="foundersSection">
+      <section className="section is-paddingless-horizontal" id="openSection" style={bckColor}>
         <div className="container grid is-large" id="founderWords">
           <div className="firstsection">
               <div className="content">
@@ -165,13 +165,9 @@ const Careers = () => {
                 <div class="columns">
                   <div class="column">
                     <div className="content" id="contentSide">
-                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Our Pioneer</h3>
                       <p className="has-text-left" style={paragraphStyle}>
                         Move more than just petroleum oil resources. With us you move an entire industry
                         and with it your career to the next level.
-                      </p>
-                      <p className="subtitle is-6 has-text-left has-text-weight-semibold" id="headPara">
-                        Our vision to resource and supply sufficient petroluem resource in the Southern hemisphere
                       </p>
                     </div>
                   </div>
@@ -293,6 +289,10 @@ const bkStyle = {
   background: '#003468',
   // background: '#1167bf',
   color: 'white'
+}
+
+const bckColor = {
+  background: '#f1f6fe'
 }
 
 export default Careers;
