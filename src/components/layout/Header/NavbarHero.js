@@ -94,7 +94,7 @@ const NavbarHero = () => {
                     {/* <h1 className="title has-text-left has-text-weight-light" id="titleBlack">Seth Resources Petroleum – Specializing in Petroleum Transportation
                     </h1> */}
                   </div>
-                  <div className="column"></div>
+                  {/* <div className="column"></div> */}
                 </div>
                 <div className="columns">
                   <div className="column is-half">
@@ -105,7 +105,7 @@ const NavbarHero = () => {
                       {/* You benefit from reliable processes, transparent data and an efficient supply chain. */}
                      </p>
                   </div>
-                  <div className="column"></div>
+                  {/* <div className="column"></div> */}
                 </div>
               </div>
               <div className="content" id="landingForm">
