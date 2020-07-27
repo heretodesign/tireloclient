@@ -1,5 +1,5 @@
 import React from 'react'
-import imgOffice from '../../../assets/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jpg'
+import imgOffice from '../../../assets/wassim-chouak-kJCAKWTH6u4-unsplash.png'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 
 const Founder = () => {

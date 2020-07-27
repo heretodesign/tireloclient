@@ -3,8 +3,9 @@ import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
 import Navbar from '../components/layout/Header/Navbar'
 import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
-import newD from '../assets/jay-skyler-4vkqO73C7O8-unsplash.jpg'
-import mine from '../assets/robin-sommer-wnOJ83k8r4w-unsplash.jpg'
+import newD from '../assets/christina-wocintechchat-o-Q8IgAlmHAUA-unsplash.png'
+import mine from '../assets/christina-wocintechchat-com-4PU-OC8sW98-unsplash.png'
+import kaelo from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'
 
 const Careers = () => {
   return (
@@ -27,7 +28,7 @@ const Careers = () => {
                     </div>
                   </div>
                   <div class="column is-half">
-                    <img className="content" src={imgOffice} id="imgCover" alt="office" />
+                    <img className="content" src={kaelo} id="imgCover" alt="office" />
                   </div>
                 </div>
               </div>

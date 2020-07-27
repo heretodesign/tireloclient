@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 // import { Button, Columns} from "react-bulma-components/full"
 import 'react-bulma-components/dist/react-bulma-components.min.css'
-// import imgOffice from '../../../assets/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg'
-import imgOffice from '../../../assets/ale-sat-1IEEuSNihv8-unsplash.jpg'
+import imgOffice from '../../../assets/emily-rusch-6dCicDMhMjk-unsplash.png'
 
 const Vision = () => {
   return (

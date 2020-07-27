@@ -1,7 +1,7 @@
 import React from 'react'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
-import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
+import imgOffice from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'
 import Navbar from '../components/layout/Header/Navbar'
 import { faAddressCard, faPhone, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

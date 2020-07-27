@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import imgOffice from '../../../assets/josue-isai-ramos-figueroa-n2NBgIx3A28-unsplash.jpg'
 import newD from '../../../assets/jay-skyler-4vkqO73C7O8-unsplash.jpg'
-import mine from '../../../assets/robin-sommer-wnOJ83k8r4w-unsplash.jpg'
+import mine from '../../../assets/juniperphoton-KKFKrOu3BVc-unsplash.png'
 import buyer from '../../../assets/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jpg'
 
 const Testimonials = () => {
