@@ -14,7 +14,9 @@ const NavbarHero = () => {
             <div className="container-fluid grid">
                 <div className="devsection">
                     <p className="subtitl is-5 has-text-centered isdata">
-                    <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth and sustainable living
+                    <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, 
+                    powering economic growth and sustainable living
+                     –– +267 71572088 | 75034118 | 74237959
                     </p>
                 </div>
             </div>
@@ -68,8 +70,8 @@ const NavbarHero = () => {
                   <span className="navbar-item">
                     <Link 
                         to="/contact-us" 
-                        className="navbar-item button has-text-small" 
-                        style={bkStyle}>
+                        className="navbar-item button has-text-small contactBtn" 
+                        >
                         Contact Us
                     </Link>
                   </span>
@@ -79,7 +81,7 @@ const NavbarHero = () => {
           </nav>
         </div>
 
-        <div className="hero-body" id="clipPath">
+        <div className="hero-body">
           <div className="container has-text-centered">
           <div className="firstsection">
               <div className="content">
@@ -95,11 +97,12 @@ const NavbarHero = () => {
                   <div className="column"></div>
                 </div>
                 <div className="columns">
-                  <div className="column is-two-fifths">
+                  <div className="column is-half">
                     <p className="has-text-left"> We are your co-pilot:
                         from remote regions to cities and beyond borders, with our fleet of delivery fuel tankers & vehicles,
-                        SPR offers comfortable, realiable solutions to ensure that your petroleum delivery are made on time, every time. Our years of experience spans over 5 years,
-                      You benefit from reliable processes, transparent data and an efficient supply chain.
+                        SPR offers comfortable, realiable solutions to ensure that your petroleum delivery are made on time, every time. 
+                        {/* Our years of experience spans over 5 years, */}
+                      {/* You benefit from reliable processes, transparent data and an efficient supply chain. */}
                      </p>
                   </div>
                   <div className="column"></div>
@@ -108,7 +111,7 @@ const NavbarHero = () => {
               <div className="content" id="landingForm">
                 <div className="columns">
                   <div className="column is-one-quarter">
-                    <a className="button is-large is-info has-test-small is-fullwidth" id="landBtn">Talk to us</a>
+                    <a className="button is-medium has-test-small is-fullwidth" id="landBtn">Talk to us</a>
                   </div>
                   <div className="column"></div>
                 </div>

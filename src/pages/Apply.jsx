@@ -39,7 +39,7 @@ const Apply = () => {
           <div className="firstsection">
               <div className="content">
                 <div class="columns">
-                  <div class="column">
+                  <div class="column is-three-quarters">
                     <div className="content" id="contentSide">
                       <p className="subtitle is-2" style={colorStyle}>Our Culture & Values</p>
                       <div className="content">
@@ -138,45 +138,45 @@ const Apply = () => {
                     <form>
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="text" placeholder="First & Last Name" />
+                          <input class="input is-info" type="text" placeholder="First & Last Name" />
                         </div>
                       </div>
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="text" placeholder="Email" />
+                          <input class="input is-info" type="text" placeholder="Email" />
                         </div>
                       </div>
                             <div class="field">
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="Phone" />
+                                    <input class="input is-info" type="text" placeholder="Phone" />
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="Location" />
+                                    <input class="input is-info" type="text" placeholder="Location" />
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input class="input" type="text" placeholder="LinkedIn Profile" />
+                                    <input class="input is-info" type="text" placeholder="LinkedIn Profile" />
                                 </div>
                             </div>
                             <div class="field">
                             <div class="control">
-                                <input class="input" type="text" placeholder="What made you decide to apply for this position?" />
+                                <input class="input is-info" type="text" placeholder="What made you decide to apply for this position?" />
                             </div>
                             </div>
                             <div class="field">
                             <div class="control">
-                                <input class="input" type="text" placeholder="possible start date" />
+                                <input class="input is-info" type="text" placeholder="possible start date" />
                             </div>
                             <br />
                             <div class="file">
                             <label class="file-label">
-                                <input class="file-input" type="file" name="resume" />
+                                <input class="file-input is-info" type="file" name="resume" />
                                 <span class="file-cta">
                                 <span class="file-label">
-                                    Upload Resume || CV
+                                    Upload Resume or CV
                                 </span>
                                 </span>
                             </label>

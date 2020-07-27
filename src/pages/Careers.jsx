@@ -54,7 +54,7 @@ const Careers = () => {
                 <br />
                 <div className="content">
                   <div class="columns">
-                    <div class="column is-one-quarter">
+                    <div class="column is-one-third">
                       <div class="card card-shadow">
                         <div class="card-image">
                             <img src={imgOffice} alt="Placeholder image" />
@@ -68,7 +68,7 @@ const Careers = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="column is-one-quarter">
+                    <div class="column is-one-third">
                       <div class="card">
                         <div class="card-image">
                             <img src={mine} alt="Placeholder image" />
@@ -82,7 +82,7 @@ const Careers = () => {
                         </div>
                       </div>
                     </div>
-                    <div class="column is-one-quarter">
+                    <div class="column is-one-third">
                       <div class="card">
                         <div class="card-image">
                             <img src={newD} alt="Placeholder image" />

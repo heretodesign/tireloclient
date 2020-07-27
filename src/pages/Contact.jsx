@@ -58,22 +58,22 @@ const Contact = () => {
                     <form>
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="text" placeholder="First & Last Name*" />
+                          <input class="input is-info" type="text" placeholder="First & Last Name*" />
                         </div>
                       </div>
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="text" placeholder="Phone Number*" />
+                          <input class="input is-info" type="text" placeholder="Phone Number*" />
                         </div>
                       </div>
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="text" placeholder="Email" />
+                          <input class="input is-info" type="text" placeholder="Email" />
                         </div>
                       </div>
                             <div class="field">
                             <div class="control">
-                                <textarea class="textarea" type="text" placeholder="message*" />
+                                <textarea class="textarea is-info" type="text" placeholder="message*" />
                             </div>
                             <br />
                             <a className="button is-large is-fullwidth" style={bkStyle}>Send</a>
@@ -111,21 +111,21 @@ const Contact = () => {
 const headerStyle = {
   fontSize: '2.6rem',
   marginTop: '80px',
-  color: '#011240'
+  color: '#003468'
 }
 const paragraphStyle = {
   fontSize: '1.2rem',
-  color: '#011240'
+  color: '#003468'
 }
 const colorStyle = {
-  color: '#011240'
+  color: '#003468'
 }
 const pStyle = {
   color: '#fff',
   marginTop: '20px'
 }
 const bkStyle = {
-  background: '#011240',
+  background: '#003468',
   color: 'white'
 }
 

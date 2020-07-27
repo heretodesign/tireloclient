@@ -24,10 +24,13 @@
 }
 
 .imgLanding {
-  background-image: url('../assets/ricardo-gomez-angel-F2iCP_knaj8-unsplash.jpg');
-  background-position: left center;
+  // background-image: url('../assets/ricardo-gomez-angel-F2iCP_knaj8-unsplash.jpg');
+  background-image: url('../assets/Web 1920 – 4.png');
+  background-position: center center;
   background-repeat:  no-repeat;
   background-size:  cover;
+  position: relative;
+  height: 100vh;
 }
 
 body {
@@ -69,7 +72,7 @@ body {
   @include tablet {
     font-size: 1.2rem;
     margin-top: 1px;
-    background: #ffa500;
+    background: #fba502;
   }
 
 
@@ -104,8 +107,8 @@ body {
 }
 
 #landingForm {
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 
   @include phone {
     margin-top: 30px;
@@ -161,4 +164,14 @@ body {
 
 #logoStyle {
   background: #ffa500;
+}
+
+.hero-head .container .navbar-item .contactBtn {
+  background: transparent;
+  color: white;
+}
+
+.hero-head .container .navbar-item .contactBtn:hover {
+  background: #fba502;
+  color: white;
 }

@@ -1,7 +1,5 @@
 import React from 'react'
-// import imgOffice from '../../../assets/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg'
 import imgOffice from '../../../assets/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jpg'
-// import imgOffice from '../../../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 
 const Founder = () => {
@@ -60,7 +58,7 @@ const colorStyle = {
 
 const marginS = {
   marginTop: '10px',
-  color: '#ed6d23'
+  color: '#fba502'
 }
 
 const parentDiv = {
