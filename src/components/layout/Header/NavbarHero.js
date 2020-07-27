@@ -79,7 +79,7 @@ const NavbarHero = () => {
           </nav>
         </div>
 
-        <div className="hero-body">
+        <div className="hero-body" id="clipPath">
           <div className="container has-text-centered">
           <div className="firstsection">
               <div className="content">
@@ -143,6 +143,10 @@ const colorStyle = {
   color: '#fff',
   fontSize: '2.8rem',
   fontWeight: 'bolder'
+}
+
+const bgColor = {
+  background: '#003468',
 }
 
 export default NavbarHero;

@@ -16,7 +16,7 @@ const Navbar = () => {
                 </div> */}
 
             <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation" style={bkStyle}>
-                <div className="navbar-brand">
+                <div className="navbar-brand" id="logoStyle">
                     <a className="navbar-item" href="https://sethresourcespetroleum.com"  style={fullStyle}>
                         <strong className="has-text-white is-2">SRP</strong>
                     </a>
@@ -55,14 +55,13 @@ const Navbar = () => {
                                 style={bkStyle}>
                                 Logistics Knowledge
                             </Link>
-                            
+                            <Link 
+                                to="/careers-at-srp" 
+                                className="navbar-item has-text-small" 
+                                style={bkStyle}>
+                                Careers
+                            </Link>
                             <div className="buttons">
-                                <Link 
-                                    to="/careers-at-srp" 
-                                    className="navbar-item button has-text-small" 
-                                    style={bkStyle}>
-                                    Careers
-                                </Link>
                                 <Link 
                                     to="/contact-us" 
                                     className="navbar-item button has-text-small" 
@@ -84,7 +83,8 @@ const pStyle = {
 }
 
 const bkStyle = {
-    background: '#1167bf',
+    // background: '#1167bf',
+    background: '#003468',
     color: 'white'
 }
 

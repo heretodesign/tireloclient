@@ -221,21 +221,22 @@ const Apply = () => {
 const headerStyle = {
   fontSize: '2.6rem',
   marginTop: '80px',
-  color: '#011240'
+  color: '#003468'
 }
 const paragraphStyle = {
   fontSize: '1.2rem',
-  color: '#011240'
+  color: '#fff'
 }
 const colorStyle = {
-  color: '#011240'
+  color: '#fff'
 }
 const pStyle = {
   color: '#fff',
   marginTop: '20px'
 }
 const bkStyle = {
-  background: '#1167bf',
+  background: '#003468',
+  // background: '#1167bf',
   color: 'white'
 }
 

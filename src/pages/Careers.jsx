@@ -279,18 +279,19 @@ const Careers = () => {
 const headerStyle = {
   fontSize: '2.6rem',
   marginTop: '80px',
-  color: '#011240'
+  color: '#003468'
 }
 const paragraphStyle = {
   fontSize: '1.2rem',
-  color: '#011240'
+  color: '#003468'
 }
 const colorStyle = {
-  color: '#011240'
+  color: '#003468'
 }
 
 const bkStyle = {
-  background: '#1167bf',
+  background: '#003468',
+  // background: '#1167bf',
   color: 'white'
 }
 
