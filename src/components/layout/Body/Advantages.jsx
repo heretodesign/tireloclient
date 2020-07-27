@@ -5,7 +5,7 @@ import imgOffice from '../../../assets/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jp
 
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 
-const OurServices = () => {
+const Advantages = () => {
   return (
     <>
       <section className="section is-paddingless-horizontal" id="servicesPage">
@@ -22,16 +22,18 @@ const OurServices = () => {
                   <div class="column">
                     <div className="content" id="contentSide">
                       <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</h3>
-                      <p className="subtitle has-text-left is-2" style={colorStyle}>Get to know us</p>
+                      <p className="subtitle has-text-left is-2" style={colorStyle}>Competitive Advantages</p>
 
-                      <p className="has-text-left" style={paragraphStyle}>
-                        Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Ptyy) Ltd 
-                        established in 2015, whose core business is to Supply and Transport Gas and Liquid Fuels thoughout Africa and the rest of the world.
+                        <ul class="menu-list" style={pStyle}>
+                            <ul style={pStyle}>
+                                <li><p style={pStyle}>Vast intellectual capital in the industry </p></li>
+                                <li><p style={pStyle}>Competitive pricing by virtue of negotiated supply agreements and streamlined overhead structure </p></li>
+                                <li><p style={pStyle}>We engage and understand our Clients specific requirements and have the capacity to provide supply-side solutions specifically tailored to meet each Buyers criterion.</p></li>
+                                <li><p style={pStyle}>A proactive rather than reactive approach to business and our Clients requirements.</p></li>
+                                <li><p style={pStyle}>Management structured to expedient decision making</p></li>
+                            </ul>
+                        </ul>
                         <br />
-                        <br />
-                        The company has associate offices in Africa, Middle East and Europe which together offer a unique blend of trading, international banking, 
-                        structured finances, and marketing experience to the benefit of our client base.
-                      </p>
                     </div>
                   </div>
                   <div class="column is-half">
@@ -61,4 +63,13 @@ const colorStyle = {
   color: '#011240'
 }
 
-export default OurServices;
+  const pStyle = {
+    color: '#011240',
+    marginTop: '20px'
+  }
+  const bkStyle = {
+    background: '#1167bf',
+    color: 'white'
+  }
+
+export default Advantages;

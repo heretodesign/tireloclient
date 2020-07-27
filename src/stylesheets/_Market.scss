@@ -37,7 +37,7 @@
   }
   
   #aboutPage {
-    background-color: #001240;
+    background-color: #003468;
     // background: #ffa500;
     align-items: center;
     card-color: transparent;
@@ -65,7 +65,7 @@
         color: #9aa8bd;
         font-size: 14px;
         letter-spacing: 1.2px;
-        
+        margin-bottom: 5px;
     }
 
     #headPara {
@@ -120,7 +120,7 @@
         color: #9aa8bd;
         font-size: 14px;
         letter-spacing: 1.2px;
-        
+        margin-bottom: 5px;
     }
 
     #headPara {
@@ -131,7 +131,8 @@
 }
 
 #marketTitle {
-  color: #011240;
+  color: #003468;
+  // color: #011240;
 }
 
 #marketPara {
@@ -142,4 +143,11 @@
 
 #market-section {
   color: #011240;
+}
+
+#founderImg {
+  background-image: url('../assets/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jpg');
+  background-position: left center;
+  background-repeat:  no-repeat;
+  background-size:  cover;
 }

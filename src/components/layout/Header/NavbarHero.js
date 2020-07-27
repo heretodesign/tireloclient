@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Button, Columns, Navbar, Header} from "react-bulma-components/full"
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 // import logo from '../../../assets/logo.png'
+import { Link } from "react-router-dom"
 
 
 const NavbarHero = () => {
@@ -11,18 +12,18 @@ const NavbarHero = () => {
       <section className="hero is-primary is-medium imgLanding">
         <div className="is-paddingless-horizontal topNav">
             <div className="container-fluid grid">
-                <div className="firstsection">
+                <div className="devsection">
                     <p className="subtitl is-5 has-text-centered isdata">
-                    <strong className="">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth
+                    <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth and sustainable living
                     </p>
-                 </div>
+                </div>
             </div>
         </div>
         <div className="hero-head">
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand" id="logoStyle">
-                <a className="navbar-item" href="https://freighthub.com/en/">
+                <a className="navbar-item" href="https://sethresourcespetroleum.com/">
                   Seth Resources | Petroleum
                 </a>
                 <span className="navbar-burger burger" data-target="navbarMenuHeroA">
@@ -33,22 +34,44 @@ const NavbarHero = () => {
               </div>
               <div id="navbarMenuHeroA" className="navbar-menu">
                 <div className="navbar-end">
-                  <a className="navbar-item">
-                    <strong>Why SethResources</strong>
-                  </a>
-                  <a className="navbar-item">
-                    Solutions
-                  </a>
-                  <a className="navbar-item">
-                    About Us
-                  </a>
-                  <a className="navbar-item">
-                    Logistics Knowledge
-                  </a>
+                  <Link 
+                      to="/" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      Home
+                  </Link>
+                  <Link 
+                      to="/" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      Solutions
+                  </Link>
+                  <Link 
+                      to="/" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      About Us
+                  </Link>
+                  <Link 
+                      to="/" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      Logistics Knowledge
+                  </Link>
+                  <Link 
+                      to="/careers-at-srp" 
+                      className="navbar-item has-text-small" 
+                      style={bkStyle}>
+                      Careers
+                  </Link>
+         
                   <span className="navbar-item">
-                  <a className="button is-info" id="navBtn">
-                    Talk to us
-                  </a>
+                    <Link 
+                        to="/contact-us" 
+                        className="navbar-item button has-text-small" 
+                        style={bkStyle}>
+                        Contact Us
+                    </Link>
                   </span>
                 </div>
               </div>
@@ -56,14 +79,18 @@ const NavbarHero = () => {
           </nav>
         </div>
 
-        <div className="hero-body">
+        <div className="hero-body" id="clipPath">
           <div className="container has-text-centered">
           <div className="firstsection">
               <div className="content">
                 <div className="columns">
                   <div className="column is-half">
-                    <h1 className="title has-text-left has-text-weight-light" id="titleBlack">Seth Resources Petroleum – Specializing in Petroleum Transportation
-                    </h1>
+                    <p className="subtitle has-text-left is-2" style={colorStyle}>
+                      Seth Resources Petroleum – Specializing in Petroleum Transportation
+                    </p>
+
+                    {/* <h1 className="title has-text-left has-text-weight-light" id="titleBlack">Seth Resources Petroleum – Specializing in Petroleum Transportation
+                    </h1> */}
                   </div>
                   <div className="column"></div>
                 </div>
@@ -94,6 +121,32 @@ const NavbarHero = () => {
       </section>
     </>
   );
+}
+
+const headerStyle = {
+  fontSize: '2.6rem',
+  marginTop: '80px',
+  color: '#011240'
+}
+
+const paragraphStyle = {
+  fontSize: '1.2rem',
+  color: '#011240'
+}
+
+const bkStyle = {
+  background: 'transparent',
+  color: 'white'
+}
+
+const colorStyle = {
+  color: '#fff',
+  fontSize: '2.8rem',
+  fontWeight: 'bolder'
+}
+
+const bgColor = {
+  background: '#003468',
 }
 
 export default NavbarHero;

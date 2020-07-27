@@ -11,10 +11,10 @@ const Market = () => {
         <div className="container grid is-large" id="contAboutPage">
             <div className="firstsection">
                 <div className="content">
-                <h4 className="subtitle is-3 has-text-left has-text-weight-semibold" id="headingAbout">
-                  Product Range and Availability
-                </h4>
-                </div>
+                  <h4 className="subtitle is-3 has-text-left has-text-weight-semibold" id="headingAbout" style={textColor}>
+                    Product Range and Availability
+                  </h4>
+                </div><br />
                 <div className="content">
                   <div className="columns">
                     <div className="column">
@@ -111,5 +111,8 @@ const Market = () => {
     </>
   );
 }
- 
+
+const textColor = {
+  color: '#003468'
+}
 export default Market;

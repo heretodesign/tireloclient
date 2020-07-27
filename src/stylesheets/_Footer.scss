@@ -20,8 +20,8 @@
   
   
   #mainFooter {
-    font-size: 0.8rem;
-    color: #011240;
+    font-size: 1rem;
+    color: #003468;
   
   
     @include phone {
@@ -47,15 +47,16 @@
   }
 
   .footer-btm {
-    color: #011240;
+    color: #003468;
   }
 
   .footer-btm #mainFooter {
-    color: #011240;
+    color: #003468;
   }
 
   .footer-btm .hiring-btn {
-    background: #FFA500;
+    background: #ed6d23;
+    // background: rgb(212, 139, 3);
     border-radius: 1%;
     border: none;
     color: white;
