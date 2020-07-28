@@ -31,7 +31,7 @@ const Good = () => {
                                 <span><FontAwesomeIcon icon={faPhone} /></span>{' '}<strong style={paragraphStyle}>World Class Support</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
-                                The company, was conceived and born in the hearts of these 3 pioneers.
+                                The company, born in the hearts of these 3 pioneers.
                             </p>
                         </div>
                         <div class="column is-one-third" style={cardStyle}>
