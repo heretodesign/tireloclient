@@ -4,18 +4,18 @@ import { Link } from "react-router-dom"
 const Navbar = () => {
     return (
         <>
-            <section className="hero is-medium container-fluid">
-                {/* <div className="is-paddingless-horizontal topNav is-fixed-top">
+            <section className="hero is-primary is-medium container-fluid imgLanding">
+                <div className="is-paddingless-horizontal topNav">
                     <div className="container-fluid grid">
-                        <div className="firstsection">
+                        <div className="devsection">
                             <p className="subtitl is-5 has-text-centered isdata">
-                            <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth and sustainable living
+                            <strong className="has-text-white">RSP</strong> – dedicated fuel distributer & forwarder, powering economic growth and sustainable living –– +267 71572088 | 75034118 | 74237959
                             </p>
                         </div>
                     </div>
-                </div> */}
+                </div> 
 
-                <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation" style={bkStyle}>
+                <nav className="navbar" role="navigation" aria-label="main navigation" style={bkStyle}>
                     <div className="container">
                         <div className="navbar-brand" id="logoStyle">
                             <a className="navbar-item" href="https://sethresourcespetroleum.com"  style={fullStyle}>

@@ -64,7 +64,8 @@ const colorStyle = {
 
   const pStyle = {
     color: '#011240',
-    marginTop: '20px'
+    marginTop: '20px',
+    fontSize: '1.1rem'
   }
   const bkStyle = {
     background: '#1167bf',

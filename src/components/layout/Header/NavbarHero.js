@@ -87,14 +87,13 @@ const NavbarHero = () => {
               <div className="content">
                 <div className="columns">
                   <div className="column is-half">
-                    <p className="subtitle has-text-left is-2" style={colorStyle}>
-                      Seth Resources Petroleum – Specializing in Petroleum Transportation
+                    <p className="subtitle has-text-left is-1" style={colorStyle}>
+                      <strong>Seth Resources</strong> <span style={spanColor}>Petroleum</span> – Specializing in Petroleum Transportation
                     </p>
 
                     {/* <h1 className="title has-text-left has-text-weight-light" id="titleBlack">Seth Resources Petroleum – Specializing in Petroleum Transportation
                     </h1> */}
                   </div>
-                  {/* <div className="column"></div> */}
                 </div>
                 <div className="columns">
                   <div className="column is-half">
@@ -105,7 +104,6 @@ const NavbarHero = () => {
                       {/* You benefit from reliable processes, transparent data and an efficient supply chain. */}
                      </p>
                   </div>
-                  {/* <div className="column"></div> */}
                 </div>
               </div>
               <div className="content" id="landingForm">
@@ -113,9 +111,7 @@ const NavbarHero = () => {
                   <div className="column is-one-quarter">
                     <a className="button is-medium has-test-small is-fullwidth" id="landBtn">Talk to us</a>
                   </div>
-                  <div className="column"></div>
                 </div>
-
               </div>
 
            </div>
@@ -146,6 +142,10 @@ const colorStyle = {
   color: '#fff',
   fontSize: '2.8rem',
   fontWeight: 'bolder'
+}
+
+const spanColor = {
+  color: '#fba502'
 }
 
 const bgColor = {
