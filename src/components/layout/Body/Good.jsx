@@ -23,7 +23,7 @@ const Good = () => {
                                 <span><FontAwesomeIcon icon={faShieldAlt} /></span>{' '} <strong style={paragraphStyle}>Secure by design</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
-                                The company, was conceived and born in the hearts of these 3 pioneers.
+                                Enterprise-grade security is built into our products by default.
                             </p>
                         </div>
                         <div class="column is-one-third" style={cardStyle}>
@@ -31,7 +31,7 @@ const Good = () => {
                                 <span><FontAwesomeIcon icon={faPhone} /></span>{' '}<strong style={paragraphStyle}>World Class Support</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
-                                The company, born in the hearts of these 3 pioneers.
+                                24/7 support for you and your team, with dedicated support teams on standby to attend to your inquiry.
                             </p>
                         </div>
                         <div class="column is-one-third" style={cardStyle}>
@@ -39,7 +39,7 @@ const Good = () => {
                                 <span><FontAwesomeIcon icon={faAddressCard} /></span>{' '}<strong style={paragraphStyle}>Exceptional Logistics</strong>
                             </p>
                             <p className="has-text-left" style={paragraphStyle}>
-                                The company, was conceived and born in the hearts of these 3 pioneers.
+                                Excellent structured & detailed systems, as well as engagement teams to ease the logistic process.
                             </p>
                         </div>
                     </div>
