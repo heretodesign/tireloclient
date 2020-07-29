@@ -24,8 +24,6 @@ const Testimonials = () => {
                     <br />
                     <p className="has-text-left" style={paragraphStyle}>
                       Our valued customer and clients spread across the southern hemisphere, in these following industry sectors
-                      Our valued customer and clients spread across the southern hemisphere, in these following industry sectors
-                      Our valued customer and clients spread across the southern hemisphere, in these following industry sectors
                     </p>
                 </div>
                 <div className="content">
