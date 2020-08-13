@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tireloclient/precache-manifest.1bd15549b5acd44c97d94d97c44ea4ca.js"
+  "/tireloclient/precache-manifest.8816dcc1b8ab137070ed3aa93e4310b7.js"
 );
 
 self.addEventListener('message', (event) => {
