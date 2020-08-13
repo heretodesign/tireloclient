@@ -22,8 +22,11 @@ const Careers = () => {
                     <div className="content" id="contentSide">
                       <h2 className="has-text-left is-uppercase" style={headerStyle}>Opportunities – at Seth Resources Petroluem</h2>
                       <p className="has-text-left" style={paragraphStyle}>
-                        Move more than just petroleum oil resources. With us you move an intire industry
-                        and with it your career to the next level.
+                        In a dynamic atmosphere, diverse teams collaborate on projects, taking ideas from the drawing board to implementation. We're all curious, and everyone is hungry for a challenge.
+                        <br />
+                        <br />
+                        "Move more than just petroleum oil resources. With us you move an intire industry
+                        and with it your career to the next level." a statement we say often at SRP.
                       </p>
                     </div>
                   </div>
@@ -36,76 +39,133 @@ const Careers = () => {
         </div>
       </section>
       <section className="section is-paddingless-horizontal" id="foundersSection">
-        <div className="container grid is-large" id="founderWords">
-          <div className="firstsection">
-              <div className="content">
-                <div class="columns">
-                  <div class="column">
-                    <div className="content" id="contentSide">
-                      <p className="subtitle is-2" style={colorStyle}>Meet Our Team</p>
-                      <p className="has-text-left" style={paragraphStyle}>
-                        At Seth Resource Petroleum, the world's best talent and experts move mountains and shape the future of the oil and gas industry.
-                      </p>
-                      <p className="has-text-left" style={paragraphStyle}>
-                        {/* The company, was conceived and born in the hearts of these 3 pioneers. */}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <div className="content">
-                  <div class="columns">
-                    <div class="column is-one-third">
-                      <div class="card card-shadow">
-                        <div class="card-image">
-                            <img src={imgOffice} alt="Placeholder image" />
+            <div className="container grid is-large" id="founderWords">
+              <div className="firstsection">
+                  <div className="content">
+                    <div class="columns">
+                      <div class="column">
+                        <div className="content" id="contentSide">
+                          <p className="subtitle is-2 has-text-centered" style={colorStyle}>Inside About Us</p>
+                          {/* <p className="has-text-left" style={paragraphStyle}>
+                            At Seth Resource Petroleum, the world's best talent and experts move mountains and shape the future of the oil and gas industry.
+                          </p> */}
+                          <p className="has-text-left" style={paragraphStyle}>
+                            {/* The company, was conceived and born in the hearts of these 3 pioneers. */}
+                          </p>
                         </div>
-                        <div class="card-content">
-                          <div class="media">
-                            <div class="media-content">
-                              <p class="title is-5 has-text-centered">Meet Brian</p>
+                      </div>
+                    </div>
+                    <br />
+                    <div className="content">
+                      <div class="columns">
+                        <div class="column is-one-third">
+                          <div class="card card-shadow">
+                            <div class="card-image">
+                                <img src={imgOffice} alt="Placeholder image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-content">
+                                  <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Who we are</Link>
+                                  <p className="has-text-left" style={cardParagraph}>
+                                    Find out about our company, our business, our team at Seth Resource Petroleum, and how we are working to power progress together with more and cleaner energy solutions.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column is-one-third">
+                          <div class="card">
+                            <div class="card-image">
+                                <img src={mine} alt="Placeholder image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-content">
+                                  <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>What we do</Link>
+                                  <p className="has-text-left" style={cardParagraph}>
+                                    From our very embryonic inception, our primary aim has been to meet the world's growing demand for more and cleaner energy solutions in ways that are eco-friendly, financially and 
+                                    socially responsible.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="column is-one-third">
+                          <div class="card">
+                            <div class="card-image">
+                                <img src={newD} alt="Placeholder image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-content">
+                                  <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Our Values</Link>
+                                  <p className="has-text-left" style={cardParagraph}>
+                                    Our ideas, visions, and technologies are driven and powered by our unique company culture, set of core values - 
+                                    honesty, integrity, inclusive and respecting of all people.  
+                                  </p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="column is-one-third">
-                      <div class="card">
-                        <div class="card-image">
-                            <img src={mine} alt="Placeholder image" />
-                        </div>
-                        <div class="card-content">
-                          <div class="media">
-                            <div class="media-content">
-                              <p class="title is-5 has-text-centered">Meet Tirelo</p>
+                    {/* <div className="content">
+                      <div class="columns">
+                        <div class="column is-one-third">
+                          <div class="card card-shadow">
+                            <div class="card-image">
+                                <img src={imgOffice} alt="Placeholder image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-content">
+                                  <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Leadership</Link>
+                                  <p className="has-text-left" style={cardParagraph}>
+                                    Every day, our team of leaders are making countless decisions and facing problems they’ve never encountered before. 
+                                    What worked yesterday can change overnight. The speed is relentless, the stakes are high, but the rewards are great for those who can lead a team to consistently achieve extraordinary results.
+                                    Read about our co-founders, our Executive committee, and Board of Directors.
+                                  </p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="column is-one-third">
-                      <div class="card">
-                        <div class="card-image">
-                            <img src={newD} alt="Placeholder image" />
-                        </div>
-                        <div class="card-content">
-                          <div class="media">
-                            <div class="media-content">
-                              <p class="title is-5 has-text-centered">Meet Keabetswe</p>
+                        <div class="column is-one-third">
+                          <div class="card">
+                            <div class="card-image">
+                                <img src={mine} alt="Placeholder image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-content">
+                                  <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Our major projects</Link>
+                                  <p className="has-text-left" style={cardParagraph}>
+                                    As we continue to evolve, our client partnership across various industries, government and mining continues to grow in the region and beyond. 
+                                  </p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    {/* <div class="column is-one-quarter">
-                      <div class="card">
-                        <div class="card-image">
-                            <img src={buyer} alt="Placeholder image" />
-                        </div>
-                        <div class="card-content">
-                          <div class="media">
-                            <div class="media-content">
-                              <p class="title is-5 has-text-centered">Buyers</p>
+                        <div class="column is-one-third">
+                          <div class="card">
+                            <div class="card-image">
+                                <img src={newD} alt="Placeholder image" />
+                            </div>
+                            <div class="card-content">
+                              <div class="media">
+                                <div class="media-content">
+                                  <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Events</Link>
+                                  <p className="has-text-left" style={cardParagraph}>
+                                    Our current and upcoming events brings together deverse teams from the government, business,
+                                    academia and other industry to discuss eco-friendly energy future.   
+                                  </p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -113,11 +173,9 @@ const Careers = () => {
                     </div> */}
                   </div>
                 </div>
-              </div>
             </div>
-        </div>
-      </section>
-      <section className="section is-paddingless-horizontal" id="foundersSection">
+          </section>
+      {/* <section className="section is-paddingless-horizontal" id="foundersSection">
         <div className="container grid is-large" id="founderWords">
           <div className="firstsection">
               <div className="content">
@@ -155,7 +213,7 @@ const Careers = () => {
               </div>
             </div>
         </div>
-      </section>
+      </section> */}
       <section className="section is-paddingless-horizontal" id="openSection" style={bckColor}>
         <div className="container grid is-large" id="founderWords">
           <div className="firstsection">
@@ -275,7 +333,7 @@ const Careers = () => {
 
 const headerStyle = {
   fontSize: '2.6rem',
-  marginTop: '80px',
+  marginTop: '30px',
   color: '#003468'
 }
 const paragraphStyle = {
@@ -290,6 +348,20 @@ const bkStyle = {
   background: '#003468',
   // background: '#1167bf',
   color: 'white'
+}
+
+const cardTitle = {
+  color: '#003468',
+  textDecoration: 'underline',
+  textAlign: 'center',
+  marginBottom: '10px'
+}
+
+const cardParagraph = {
+  color: '#003468',
+  textAlign: 'left',
+  fontSize: '1rem',
+  marginTop: '15px'
 }
 
 const bckColor = {

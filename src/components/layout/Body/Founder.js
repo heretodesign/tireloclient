@@ -12,7 +12,7 @@ const Founder = () => {
                   <p className="subtitle is-6 has-text-left has-text-grey has-text-weight-semibold is-uppercase">
                   </p>
               </div>
-              <div className="content">
+              <div className="content" >
                 <div class="columns" style={innerStyle}>
                   <div class="column is-two-thrids">
                     <div className="content" id="contentSide" style={parentDiv}>
@@ -78,6 +78,7 @@ const founderStyle = {
 
 const innerStyle = {
   height: '500px'
+  // marginBottom: '100px',
 }
 
 const textColor = {

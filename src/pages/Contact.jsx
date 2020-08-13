@@ -43,15 +43,19 @@ const Contact = () => {
                 <div class="columns">
                   <div class="column">
                     <div className="content" id="contentSide">
-                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Our Pioneer</h3>
+                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle"></h3>
                       <p className="has-text-left" style={paragraphStyle}>
+                        Reach our team via phone: 
+                      </p>
+                      <p className="has-text-left" style={paragraphStyle}>
+                        +267 71572088  or  +267 75034118   &   +267 74237959
                       </p>
                       
                     </div>
                   </div>
                 </div>
                 <div className="content">
-                  <h3 style={colorStyle}>Fill all Details</h3>
+                  <h3 style={colorStyle}>Fill all Details (email)</h3>
                 </div>
                 <div class="columns">
                   <div class="column is-half">

@@ -23,7 +23,7 @@ const Testimonials = () => {
                     </div>
                     <br />
                     <p className="has-text-left" style={paragraphStyle}>
-                      Our valued customer and clients spread across the southern hemisphere, in these following industry sectors
+                      As we continue to evolve and widen our reach within the southern hemisphere, our partnerships and valued customers have increased exponentially. Our growing clients base are in these following industry sectors. 
                     </p>
                 </div>
                 <div className="content">

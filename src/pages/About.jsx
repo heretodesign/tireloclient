@@ -8,7 +8,7 @@ import mine from '../assets/christina-wocintechchat-com-4PU-OC8sW98-unsplash.png
 import kaelo from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faAddressCard, faPhone, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
+import { faDesktop, faIndustry, faChalkboardTeacher, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
     return (
@@ -25,8 +25,10 @@ const About = () => {
                         <div className="content" id="contentSide">
                           <h2 className="has-text-left is-uppercase" style={headerStyle}>About Us</h2>
                           <p className="has-text-left" style={paragraphStyle}>
-                            Move more than just petroleum oil resources. With us you move an intire industry
-                            and with it your career to the next level.
+                            Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Pty) Ltd established in 2015, whose core business is to Supply and Transport Gas and Liquid Fuels thoughout Africa and the rest of the world.
+                            <br />
+                            <br />
+                            The company has associate offices in Africa, Middle East and Europe which together offer a unique blend of trading, international banking, structured finances, and marketing experience to the benefit of our client base.
                           </p>
                         </div>
                       </div>
@@ -175,7 +177,7 @@ const About = () => {
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Our major projects</Link>
                                   <p className="has-text-left" style={cardParagraph}>
-                                    Our client partnership continues to grow in the region and beyond. 
+                                    As we continue to evolve, our client partnership across various industries, government and mining continues to grow in the region and beyond. 
                                   </p>
                                 </div>
                               </div>
@@ -294,35 +296,35 @@ const About = () => {
                     <div class="columns">
                         <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-centered" style={paragraphStyle}>
-                                <span><FontAwesomeIcon icon={faShieldAlt} size="5x" /></span>{' '}
+                                <span><FontAwesomeIcon icon={faIndustry} size="5x" /></span>{' '}
                             </p>
                             <p className="has-text-centered" style={paragraphStyle}>
                                 <strong style={paragraphStyle}>Precise & reliably</strong>
                             </p>
                             <p className="has-text-centered" style={paragraphStyle}>
-                                Enterprise-grade security is built into our products by default.
+                                We combine accurate and transparent data with reliable, human operations for your business success.
                             </p>
                         </div>
                         <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-centered" style={paragraphStyle}>
-                              <span><FontAwesomeIcon icon={faPhone} size="5x" /></span>{' '}
+                              <span><FontAwesomeIcon icon={faChalkboardTeacher} size="5x" /></span>{' '}
                             </p>
                             <p className="has-text-centered" style={paragraphStyle}>
                               <strong style={paragraphStyle}>Efficient & proactive</strong>
                             </p>
                             <p className="has-text-centered" style={paragraphStyle}>
-                                24/7 support for you and your team, with dedicated support teams on standby to attend to your inquiry.
+                                Being proactive instead or just reactive is our motto. We show what happens where, when, and why.
                             </p>
                         </div>
                         <div class="column is-one-third" style={cardStyle}>
                             <p className="has-text-centered" style={paragraphStyle}>
-                                <span><FontAwesomeIcon icon={faAddressCard} size="5x" /></span>{' '}
+                                <span><FontAwesomeIcon icon={faDesktop} size="5x" /></span>{' '}
                             </p>
                             <p className="has-text-centered" style={paragraphStyle}>
                               <strong style={paragraphStyle}>Digital & easy</strong>
                             </p>
                             <p className="has-text-centered" style={paragraphStyle}>
-                                Excellent structured & detailed systems, as well as engagement teams to ease the logistic process.
+                                Digitization is a must nowadays. Coupled with intuitive operations.
                             </p>
                         </div>
                     </div>
@@ -348,7 +350,7 @@ const colStyle = {
 
 const headerStyle = {
   fontSize: '2.6rem',
-  marginTop: '80px',
+  marginTop: '30px',
   color: '#003468'
 }
 const paragraphStyle = {

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
+
+@mixin phone {
+  @media (max-width: 768px) { @content; }
+}
+
+@mixin tablet {
+  @media (min-width: 769px) and (max-width: 1023) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) and (max-width: 1215px) { @content; }
+}
+
+@mixin widescreen {
+  @media (min-width: 1216px) and (max-width: 1407px) { @content; }
+}
+
+@mixin fullhd {
+  @media (min-width: 1408px) { @content; }
+}
+
+
+#founderSection {
+
+  @include desktop {
+    height: 500px;
+    padding: 0px 0px;
+    background: #003468;
+    color: #011240;
+    padding-bottom: 200px;
+  }
+
+  @include tablet {
+    height: 500px;
+  }
+
+  @include phone {
+    height: 500px;
+  }
+}
