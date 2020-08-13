@@ -45,7 +45,7 @@ const Navbar = () => {
                                         Solutions
                                     </Link>
                                     <Link 
-                                        to="/" 
+                                        to="/about-us" 
                                         className="navbar-item has-text-small" 
                                         style={bkStyle}>
                                         About Us

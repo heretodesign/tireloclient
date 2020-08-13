@@ -25,7 +25,7 @@ const NavbarHero = () => {
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand" id="logoStyle">
-                <a className="navbar-item" href="https://sethresourcespetroleum.com/">
+                <a className="navbar-item" href="/">
                   <strong className="has-text-white is-2">Seth Resources Petroleum</strong>
                 </a>
                 <span className="navbar-burger burger" data-target="navbarMenuHeroA">
@@ -49,7 +49,7 @@ const NavbarHero = () => {
                       Solutions
                   </Link>
                   <Link 
-                      to="/" 
+                      to="/about-us" 
                       className="navbar-item has-text-small" 
                       style={bkStyle}>
                       About Us

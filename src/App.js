@@ -6,6 +6,7 @@ import Home from './pages/HomePage'
 import Footer from './components/layout/Footer/Footer'
 import Apply from './pages/Apply';
 import Contact from './pages/Contact';
+import About from './pages/About';
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path="/careers-at-srp" component={Careers} />
         <Route exact path="/apply-for-this-job" component={Apply} />
         <Route exact path="/contact-us" component={Contact} />
+        <Route exact path="/about-us" component={About} />
       </Switch>
       <Footer />
     </div>

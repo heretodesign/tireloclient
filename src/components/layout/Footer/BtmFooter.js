@@ -16,17 +16,17 @@ const BtmFooter = () => {
                 </div>
                 <div className="column is-2">
                     <div className="firstFooter">
-                        <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter">About Us </h1>
+                        <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter"><Link to="/" id="mainFooter"> Home </Link></h1>
                     </div>
                 </div>
                 <div className="column is-2">
                     <div className="firstFooter">
-                    <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter">Logistic Knowledge</h1>
+                        <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter"><Link to="/about-us" id="mainFooter"> About Us </Link></h1>
                     </div>
                 </div>
                 <div className="column is-2">
                     <div className="firstFooter">
-                    <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter">Legal</h1>
+                        <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter">Logistic Knowledge</h1>
                     </div>
                 </div>
                 <div className="column is-2">
