@@ -6,6 +6,7 @@ import Cards from '../components/layout/Body/Cards'
 import Good from '../components/layout/Body/Good'
 import OurServices from '../components/layout/Body/OurServices'
 import Market from '../components/layout/Body/Market'
+import Markets from '../components/layout/Body/Markets'
 import AboutUs from '../components/layout/Body/AboutUs'
 import Testimonials from '../components/layout/Body/Testimonials'
 import Header from '../components/layout/Header/Header'
@@ -24,7 +25,8 @@ const HomePage = () => {
             <br />
             <Market />
             <br />
-            <Testimonials />
+            {/* <Testimonials /> */}
+            <Markets />
             <br />
             <br />
             <br />
