@@ -35,10 +35,11 @@
   }
 
   @include tablet {
-    height: 500px;
+    height: 00px;
   }
 
   @include phone {
     height: 500px;
+    font-size: 0.8rem;
   }
 }

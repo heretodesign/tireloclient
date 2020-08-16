@@ -7,7 +7,7 @@ import imgOffice from '../../../assets/dimitry-anikin-ATyawSn-NsE-unsplash.png'
 const AboutUs = () => {
   return (
     <>
-     <section className="section is-paddingless-horizontal" id="aboutPage">
+      <section className="section is-paddingless-horizontal" id="aboutPage">
         <div className="container grid is-large" id="contAboutPage">
             <div className="firstsection">
                 <div className="content">

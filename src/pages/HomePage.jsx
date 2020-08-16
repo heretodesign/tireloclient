@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link, Switch } from "react-router-dom"
 import Founder from '../components/layout/Body/Founder'
+import Founders from '../components/layout/Body/Founders'
 import ContactUs from '../components/layout/Body/ContactUs'
 import Cards from '../components/layout/Body/Cards'
 import Good from '../components/layout/Body/Good'
@@ -31,6 +32,7 @@ const HomePage = () => {
             <br />
             <br />
             <Founder />
+            {/* <Founders /> */}
             <br />
             <br />
             <br />

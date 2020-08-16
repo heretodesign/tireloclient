@@ -9,7 +9,7 @@ import buyer from '../../../assets/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jp
 const Markets = () => {
   return (
     <>
-    <section className="section is-paddingless-horizontal">
+      <section className="section is-paddingless-horizontal">
         <div className="container grid is-large">
             <div className="firstsection">
                 <div className="content">
@@ -95,7 +95,6 @@ const Markets = () => {
           </div>
         </div>
       </section>
-    
     </>
   );
 }
