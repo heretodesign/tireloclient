@@ -6,7 +6,7 @@ import 'react-bulma-components/dist/react-bulma-components.min.css'
 const ContactUs = () => {
   return (
     <>
-     <section className="section is-paddingless-horizontal">
+      <section className="section is-paddingless-horizontal">
         <div className="container grid is-large">
             <div className="firstsection">
               <div class="columns">
