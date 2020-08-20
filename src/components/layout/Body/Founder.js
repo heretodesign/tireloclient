@@ -1,80 +1,70 @@
 import React from 'react'
 import imgOffice from '../../../assets/wassim-chouak-kJCAKWTH6u4-unsplash.png'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
+import styled from 'styled-components'
+
+const Section = styled.section`
+  padding: 0px 0px;
+  background: #003468;
+  color: #011240;
+`
+
+const ColorStyle = styled.p`
+  color: #9aa8bd;
+`
+
+const ParentDiv = styled.div`
+  margin-top: 80px;
+  margin-left: 70px;
+  margin-right: 50px;
+`
+
+const ParagraphStyle = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0px;
+`
+
+const H4 = styled.p`
+  margin-top: 10px;
+  color: #fba502;
+`
 
 const Founder = () => {
   return (
     <>
-      <section className="section is-paddingless-horizontal" style={founderStyle}>
+      <Section className="section is-paddingless-horizontal">
         <div className="content" >
-          <div class="columns" style={innerStyle}>
-            <div class="column is-two-thirds">
-              <div className="content" id="contentSide" style={parentDiv}>
-                <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle" style={textColor}>Our Pioneers Message</h3>
-                <p className="has-text-left" style={paragraphStyle}>
+          <div class="columns" >
+            <div class="column is-two-thirds" style={iStyle}>
+              <ParentDiv className="content" id="contentSide">
+                <ColorStyle className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Our Pioneers Message</ColorStyle>
+                <ParagraphStyle className="has-text-left">
                   Our vision has always been and is to resource and supply sufficient oil and petroleum resources to enable our partners and clients throughout the region to function in a time to great stress and uncertainty. 
                   During the global pandemic season, we've further reiterated our ambition to scale our business and acquire more clients, and therefore create job opportunities for the right talent to join our growing SRP family.  
-                </p>
+                </ParagraphStyle>
                 <br />
-                <p className="has-text-left" style={colorStyle}>
+                <ParagraphStyle className="has-text-left">
                   Brian, Tirelo && Keabetswe
-                </p>
-                <h4 className="subtitle is-6 has-text-left has-text-weight-semibold" style={marginS}>
+                </ParagraphStyle>
+                <H4 className="subtitle is-6 has-text-left has-text-weight-semibold">
                   The Founding Team
-                </h4>
-              </div>
+                </H4>
+              </ParentDiv>
             </div>
-            <div class="column is-one-third" id="founderImg">
+            <div class="column is-one-third" id="founderImg"  style={iStyle}>
               {/* <img className="content" src={imgOffice} height="100%" width="100%" id="imgCover" alt="office" /> */}
             </div>
           </div>
         </div>
-      </section>
+      </Section>
     </>
   );
 }
 
-const headerStyle = {
-  fontSize: '2.6rem',
-  marginTop: '80px',
-  color: '#011240'
-}
-const paragraphStyle = {
-  fontSize: '1.2rem',
-  marginBottom: '0px',
-  color: '#fff'
-}
-const colorStyle = {
-  color: '#fff'
-}
-
-const marginS = {
-  marginTop: '10px',
-  color: '#fba502'
-}
-
-const parentDiv = {
-  marginTop: '80px',
-  marginLeft: '70px',
-  marginRight: '50px'
-}
-
-const founderStyle = {
-  padding: '0px 0px',
-  // background: '#005fbf',
-  // background: '#084a8c',
-  background: '#003468',
-  // background: '#F6F9FF',
-  color: '#011240'
-}
-
-const innerStyle = {
-  height: '500px'
-  // marginBottom: '100px',
-}
-
-const textColor = {
-  color: '#9aa8bd'
+const iStyle = {
+  paddingBottom: '120px',
+  paddingTop: '20px',
 }
 
 export default Founder;
