@@ -41,7 +41,6 @@ const Founders = () => {
   );
 }
 
-
 const paragraphStyle = {
   fontSize: '1.2rem',
   marginBottom: '0px',
