@@ -1,9 +1,70 @@
 import React, { Component } from 'react';
-// import { Button, Columns, Navbar, Header} from "react-bulma-components/full"
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 // import logo from '../../../assets/logo.png'
 import { Link } from "react-router-dom"
+import styled from 'styled-components'
 
+const MainTitle = styled.p`
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 3.4rem;
+  font-weight: 500;
+
+  @media (max-width: 768px) { 
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+	}
+`
+
+const MainParagraph = styled.p`
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: left;
+
+  @media (max-width: 768px) { 
+    color: #fff;
+    font-size: 1rem;
+	}
+`
+
+const SpanColor = styled.span`
+  color: #fba502;
+  font-family: sans-serif;
+  font-size: 3.4rem;
+  font-weight: 500;
+`
+
+const Button = styled.button`
+  @include tablet {
+    font-size: 1.2rem;
+    margin-top: 1px;
+    background: #fba502;
+  }
+	@media (max-width: 768px) { 
+		width: 450px; 
+		padding: 10px;
+	}
+
+  @include phone {
+    font-size: 1rem;
+    margin-top: 1px;
+  }
+
+  color: #fff;
+  background: transparent;
+
+  &:hover {
+    background-color: #003468;
+    color: white;
+  }
+`
+
+const bkStyle = {
+  background: 'transparent',
+  color: 'white'
+}
 
 const NavbarHero = () => {
 
@@ -25,9 +86,11 @@ const NavbarHero = () => {
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand" id="logoStyle">
-                <a className="navbar-item" href="/">
+                <Link className="navbar-item"
+                  to="/"
+                  >
                   <strong className="has-text-white is-2">Seth Resources Petroleum</strong>
-                </a>
+                </Link>
                 <span className="navbar-burger burger" data-target="navbarMenuHeroA">
                   <span></span>
                   <span></span>
@@ -87,22 +150,17 @@ const NavbarHero = () => {
               <div className="content">
                 <div className="columns">
                   <div className="column is-half">
-                    <p className="subtitle has-text-left is-1" style={colorStyle}>
-                      <strong>Seth Resources</strong> <span style={spanColor}>Petroleum</span> – Specializing in Petroleum Transportation
-                    </p>
-
-                    {/* <h1 className="title has-text-left has-text-weight-light" id="titleBlack">Seth Resources Petroleum – Specializing in Petroleum Transportation
-                    </h1> */}
+                    <MainTitle className="subtitle has-text-left is-1">
+                      Seth Resources <SpanColor>Petroleum</SpanColor> – Specializing in Petroleum Transportation
+                    </MainTitle>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-half">
-                    <p className="has-text-left"> We are your co-pilot:
-                        from remote regions to cities and beyond borders, with our fleet of delivery fuel tankers & vehicles,
-                        SPR offers comfortable, realiable solutions to ensure that your petroleum delivery are made on time, every time. 
-                        {/* Our years of experience spans over 5 years, */}
-                      {/* You benefit from reliable processes, transparent data and an efficient supply chain. */}
-                     </p>
+                    <MainParagraph className="has-text-lefts"> We are your co-pilot:
+                      from remote regions to cities and beyond borders, with our fleet of delivery fuel tankers & vehicles,
+                      SPR offers comfortable, realiable solutions to ensure that your petroleum delivery are made on time, every time. 
+                    </MainParagraph>
                   </div>
                 </div>
               </div>
@@ -113,43 +171,12 @@ const NavbarHero = () => {
                   </div>
                 </div>
               </div>
-
-           </div>
+            </div>
           </div>
         </div>
       </section>
     </>
   );
-}
-
-const headerStyle = {
-  fontSize: '2.6rem',
-  marginTop: '80px',
-  color: '#011240'
-}
-
-const paragraphStyle = {
-  fontSize: '1.2rem',
-  color: '#011240'
-}
-
-const bkStyle = {
-  background: 'transparent',
-  color: 'white'
-}
-
-const colorStyle = {
-  color: '#fff',
-  fontSize: '2.8rem',
-  fontWeight: 'bolder'
-}
-
-const spanColor = {
-  color: '#fba502'
-}
-
-const bgColor = {
-  background: '#003468',
 }
 
 export default NavbarHero;

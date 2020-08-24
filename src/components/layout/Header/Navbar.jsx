@@ -18,9 +18,14 @@ const Navbar = () => {
                 <nav className="navbar" role="navigation" aria-label="main navigation" style={bkStyle}>
                     <div className="container">
                         <div className="navbar-brand" id="logoStyle">
-                            <a className="navbar-item" href="https://sethresourcespetroleum.com"  style={fullStyle}>
+                            {/* <a className="navbar-item" href="https://sethresourcespetroleum.com"  style={fullStyle}>
                                 <strong className="has-text-white is-2">Seth Resources Petroleum</strong>
-                            </a>
+                            </a> */}
+                            <Link className="navbar-item"
+                                to="/"
+                            >
+                                <strong className="has-text-white is-2">Seth Resources Petroleum</strong>
+                            </Link>
 
                             <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                             <span aria-hidden="true"></span>
