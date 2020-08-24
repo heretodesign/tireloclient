@@ -1,28 +1,56 @@
 import React from 'react'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
+import styled from 'styled-components'
 import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
 import Navbar from '../components/layout/Header/Navbar'
 import { faAddressCard, faPhone, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+const Section = styled.section`
+  background: #003468;
+  color: white;
+`
+
+const HeaderTitle = styled.p`
+  font-size: 2.6rem;
+  margin-top: 0px;
+  color: #fff;
+`
+const MainPara = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+`
+
+const TextPara = styled.p`
+  font-size: 1.2rem;
+  color: #003468;
+`
+const Response = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: bold;
+`
+
+
 const Contact = () => {
   return (
     <>
-    <Navbar />
-    <br />
-    <br />
-      <section className="section is-paddingless-horizontal" id="foundersSection">
-        <div className="container grid is-large" id="founderWords">
-            <div className="firstsection">
+      <Navbar />
+      <Section className="section is-paddingless-horizontal">
+      <br />
+      <br />
+        <div className="container grid is-large">
+            <div className="firstsectionS">
               <div className="content">
                 <div class="columns">
                   <div class="column">
-                    <div className="content" id="contentSide">
-                      <h2 className="has-text-left is-uppercase" style={headerStyle}>Contact Us – at Seth Resources Petroluem</h2>
-                      <p className="has-text-left" style={paragraphStyle}>
+                    <div className="content">
+                      <HeaderTitle className="has-text-left is-uppercase">Contact Us – at Seth Resources Petroluem</HeaderTitle>
+                      <MainPara className="has-text-left">
                         Our world class team of dedicated support will get back to within the next 2 hours upon receiving your inquiry.
-                      </p>
+                      </MainPara>
                     </div>
                   </div>
                   <div class="column is-half">
@@ -32,24 +60,24 @@ const Contact = () => {
               </div>
             </div>
         </div>
-      </section>
-      <section className="section is-paddingless-horizontal" id="foundersSection">
-        <div className="container grid is-large" id="founderWords">
-          <div className="firstsection">
+      </Section>
+      <section className="section is-paddingless-horizontal">
+        <div className="container grid is-large">
+          <div className="firstsections">
               <div className="content">
                 <p className="subtitle is-2" style={colorStyle}>Our dedicated team will respond within the next 24hours</p>
               </div>
               <div className="content">
                 <div class="columns">
                   <div class="column">
-                    <div className="content" id="contentSide">
+                    <div className="content">
                       <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle"></h3>
                       <p className="has-text-left" style={paragraphStyle}>
                         Reach our team via phone: 
                       </p>
-                      <p className="has-text-left" style={paragraphStyle}>
+                      <TextPara className="has-text-left">
                         +267 71572088  or  +267 75034118   &   +267 74237959
-                      </p>
+                      </TextPara>
                       
                     </div>
                   </div>
@@ -75,23 +103,22 @@ const Contact = () => {
                           <input class="input is-info" type="text" placeholder="Email" />
                         </div>
                       </div>
-                            <div class="field">
-                            <div class="control">
-                                <textarea class="textarea is-info" type="text" placeholder="message*" />
-                            </div>
-                            <br />
-                            <a className="button is-large is-fullwidth" style={bkStyle}>Send</a>
+                      <div class="field">
+                        <div class="control">
+                            <textarea class="textarea is-info" type="text" placeholder="message*" />
                         </div>
+                        <br />
+                        <a className="button is-large is-fullwidth" style={bkStyle}>Send</a>
+                      </div>
                     </form>
                   </div>
                   <div class="column is-one-third">
                   <div class="card" style={bkStyle}>
                     <div class="card-content">
                         <div class="content is-medium">
-                            
                             <ul class="menu-list" style={pStyle}>
                                 <li>
-                                <h3 className="has-text-left" style={pStyle}>{' '} Our Response Process</h3>
+                                <Response className="has-text-left">{' '} Our Response Process</Response>
                                 <ul style={pStyle}>
                                     <li><p style={pStyle}>Fill in the form </p></li>
                                     <li><p style={pStyle}>Email/Phone conversation </p></li>
@@ -112,11 +139,7 @@ const Contact = () => {
   );
 }
 
-const headerStyle = {
-  fontSize: '2.6rem',
-  marginTop: '80px',
-  color: '#003468'
-}
+
 const paragraphStyle = {
   fontSize: '1.2rem',
   color: '#003468'

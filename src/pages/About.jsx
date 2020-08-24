@@ -1,6 +1,7 @@
 import React from 'react';
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
+import styled from 'styled-components'
 import Navbar from '../components/layout/Header/Navbar'
 import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
 import newD from '../assets/christina-wocintechchat-o-Q8IgAlmHAUA-unsplash.png'
@@ -10,26 +11,41 @@ import kaelo from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.pn
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDesktop, faIndustry, faChalkboardTeacher, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 
+const Section = styled.section`
+  background: #003468;
+  color: white;
+`
+
+const HeaderTitle = styled.p`
+  font-size: 2.6rem;
+  margin-top: 0px;
+  color: #fff;
+`
+const MainPara = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+`
+
 const About = () => {
     return (
         <>
           <Navbar />
-          <br />
-          <br />
-          <section className="section is-paddingless-horizontal" id="foundersSection">
-            <div className="container grid is-large" id="founderWords">
-              <div className="firstsection">
+          <Section className="section is-paddingless-horizontal">
+            <br />
+            <br />
+            <div className="container grid is-large">
+              <div className="firstsections">
                   <div className="content">
                     <div class="columns">
                       <div class="column">
-                        <div className="content" id="contentSide">
-                          <h2 className="has-text-left is-uppercase" style={headerStyle}>About Us</h2>
-                          <p className="has-text-left" style={paragraphStyle}>
+                        <div className="content">
+                          <HeaderTitle className="has-text-left is-uppercase">About Us</HeaderTitle>
+                          <MainPara className="has-text-left">
                             Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Pty) Ltd established in 2015, whose core business is to Supply and Transport Gas and Liquid Fuels thoughout Africa and the rest of the world.
                             <br />
                             <br />
                             The company has associate offices in Africa, Middle East and Europe which together offer a unique blend of trading, international banking, structured finances, and marketing experience to the benefit of our client base.
-                          </p>
+                          </MainPara>
                         </div>
                       </div>
                       <div class="column is-half">
@@ -39,9 +55,8 @@ const About = () => {
                   </div>
                 </div>
             </div>
-          </section>
-          <br />
-          <br />
+          </Section>
+          
           <section className="section is-paddingless-horizontal" id="icard">
             <div className="container grid is-large">
                 <div className="firstsection">

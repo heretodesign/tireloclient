@@ -1,32 +1,48 @@
 import React from 'react'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
+import styled from 'styled-components'
 import imgOffice from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'
 import Navbar from '../components/layout/Header/Navbar'
 import { faAddressCard, faPhone, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+const Section = styled.section`
+  background: #003468;
+  color: white;
+`
+
+const HeaderTitle = styled.p`
+  font-size: 2.6rem;
+  margin-top: 0px;
+  color: #fff;
+`
+const MainPara = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+`
+
 const Apply = () => {
   return (
     <>
     <Navbar />
-    <br />
-    <br />
-      <section className="section is-paddingless-horizontal" id="foundersSection">
-        <div className="container grid is-large" id="founderWords">
-            <div className="firstsection">
+    <Section className="section is-paddingless-horizontal">
+      <br />
+      <br />
+        <div className="container grid is-large">
+            <div className="firstsections">
               <div className="content">
                 <div class="columns">
                   <div class="column">
-                    <div className="content" id="contentSide">
-                      <h2 className="has-text-left is-uppercase" style={headerStyle}>Opportunities – at Seth Resources Petroluem</h2>
-                      <p className="has-text-left" style={paragraphStyle}>
+                    <div className="content">
+                      <HeaderTitle className="has-text-left is-uppercase">Opportunities – at Seth Resources Petroluem</HeaderTitle>
+                      <MainPara className="has-text-left">
                         In a dynamic atmosphere, diverse teams collaborate on projects, taking ideas from the drawing board to implementation. We're all curious, and everyone is hungry for a challenge.
                         <br />
                         <br />
                         "Move more than just petroleum oil resources. With us you move an intire industry
                         and with it your career to the next level." a statement we say often at SRP.
-                      </p>
+                      </MainPara>
                     </div>
                   </div>
                   <div class="column is-half">
@@ -36,7 +52,7 @@ const Apply = () => {
               </div>
             </div>
         </div>
-      </section>
+      </Section>
       <section className="section is-paddingless-horizontal">
         <div className="container grid is-large" id="founderWords">
           <div className="firstsection">
