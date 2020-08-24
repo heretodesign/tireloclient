@@ -4,14 +4,17 @@ import { Link } from "react-router-dom"
 import styled from 'styled-components'
 import imgOffice from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'
 import Navbar from '../components/layout/Header/Navbar'
-import { faAddressCard, faPhone, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard, faCloud, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Section = styled.section`
   background: #003468;
   color: white;
 `
-
+const BtmSection = styled.section`
+  background: #f1f6fe;
+  color: white;
+`
 const HeaderTitle = styled.p`
   font-size: 2.6rem;
   margin-top: 0px;
@@ -21,6 +24,43 @@ const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
 `
+const TopPara = styled.p`
+  color: #9aa8bd;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+`
+const Paragraph = styled.p`
+  color: #003468;
+  font-size: 1.2rem;
+`
+const Span = styled.span`
+  color: #003468;
+`
+const ColorStyle = styled.p`
+  color: #003468;
+  font-size: 1.4rem;
+  font-weight: bolder;
+`
+const ColorHeader = styled.p`
+  font-size: 2.6rem;
+  margin-top: 0px;
+  color: #003468;
+`
+const ResHeader = styled.ul`
+  margin-top: 20px;
+  color: #fff;
+`
+const ResParagraph = styled.p`
+  margin-top: 20px;
+  color: #fff;
+`
+const Response = styled.p`
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: bold;
+`
+
 
 const Apply = () => {
   return (
@@ -35,7 +75,8 @@ const Apply = () => {
                 <div class="columns">
                   <div class="column">
                     <div className="content">
-                      <HeaderTitle className="has-text-left is-uppercase">Opportunities – at Seth Resources Petroluem</HeaderTitle>
+                      <TopPara className="subtitle is-6 has-text-left is-uppercase">Apply for role</TopPara>
+                      <HeaderTitle className="subtitle has-text-left is-2">Opportunities – at Seth Resources Petroluem</HeaderTitle>
                       <MainPara className="has-text-left">
                         In a dynamic atmosphere, diverse teams collaborate on projects, taking ideas from the drawing board to implementation. We're all curious, and everyone is hungry for a challenge.
                         <br />
@@ -54,17 +95,17 @@ const Apply = () => {
         </div>
       </Section>
       <section className="section is-paddingless-horizontal">
-        <div className="container grid is-large" id="founderWords">
-          <div className="firstsection">
+        <div className="container grid is-large">
+          <div className="firstsections">
               <div className="content">
                 <div class="columns">
                   <div class="column is-three-quarters">
                     <div className="content" id="contentSide">
-                      <p className="subtitle is-2" style={colorStyle}>Experienced Operations Manager</p>
+                      <ColorHeader className="subtitle is-2">Experienced Operations Manager</ColorHeader>
                       <div className="content">
-                        <h3 style={colorStyle}>Where you fit in</h3>
+                        <ColorStyle>Where you fit in</ColorStyle>
                       </div>
-                      <p className="has-text-left" style={paragraphStyle}>
+                      <Paragraph className="has-text-left">
                         SRP is constantly growing. As one of our Operations Managers, you are the link between SRP and our partners. With negotiation and personal skills, you initiate new relations and work collaboratively on innovative projects. Using your genuine passion for food and an awareness for what consumers want, you expand our assortment with great products.
                         <br />
                         <br />
@@ -72,11 +113,11 @@ const Apply = () => {
                         <br />
                         <br />
                         There’s no box that can keep your ideas contained. You establish original and engaging initiatives that expand our assortment and benefit our customers. With the freedom to experiment, test, and analyze results, you take ownership of projects and oversee their evolution throughout the entire pipeline.  
-                      </p>
+                      </Paragraph>
                       <div className="content">
-                        <h3 style={colorStyle}>What you do</h3>
+                        <ColorStyle>What you do</ColorStyle>
                       </div>
-                      <p className="has-text-left" style={paragraphStyle}>
+                      <Paragraph className="has-text-left">
                           <ul>
                               <li>
                                 Take full responsibility for multiple categories, maintain our assortment, and fulfill all the day-to-day problem solving and communication 
@@ -91,17 +132,17 @@ const Apply = () => {
                                 Ensure that our customers find products at the most competitive price
                               </li>
                           </ul>
-                      </p>
+                      </Paragraph>
                       <div className="content">
-                        <h3 style={colorStyle}>What you need</h3>
+                        <ColorStyle>What you need</ColorStyle>
                       </div>
-                      <p className="has-text-left" style={paragraphStyle}>
+                      <Paragraph className="has-text-left">
                         The success of our customers is our success. Our solution is to supply oil and petroleum to enable our customers to achieve their intended business.
-                      </p>
+                      </Paragraph>
                       <div className="content">
-                        <h3 style={colorStyle}>What are the SRP Perks</h3>
+                        <ColorStyle>What are the SRP Perks</ColorStyle>
                       </div>
-                      <p className="has-text-left" style={paragraphStyle}>
+                      <Paragraph className="has-text-left">
                         <ul>
                           <li>
                               Steep learning curve by taking on responsibility from day one                            
@@ -119,8 +160,8 @@ const Apply = () => {
                               Participate in team events, Christmas or summer parties, and cozy barbecues
                           </li>
                         </ul>
-                      </p>
-                      <p style={paragraphStyle}>Up for the challenge? Then join us and be part of the SRP team!</p>
+                      </Paragraph>
+                      <Paragraph>Up for the challenge? Then join us and be part of the SRP team!</Paragraph>
                     </div>
                   </div>
                 </div>
@@ -128,25 +169,15 @@ const Apply = () => {
             </div>
         </div>
       </section>   
-      <section className="section is-paddingless-horizontal" id="foundersSection" style={bckColor}>
+      <BtmSection className="section is-paddingless-horizontal" id="foundersSection">
         <div className="container grid is-large" id="founderWords">
           <div className="firstsection">
               <div className="content">
-                <p className="subtitle is-2" style={colorStyle}>Apply for the role</p>
+                <ColorHeader className="subtitle">Apply for the role</ColorHeader>
               </div>
               <div className="content">
-                {/* <div class="columns">
-                  <div class="column">
-                    <div className="content" id="contentSide">
-                      <p className="has-text-left" style={ppStyle}>
-                        Move more than just petroleum oil resources. With us you move an entire industry
-                        and with it your career to the next level.
-                      </p>
-                    </div>
-                  </div>
-                </div> */}
                 <div className="content">
-                  <h3 style={colorStyle}>Fill all Details</h3>
+                  <ColorStyle>Fill all Details</ColorStyle>
                 </div>
                 <div class="columns">
                   <div class="column is-half">
@@ -190,9 +221,9 @@ const Apply = () => {
                             <label class="file-label">
                                 <input class="file-input is-info" type="file" name="resume" />
                                 <span class="file-cta">
-                                <span class="file-label">
-                                    Upload Resume or CV
-                                </span>
+                                <Span class="file-label">
+                                <span><FontAwesomeIcon icon={faCloud} size="l" />{' '}</span>{' '}{' '} Upload Resume or CV
+                                </Span>
                                 </span>
                             </label>
                             </div>
@@ -205,20 +236,19 @@ const Apply = () => {
                   <div class="card" style={bkStyle}>
                     <div class="card-content">
                         <div class="content is-medium">
-                            
-                            <ul class="menu-list" style={pStyle}>
-                                <li>
-                                <h3 className="has-text-left" style={pStyle}>{' '} The Hiring Process</h3>
-                                <ul style={pStyle}>
-                                    <li><p style={pStyle}>CV screening </p></li>
-                                    <li><p style={pStyle}>Phone conversation </p></li>
-                                    <li><p style={pStyle}>Interviews</p></li>
-                                    <li><p style={pStyle}>On-site day*</p></li>
-                                    <li><p style={pStyle}>Hired</p></li>
-                                    <li><p style={pStyle}>First day of work</p></li>
-                                </ul>
-                                </li>
-                            </ul>
+                            <ResHeader class="menu-list">
+                              <li>
+                                <Response className="has-text-left">{' '} The Hiring Process</Response>
+                                <ResHeader>
+                                    <li><ResParagraph>CV screening </ResParagraph></li>
+                                    <li><ResParagraph>Phone conversation </ResParagraph></li>
+                                    <li><ResParagraph>Interviews</ResParagraph></li>
+                                    <li><ResParagraph>On-site day*</ResParagraph></li>
+                                    <li><ResParagraph>Hired</ResParagraph></li>
+                                    <li><ResParagraph>First day of work</ResParagraph></li>
+                                </ResHeader>
+                              </li>
+                            </ResHeader>
                             <br />
                         </div>
                     </div>
@@ -228,39 +258,15 @@ const Apply = () => {
               </div>
             </div>
         </div>
-      </section>
+      </BtmSection>
     </>
   );
 }
 
-const headerStyle = {
-  fontSize: '2.6rem',
-  marginTop: '30px',
-  color: '#003468'
-}
-const paragraphStyle = {
-  fontSize: '1.2rem',
-  color: '#003468'
-}
-const ppStyle = {
-  fontSize: '1.2rem',
-  color: '#fff'
-}
-
-const colorStyle = {
-  color: '#003468'
-}
-const pStyle = {
-  color: '#fff',
-  marginTop: '20px'
-}
 const bkStyle = {
   background: '#003468',
   // background: '#1167bf',
   color: 'white'
 }
 
-const bckColor = {
-  background: '#f1f6fe'
-}
 export default Apply;

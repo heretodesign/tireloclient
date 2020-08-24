@@ -11,7 +11,6 @@ const Section = styled.section`
   background: #003468;
   color: white;
 `
-
 const HeaderTitle = styled.p`
   font-size: 2.6rem;
   margin-top: 0px;
@@ -21,7 +20,6 @@ const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
 `
-
 const TextPara = styled.p`
   font-size: 1.2rem;
   color: #003468;
@@ -32,7 +30,31 @@ const Response = styled.p`
   margin-top: 20px;
   font-weight: bold;
 `
-
+const TopPara = styled.p`
+  color: #9aa8bd;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+`
+const ResHeader = styled.ul`
+  margin-top: 20px;
+  color: #fff;
+`
+const ResParagraph = styled.p`
+  margin-top: 20px;
+  color: #fff;
+`
+const ParagraphSt = styled.p`
+  font-size: 1.2rem;
+  color: #003468;
+`
+const TextColor = styled.p`
+  color: #003468;
+`
+const TextTitleColor = styled.p`
+  color: #003468;
+  font-size: 1.4rem;
+  font-weight: bold;
+`
 
 const Contact = () => {
   return (
@@ -47,7 +69,8 @@ const Contact = () => {
                 <div class="columns">
                   <div class="column">
                     <div className="content">
-                      <HeaderTitle className="has-text-left is-uppercase">Contact Us – at Seth Resources Petroluem</HeaderTitle>
+                      <TopPara className="subtitle is-6 has-text-left is-uppercase">Ways to reach us</TopPara>
+                      <HeaderTitle className="subtitle has-text-left is-2">Contact Us – at Seth Resources Petroluem</HeaderTitle>
                       <MainPara className="has-text-left">
                         Our world class team of dedicated support will get back to within the next 2 hours upon receiving your inquiry.
                       </MainPara>
@@ -65,16 +88,16 @@ const Contact = () => {
         <div className="container grid is-large">
           <div className="firstsections">
               <div className="content">
-                <p className="subtitle is-2" style={colorStyle}>Our dedicated team will respond within the next 24hours</p>
+                <TextColor className="subtitle is-2">Our dedicated team will respond within the next 24hours</TextColor>
               </div>
               <div className="content">
                 <div class="columns">
                   <div class="column">
                     <div className="content">
                       <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle"></h3>
-                      <p className="has-text-left" style={paragraphStyle}>
+                      <ParagraphSt className="has-text-left">
                         Reach our team via phone: 
-                      </p>
+                      </ParagraphSt>
                       <TextPara className="has-text-left">
                         +267 71572088  or  +267 75034118   &   +267 74237959
                       </TextPara>
@@ -83,7 +106,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="content">
-                  <h3 style={colorStyle}>Fill all Details (email)</h3>
+                  <TextTitleColor className="is-2">Fill all Details (email)</TextTitleColor>
                 </div>
                 <div class="columns">
                   <div class="column is-half">
@@ -116,15 +139,15 @@ const Contact = () => {
                   <div class="card" style={bkStyle}>
                     <div class="card-content">
                         <div class="content is-medium">
-                            <ul class="menu-list" style={pStyle}>
+                            <ResHeader class="menu-list">
                                 <li>
                                 <Response className="has-text-left">{' '} Our Response Process</Response>
-                                <ul style={pStyle}>
-                                    <li><p style={pStyle}>Fill in the form </p></li>
-                                    <li><p style={pStyle}>Email/Phone conversation </p></li>
-                                </ul>
+                                <ResHeader>
+                                    <li><ResParagraph>Fill in the form </ResParagraph></li>
+                                    <li><ResParagraph>Email/Phone conversation </ResParagraph></li>
+                                </ResHeader>
                                 </li>
-                            </ul>
+                            </ResHeader>
                             <br />
                         </div>
                     </div>
@@ -139,18 +162,6 @@ const Contact = () => {
   );
 }
 
-
-const paragraphStyle = {
-  fontSize: '1.2rem',
-  color: '#003468'
-}
-const colorStyle = {
-  color: '#003468'
-}
-const pStyle = {
-  color: '#fff',
-  marginTop: '20px'
-}
 const bkStyle = {
   background: '#003468',
   color: 'white'

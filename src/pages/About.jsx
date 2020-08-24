@@ -15,6 +15,11 @@ const Section = styled.section`
   background: #003468;
   color: white;
 `
+const CardSection = styled.section`
+  background-color: #f1f6fe;
+  card-color: transparent;
+  color: #003468;
+`
 
 const HeaderTitle = styled.p`
   font-size: 2.6rem;
@@ -24,6 +29,39 @@ const HeaderTitle = styled.p`
 const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
+`
+const TopPara = styled.p`
+  color: #9aa8bd;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+`
+const CardParagraph = styled.p`
+  color: #003468;
+  text-align: left;
+  font-size: 1.1rem;
+  margin-top: 15px;
+`
+const CardDiv = styled.div`
+  border-style: outset;
+  border-bottom-color: #041B61;
+`
+const ParagraphSty = styled.p`
+  color: #003468;
+  font-size: 1.2rem;
+  margin-top: 10px;
+`
+const ColStyle = styled.p`
+  color: #003468;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  margin-bottom: 0px;
+`
+const Inside = styled.p`
+  color: #003468;
+`
+const CardTit = styled.p`
+  color: #003468;
+  font-weight: bold;
 `
 
 const About = () => {
@@ -39,7 +77,8 @@ const About = () => {
                     <div class="columns">
                       <div class="column">
                         <div className="content">
-                          <HeaderTitle className="has-text-left is-uppercase">About Us</HeaderTitle>
+                          <TopPara className="subtitle is-6 has-text-left is-uppercase">Why we exist</TopPara>
+                          <HeaderTitle className="subtitle has-text-left is-2">About Us</HeaderTitle>
                           <MainPara className="has-text-left">
                             Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Pty) Ltd established in 2015, whose core business is to Supply and Transport Gas and Liquid Fuels thoughout Africa and the rest of the world.
                             <br />
@@ -56,50 +95,40 @@ const About = () => {
                 </div>
             </div>
           </Section>
-          
-          <section className="section is-paddingless-horizontal" id="icard">
+          <CardSection className="section is-paddingless-horizontal">
             <div className="container grid is-large">
                 <div className="firstsection">
                   <div className="content">
                     <div className="columns">
                     <div className="column is-one-third">
-                      <h3 className="has-text-centered" style={colStyle}>10+</h3>
-                      <p className="has-text-centered">
-                        Employees
-                      </p>
+                      <ParagraphSty className="has-text-centered">
+                        <ColStyle className="has-text-centered is-1">10+</ColStyle> Employees
+                      </ParagraphSty>
                     </div>
                     <div className="column is-one-third">
-                      <h3 className="has-text-centered" id="marketTitle" style={colStyle}>1</h3>
-                      <p className="has-text-centered" id="markePara">
-                        Locations
-                      </p>
+                      <ParagraphSty className="has-text-centered">
+                        <ColStyle className="has-text-centered">1</ColStyle> Locations
+                      </ParagraphSty>
                     </div>
                     <div className="column is-one-third">
-                      <h3 className="has-text-centered" id="marketTitle" style={colStyle}>10+</h3>
-                      <p className="has-text-centered" id="maretPara">
-                        Customers
-                      </p>
+                      
+                      <ParagraphSty className="has-text-centered">
+                        <ColStyle className="has-text-centered">10+</ColStyle> Customers
+                      </ParagraphSty>
                     </div>
                   </div>
-
                   </div>    
                 </div>
             </div>
-          </section>
+          </CardSection>
           <section className="section is-paddingless-horizontal" id="foundersSection">
             <div className="container grid is-large" id="founderWords">
-              <div className="firstsection">
+              <div className="firstsections">
                   <div className="content">
                     <div class="columns">
                       <div class="column">
                         <div className="content" id="contentSide">
-                          <p className="subtitle is-2 has-text-centered" style={colorStyle}>Inside About Us</p>
-                          {/* <p className="has-text-left" style={paragraphStyle}>
-                            At Seth Resource Petroleum, the world's best talent and experts move mountains and shape the future of the oil and gas industry.
-                          </p> */}
-                          <p className="has-text-left" style={paragraphStyle}>
-                            {/* The company, was conceived and born in the hearts of these 3 pioneers. */}
-                          </p>
+                          <Inside className="subtitle is-2 has-text-centered">Inside About Us</Inside>
                         </div>
                       </div>
                     </div>
@@ -115,9 +144,9 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Who we are</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     Find out about our company, our business, our team at Seth Resource Petroleum, and how we are working to power progress together with more and cleaner energy solutions.
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -132,10 +161,10 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>What we do</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     From our very embryonic inception, our primary aim has been to meet the world's growing demand for more and cleaner energy solutions in ways that are eco-friendly, financially and 
                                     socially responsible.
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -150,10 +179,10 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Our Values</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     Our ideas, visions, and technologies are driven and powered by our unique company culture, set of core values - 
                                     honesty, integrity, inclusive and respecting of all people.  
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -172,11 +201,11 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Leadership</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     Every day, our team of leaders are making countless decisions and facing problems they’ve never encountered before. 
                                     What worked yesterday can change overnight. The speed is relentless, the stakes are high, but the rewards are great for those who can lead a team to consistently achieve extraordinary results.
                                     Read about our co-founders, our Executive committee, and Board of Directors.
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -191,9 +220,9 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Our major projects</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     As we continue to evolve, our client partnership across various industries, government and mining continues to grow in the region and beyond. 
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -208,10 +237,10 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Events</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     Our current and upcoming events brings together deverse teams from the government, business,
                                     academia and other industry to discuss eco-friendly energy future.   
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -223,14 +252,14 @@ const About = () => {
                 </div>
             </div>
           </section>
-          <section className="section is-paddingless-horizontal" id="foundersSection">
-            <div className="container grid is-large" id="founderWords">
-              <div className="firstsection">
+          <section className="section is-paddingless-horizontal">
+            <div className="container grid is-large">
+              <div className="firstsections">
                   <div className="content">
                     <div class="columns">
                       <div class="column">
                         <div className="content" id="contentSide">
-                          <p className="subtitle is-2 has-text-centered" style={colorStyle}>Featured Content</p>
+                          <Inside className="subtitle is-2 has-text-centered">Featured Content</Inside>
                         </div>
                       </div>
                     </div>
@@ -246,9 +275,9 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link to="/careers-at-srp" class="title is-4 is-underlined has-text-centered" style={cardTitle}>Careers</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     Discover the impact you can make with a career at Seth Resources Petroleum.
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -263,9 +292,9 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Media</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     Discover our public content releases or find media relations teams contact details. 
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -280,9 +309,9 @@ const About = () => {
                               <div class="media">
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Sustainability</Link>
-                                  <p className="has-text-left" style={cardParagraph}>
+                                  <CardParagraph className="has-text-left">
                                     Discover our passion to be an eco-friendly driven company and our awareness to make a positive contribution towards climate change. 
-                                  </p>
+                                  </CardParagraph>
                                 </div>
                               </div>
                             </div>
@@ -309,39 +338,39 @@ const About = () => {
                     <br />
                     <div className="content">
                     <div class="columns">
-                        <div class="column is-one-third" style={cardStyle}>
-                            <p className="has-text-centered" style={paragraphStyle}>
+                        <CardDiv class="column is-one-third">
+                            <ParagraphSty className="has-text-centered">
                                 <span><FontAwesomeIcon icon={faIndustry} size="5x" /></span>{' '}
-                            </p>
-                            <p className="has-text-centered" style={paragraphStyle}>
-                                <strong style={paragraphStyle}>Precise & reliably</strong>
-                            </p>
-                            <p className="has-text-centered" style={paragraphStyle}>
+                            </ParagraphSty>
+                            <ParagraphSty className="has-text-centered">
+                                <CardTit>Precise & reliably</CardTit>
+                            </ParagraphSty>
+                            <ParagraphSty className="has-text-centered">
                                 We combine accurate and transparent data with reliable, human operations for your business success.
-                            </p>
-                        </div>
-                        <div class="column is-one-third" style={cardStyle}>
-                            <p className="has-text-centered" style={paragraphStyle}>
+                            </ParagraphSty>
+                        </CardDiv>
+                        <CardDiv class="column is-one-third">
+                            <ParagraphSty className="has-text-centered">
                               <span><FontAwesomeIcon icon={faChalkboardTeacher} size="5x" /></span>{' '}
-                            </p>
-                            <p className="has-text-centered" style={paragraphStyle}>
-                              <strong style={paragraphStyle}>Efficient & proactive</strong>
-                            </p>
-                            <p className="has-text-centered" style={paragraphStyle}>
+                            </ParagraphSty>
+                            <ParagraphSty className="has-text-centered">
+                              <CardTit>Efficient & proactive</CardTit>
+                            </ParagraphSty>
+                            <ParagraphSty className="has-text-centered">
                                 Being proactive instead or just reactive is our motto. We show what happens where, when, and why.
-                            </p>
-                        </div>
-                        <div class="column is-one-third" style={cardStyle}>
-                            <p className="has-text-centered" style={paragraphStyle}>
+                            </ParagraphSty>
+                        </CardDiv>
+                        <CardDiv class="column is-one-third">
+                            <ParagraphSty className="has-text-centered">
                                 <span><FontAwesomeIcon icon={faDesktop} size="5x" /></span>{' '}
-                            </p>
-                            <p className="has-text-centered" style={paragraphStyle}>
-                              <strong style={paragraphStyle}>Digital & easy</strong>
-                            </p>
-                            <p className="has-text-centered" style={paragraphStyle}>
+                            </ParagraphSty>
+                            <ParagraphSty className="has-text-centered">
+                              <CardTit>Digital & easy</CardTit>
+                            </ParagraphSty>
+                            <ParagraphSty className="has-text-centered">
                                 Digitization is a must nowadays. Coupled with intuitive operations.
-                            </p>
-                        </div>
+                            </ParagraphSty>
+                        </CardDiv>
                     </div>
                     </div>
                 </div>
@@ -351,30 +380,6 @@ const About = () => {
         </>
     );
 }
-const cardStyle = {
-  borderStyle: 'outset',
-  borderBottomColor: '#041B61'
-}
-
-const colStyle = {
-  color: '#003468',
-  fontSize: '2.4rem',
-  fontWeight: 'bolder',
-  marginBottom: '0px'
-}
-
-const headerStyle = {
-  fontSize: '2.6rem',
-  marginTop: '30px',
-  color: '#003468'
-}
-const paragraphStyle = {
-  fontSize: '1.2rem',
-  color: '#003468'
-}
-const colorStyle = {
-  color: '#003468',
-}
 
 const cardTitle = {
   color: '#003468',
@@ -383,21 +388,5 @@ const cardTitle = {
   marginBottom: '10px'
 }
 
-const cardParagraph = {
-  color: '#003468',
-  textAlign: 'left',
-  fontSize: '1rem',
-  marginTop: '15px'
-}
-
-const bkStyle = {
-  background: '#003468',
-  // background: '#1167bf',
-  color: 'white'
-}
-
-const bckColor = {
-  background: '#f1f6fe'
-}
 
 export default About;
