@@ -7,8 +7,8 @@ import styled from 'styled-components'
 const MainTitle = styled.p`
   color: #fff;
   font-family: sans-serif;
-  font-size: 3.4rem;
-  font-weight: 500;
+  font-size: 3.2rem;
+  font-weight: 600;
 
   @media (max-width: 768px) { 
     color: #fff;
@@ -31,9 +31,9 @@ const MainParagraph = styled.p`
 
 const SpanColor = styled.span`
   color: #fba502;
-  font-family: sans-serif;
-  font-size: 3.4rem;
-  font-weight: 500;
+  // font-family: sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
 `
 
 const Button = styled.button`
@@ -146,11 +146,11 @@ const NavbarHero = () => {
 
         <div className="hero-body">
           <div className="container has-text-centered">
-          <div className="firstsection">
+          <div className="firstssection">
               <div className="content">
                 <div className="columns">
-                  <div className="column is-half">
-                    <MainTitle className="subtitle has-text-left is-1">
+                  <div className="column is-three-fifths">
+                    <MainTitle className="subtitle has-text-left">
                       Seth Resources <SpanColor>Petroleum</SpanColor> – Specializing in Petroleum Transportation
                     </MainTitle>
                   </div>

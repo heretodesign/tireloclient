@@ -10,11 +10,6 @@ const Section = styled.section`
 	position: relative;
 	height: 100vh;
 `
-const ColorPara = styled.p`
-  color: #011240;
-  font-size: 2.8rem;
-  font-weight: bolder;
-`
 
 const Banner = () => {
   return (
@@ -46,20 +41,5 @@ const Banner = () => {
     </div>
   );
 }
-
-
-const colorStyle = {
-  color: '#011240'
-}
-
-  const pStyle = {
-    color: '#011240',
-    marginTop: '20px',
-    fontSize: '1.1rem'
-  }
-  const bkStyle = {
-    background: '#1167bf',
-    color: 'white'
-  }
 
 export default Banner;

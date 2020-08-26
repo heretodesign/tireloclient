@@ -70,11 +70,11 @@ const cardTitle = {
 
 const paragraphStyle = {
   fontSize: '1.2rem',
-  color: '#011240'
+  color: '#003468'
 }
 
 const colorStyle = {
-  color: '#011240'
+  color: '#003468'
 }
 
 export default OurServices;

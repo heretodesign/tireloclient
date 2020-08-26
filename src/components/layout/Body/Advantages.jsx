@@ -11,18 +11,11 @@ const Advantages = () => {
         <div className="container grid is-large" id="contAboutPage">
           <div className="firstsection">
               <div className="content">
-                  <p className="subtitle is-6 has-text-left has-text-grey has-text-weight-semibold is-uppercase">
-                  
-                  </p>
-              </div>
-              <div className="content">
                 <div class="columns">
-                  
                   <div class="column">
                     <div className="content" id="contentSide">
                       <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</h3>
                       <p className="subtitle has-text-left is-2" style={colorStyle}>Competitive Advantages</p>
-
                         <ul class="menu-list" style={pStyle}>
                             <ul style={pStyle}>
                                 <li><p style={pStyle}>Vast intellectual capital in the industry </p></li>
@@ -47,29 +40,14 @@ const Advantages = () => {
   );
 }
 
-const headerStyle = {
-  fontSize: '2.6rem',
-  marginTop: '80px',
-  color: '#011240'
-}
-
-const paragraphStyle = {
-  fontSize: '1.2rem',
-  color: '#011240'
-}
-
 const colorStyle = {
-  color: '#011240'
+  color: '#003468'
 }
 
   const pStyle = {
-    color: '#011240',
+    color: '#003468',
     marginTop: '20px',
     fontSize: '1.1rem'
-  }
-  const bkStyle = {
-    background: '#1167bf',
-    color: 'white'
   }
 
 export default Advantages;

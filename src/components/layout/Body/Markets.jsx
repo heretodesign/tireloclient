@@ -106,7 +106,7 @@ const textColor = {
 const paragraphStyle = {
   fontSize: '1.2rem',
   color: '#003468',
-  marginBottom: '100px'
+  marginBottom: '10px'
 }
 
 const colorStyle = {
