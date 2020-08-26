@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "51f930279787a6ea79c4f3acd5cd9ed0",
+    "revision": "4def27f9b747eea0f6d8293a6205d20a",
     "url": "/tireloclient/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tireloclient/static/css/2.920bdfdc.chunk.css"
   },
   {
-    "revision": "cba2c83ca7b6c1f6baf9",
-    "url": "/tireloclient/static/css/main.37da6ac9.chunk.css"
+    "revision": "c8185dea76286e346027",
+    "url": "/tireloclient/static/css/main.ba0d9012.chunk.css"
   },
   {
     "revision": "7fce158c86bd8a5fb916",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tireloclient/static/js/2.225a37ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cba2c83ca7b6c1f6baf9",
-    "url": "/tireloclient/static/js/main.32c46663.chunk.js"
+    "revision": "c8185dea76286e346027",
+    "url": "/tireloclient/static/js/main.1c2e696c.chunk.js"
   },
   {
     "revision": "c2f991b2eda1d11989ff",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tireloclient/static/media/ban.84812099.png"
   },
   {
-    "revision": "dbb9e2e963ff362f2f17d8e8bf7e0964",
-    "url": "/tireloclient/static/media/ceo.dbb9e2e9.jpeg"
+    "revision": "71215e332fdf005be5de17cdcf9629d2",
+    "url": "/tireloclient/static/media/ce.71215e33.jpeg"
   },
   {
     "revision": "d6ca2ed0edf5f8d77b2d5433eeb0d721",
@@ -72,10 +72,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tireloclient/static/media/emily-rusch-6dCicDMhMjk-unsplash.2d45a589.png"
   },
   {
-    "revision": "03a65c51f8fbfa9714b930b5a95184cd",
-    "url": "/tireloclient/static/media/finance.03a65c51.jpeg"
-  },
-  {
     "revision": "5de12760ad2b88d7f1299c9f4f8b379c",
     "url": "/tireloclient/static/media/jay-skyler-4vkqO73C7O8-unsplash.5de12760.jpg"
   },
@@ -102,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bb52646d1fab2d91ee7acabde138958e",
     "url": "/tireloclient/static/media/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.bb52646d.jpg"
+  },
+  {
+    "revision": "e9efa8cd68f93c6d20c960999cb7c158",
+    "url": "/tireloclient/static/media/ti.e9efa8cd.jpeg"
   },
   {
     "revision": "d01ef7cab4858b5050000dd0218a9464",

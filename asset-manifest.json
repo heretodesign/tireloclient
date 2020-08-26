@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tireloclient/static/css/main.37da6ac9.chunk.css",
-    "main.js": "/tireloclient/static/js/main.32c46663.chunk.js",
-    "main.js.map": "/tireloclient/static/js/main.32c46663.chunk.js.map",
+    "main.css": "/tireloclient/static/css/main.ba0d9012.chunk.css",
+    "main.js": "/tireloclient/static/js/main.1c2e696c.chunk.js",
+    "main.js.map": "/tireloclient/static/js/main.1c2e696c.chunk.js.map",
     "runtime-main.js": "/tireloclient/static/js/runtime-main.f5cf2e3c.js",
     "runtime-main.js.map": "/tireloclient/static/js/runtime-main.f5cf2e3c.js.map",
     "static/css/2.920bdfdc.chunk.css": "/tireloclient/static/css/2.920bdfdc.chunk.css",
     "static/js/2.225a37ee.chunk.js": "/tireloclient/static/js/2.225a37ee.chunk.js",
     "static/js/2.225a37ee.chunk.js.map": "/tireloclient/static/js/2.225a37ee.chunk.js.map",
     "index.html": "/tireloclient/index.html",
-    "precache-manifest.0bffd58747588bb3c4db3a68f86881c4.js": "/tireloclient/precache-manifest.0bffd58747588bb3c4db3a68f86881c4.js",
+    "precache-manifest.59c917e0db32d0d3e99f122aa3699a09.js": "/tireloclient/precache-manifest.59c917e0db32d0d3e99f122aa3699a09.js",
     "service-worker.js": "/tireloclient/service-worker.js",
     "static/css/2.920bdfdc.chunk.css.map": "/tireloclient/static/css/2.920bdfdc.chunk.css.map",
-    "static/css/main.37da6ac9.chunk.css.map": "/tireloclient/static/css/main.37da6ac9.chunk.css.map",
+    "static/css/main.ba0d9012.chunk.css.map": "/tireloclient/static/css/main.ba0d9012.chunk.css.map",
     "static/js/2.225a37ee.chunk.js.LICENSE.txt": "/tireloclient/static/js/2.225a37ee.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/tireloclient/static/media/Web 720.4c5b7068.png",
     "static/media/ban.png": "/tireloclient/static/media/ban.84812099.png",
-    "static/media/ceo.jpeg": "/tireloclient/static/media/ceo.dbb9e2e9.jpeg",
+    "static/media/ce.jpeg": "/tireloclient/static/media/ce.71215e33.jpeg",
     "static/media/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png": "/tireloclient/static/media/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.d6ca2ed0.png",
     "static/media/christina-wocintechchat-com-4PU-OC8sW98-unsplash.png": "/tireloclient/static/media/christina-wocintechchat-com-4PU-OC8sW98-unsplash.bc534a6b.png",
     "static/media/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg": "/tireloclient/static/media/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.1f551809.jpg",
@@ -25,7 +25,6 @@
     "static/media/dimitry-anikin-ATyawSn-NsE-unsplash.png": "/tireloclient/static/media/dimitry-anikin-ATyawSn-NsE-unsplash.3a3adc4b.png",
     "static/media/elderly.jpg": "/tireloclient/static/media/elderly.0af0cf48.jpg",
     "static/media/emily-rusch-6dCicDMhMjk-unsplash.png": "/tireloclient/static/media/emily-rusch-6dCicDMhMjk-unsplash.2d45a589.png",
-    "static/media/finance.jpeg": "/tireloclient/static/media/finance.03a65c51.jpeg",
     "static/media/jay-skyler-4vkqO73C7O8-unsplash.jpg": "/tireloclient/static/media/jay-skyler-4vkqO73C7O8-unsplash.5de12760.jpg",
     "static/media/josue-isai-ramos-figueroa-n2NBgIx3A28-unsplash.jpg": "/tireloclient/static/media/josue-isai-ramos-figueroa-n2NBgIx3A28-unsplash.1383d5b4.jpg",
     "static/media/juniperphoton-KKFKrOu3BVc-unsplash.png": "/tireloclient/static/media/juniperphoton-KKFKrOu3BVc-unsplash.abadf60b.png",
@@ -33,6 +32,7 @@
     "static/media/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg": "/tireloclient/static/media/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.a11e8b65.jpg",
     "static/media/shaah-shahidh--subrrYxv8A-unsplash.png": "/tireloclient/static/media/shaah-shahidh--subrrYxv8A-unsplash.cfa93067.png",
     "static/media/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jpg": "/tireloclient/static/media/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.bb52646d.jpg",
+    "static/media/ti.jpeg": "/tireloclient/static/media/ti.e9efa8cd.jpeg",
     "static/media/vladimir-patkachakov-ZAP1duyEIR4-unsplash.jpg": "/tireloclient/static/media/vladimir-patkachakov-ZAP1duyEIR4-unsplash.d01ef7ca.jpg",
     "static/media/wassim-chouak-kJCAKWTH6u4-unsplash.png": "/tireloclient/static/media/wassim-chouak-kJCAKWTH6u4-unsplash.7e9cf3eb.png"
   },
@@ -40,7 +40,7 @@
     "static/js/runtime-main.f5cf2e3c.js",
     "static/css/2.920bdfdc.chunk.css",
     "static/js/2.225a37ee.chunk.js",
-    "static/css/main.37da6ac9.chunk.css",
-    "static/js/main.32c46663.chunk.js"
+    "static/css/main.ba0d9012.chunk.css",
+    "static/js/main.1c2e696c.chunk.js"
   ]
 }
