@@ -8,8 +8,8 @@ import newD from '../assets/christina-wocintechchat-o-Q8IgAlmHAUA-unsplash.png'
 import mine from '../assets/christina-wocintechchat-com-4PU-OC8sW98-unsplash.png'
 import kaelo from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'
 import coo from '../assets/coo.jpeg'
-import ceo from '../assets/ceo.jpeg'
-import finance from '../assets/finance.jpeg'
+import ceo from '../assets/ce.jpeg'
+import finance from '../assets/ti.jpeg'
 import marketing from '../assets/marketing.jpeg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,7 +20,8 @@ const Section = styled.section`
   color: white;
 `
 const CardSection = styled.section`
-  background-color: #f1f6fe;
+  // background-color: #f1f6fe;
+  background-color: #e3f4fc;
   card-color: transparent;
   color: #003468;
 `
@@ -58,6 +59,21 @@ const ParagraphSty = styled.p`
   font-size: 1.2rem;
   margin-top: 10px;
 `
+const CardParagraphs = styled.p`
+  color: #003468;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) { 
+    color: #003468;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	}
+`
 const ColStyle = styled.p`
   color: #003468;
   font-size: 2.4rem;
@@ -74,7 +90,9 @@ const CardTit = styled.p`
 const AboutGet = styled.p`
   font-size: 2.6rem;
   margin-top: 0px;
-  color: #011240;
+  color: #003468;
+
+
 `
 const AboutRole = styled.p`
   font-size: 2.6rem;
@@ -83,9 +101,7 @@ const AboutRole = styled.p`
   text-align: center;
   text-decoration: underline;
 `
-const colorStyle = {
-  color: '#011240',
-}
+
 const About = () => {
     return (
         <>
@@ -110,7 +126,7 @@ const About = () => {
                               {/* The company has found it suitable to adhere calling by the Government of Botswana to perform different levels of investment, Product and service availability,
                               right quantity, good quality and meet standards of service, fair pricing and reasonable cost of products and services.                          
                              */}
-                             </MainPara>
+                          </MainPara>
                           {/* <MainPara className="has-text-left">
                             Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Pty) Ltd established in 2015, whose core business is to Supply and Transport Gas and Liquid Fuels thoughout Africa and the rest of the world.
                             <br />
@@ -162,9 +178,6 @@ const About = () => {
                       <div className="content" id="contentSide">
                         <TopPara className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Team</TopPara>
                         <AboutGet className="subtitle has-text-left">Meet the Team</AboutGet>
-                        {/* <CardParagraph className="has-text-left">
-                          We are passionate, driven individuals with a lot of team spirit and a shared appreciation
-                        </CardParagraph> */}
                       </div>
                     </div>
                   </div>
@@ -172,6 +185,40 @@ const About = () => {
                     <div class="column">
                     <div className="content">
                     <div class="columns">
+                      <div class="column is-one-quarter">
+                        <div class="card">
+                          <div class="card-image">
+                              <img src={coo} alt="Placeholder image" />
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-content">
+                                <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Chief Operations Officer</Link>
+                                <CardParagraph className="has-text-left">
+                                  Meet Keabetswe T. Rannowane
+                                </CardParagraph>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-one-quarter">
+                        <div class="card">
+                          <div class="card-image">
+                              <img src={ceo} alt="Placeholder image" />
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-content">
+                                <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Chief Executive Officer (C.E.O)</Link>
+                                <CardParagraph className="has-text-left">
+                                  Meet Brian Mmusi
+                                </CardParagraph>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <div class="column is-one-quarter">
                         <div class="card card-shadow">
                           <div class="card-image">
@@ -200,40 +247,6 @@ const About = () => {
                                 <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Marketing Executive</Link>
                                 <CardParagraph className="has-text-left">
                                   Meet Same Thamage
-                                </CardParagraph>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="column is-one-quarter">
-                        <div class="card">
-                          <div class="card-image">
-                              <img src={coo} alt="Placeholder image" />
-                          </div>
-                          <div class="card-content">
-                            <div class="media">
-                              <div class="media-content">
-                                <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Chief Operations Officer</Link>
-                                <CardParagraph className="has-text-left">
-                                  Meet Keabetswe T. Rannoane
-                                </CardParagraph>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="column is-one-quarter">
-                        <div class="card">
-                          <div class="card-image">
-                              <img src={ceo} alt="Placeholder image" />
-                          </div>
-                          <div class="card-content">
-                            <div class="media">
-                              <div class="media-content">
-                                <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Chief Executive Officer (C.E.O)</Link>
-                                <CardParagraph className="has-text-left">
-                                  Meet Brian Mmusi
                                 </CardParagraph>
                               </div>
                             </div>
@@ -514,9 +527,9 @@ const About = () => {
                             <ParagraphSty className="has-text-centered">
                                 <CardTit>Precise & reliably</CardTit>
                             </ParagraphSty>
-                            <ParagraphSty className="has-text-centered">
+                            <CardParagraphs className="has-text">
                                 We combine accurate and transparent data with reliable, human operations for your business success.
-                            </ParagraphSty>
+                            </CardParagraphs>
                         </CardDiv>
                         <CardDiv class="column is-one-third">
                             <ParagraphSty className="has-text-centered">
@@ -525,9 +538,9 @@ const About = () => {
                             <ParagraphSty className="has-text-centered">
                               <CardTit>Efficient & proactive</CardTit>
                             </ParagraphSty>
-                            <ParagraphSty className="has-text-centered">
+                            <CardParagraphs className="has-text">
                                 Being proactive instead or just reactive is our motto. We show what happens where, when, and why.
-                            </ParagraphSty>
+                            </CardParagraphs>
                         </CardDiv>
                         <CardDiv class="column is-one-third">
                             <ParagraphSty className="has-text-centered">
@@ -536,9 +549,9 @@ const About = () => {
                             <ParagraphSty className="has-text-centered">
                               <CardTit>Digital & easy</CardTit>
                             </ParagraphSty>
-                            <ParagraphSty className="has-text-centered">
+                            <CardParagraphs className="has-text">
                                 Digitization is a must nowadays. Coupled with intuitive operations.
-                            </ParagraphSty>
+                            </CardParagraphs>
                         </CardDiv>
                     </div>
                     </div>

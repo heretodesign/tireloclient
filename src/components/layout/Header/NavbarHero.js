@@ -13,8 +13,10 @@ const MainTitle = styled.p`
   @media (max-width: 768px) { 
     color: #fff;
     font-family: sans-serif;
-    font-size: 1.4rem;
+    font-size: 2.4rem;
     font-weight: 500;
+    text-align: center;
+
 	}
 `
 
@@ -25,15 +27,24 @@ const MainParagraph = styled.p`
 
   @media (max-width: 768px) { 
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
 	}
 `
 
 const SpanColor = styled.span`
   color: #fba502;
-  // font-family: sans-serif;
+  font-family: sans-serif;
   font-size: 3.2rem;
   font-weight: 600;
+
+  @media (max-width: 768px) { 
+    color: #fba502;
+    font-family: sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+	}
 `
 
 const Button = styled.button`

@@ -36,7 +36,8 @@
   }
   
   #icard {
-    background-color: #f1f6fe;
+    // background-color: #f1f6fe;
+    background-color: #e3f4fc;
     // background-color: #ffa500;
     card-color: transparent;
     color: #003468;
@@ -54,4 +55,8 @@
     font-size: 2em;
     font-weight: bold;
     color: #003468;
+}
+
+.card {
+  border-bottom: 5px solid #003684;
 }
