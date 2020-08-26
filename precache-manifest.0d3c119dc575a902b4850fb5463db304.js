@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9cc384338ac9bdb962b22c04d8303b8",
+    "revision": "16d50e5e9e79594e84189a4dc1a0ae0f",
     "url": "/tireloclient/index.html"
   },
   {
-    "revision": "72d6368fb54af58c4c65",
+    "revision": "66079d99e9429db6665f",
     "url": "/tireloclient/static/css/2.920bdfdc.chunk.css"
   },
   {
-    "revision": "b3f62c8f569ba48deead",
+    "revision": "600f0f18fe18a664fd79",
     "url": "/tireloclient/static/css/main.37da6ac9.chunk.css"
   },
   {
-    "revision": "72d6368fb54af58c4c65",
-    "url": "/tireloclient/static/js/2.f531d588.chunk.js"
+    "revision": "66079d99e9429db6665f",
+    "url": "/tireloclient/static/js/2.759f8a5b.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/tireloclient/static/js/2.f531d588.chunk.js.LICENSE.txt"
+    "url": "/tireloclient/static/js/2.759f8a5b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b3f62c8f569ba48deead",
-    "url": "/tireloclient/static/js/main.00dd584c.chunk.js"
+    "revision": "600f0f18fe18a664fd79",
+    "url": "/tireloclient/static/js/main.990fa07f.chunk.js"
   },
   {
     "revision": "c2f991b2eda1d11989ff",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4c5b70682d666afe2dd7131f8fe15848",
     "url": "/tireloclient/static/media/Web 720.4c5b7068.png"
+  },
+  {
+    "revision": "fc618e55c7c4c98b11c5a7942c1fb982",
+    "url": "/tireloclient/static/media/banner.fc618e55.jpeg"
   },
   {
     "revision": "dbb9e2e963ff362f2f17d8e8bf7e0964",

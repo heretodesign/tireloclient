@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/tireloclient/static/css/main.37da6ac9.chunk.css",
-    "main.js": "/tireloclient/static/js/main.00dd584c.chunk.js",
-    "main.js.map": "/tireloclient/static/js/main.00dd584c.chunk.js.map",
+    "main.js": "/tireloclient/static/js/main.990fa07f.chunk.js",
+    "main.js.map": "/tireloclient/static/js/main.990fa07f.chunk.js.map",
     "runtime-main.js": "/tireloclient/static/js/runtime-main.f5cf2e3c.js",
     "runtime-main.js.map": "/tireloclient/static/js/runtime-main.f5cf2e3c.js.map",
     "static/css/2.920bdfdc.chunk.css": "/tireloclient/static/css/2.920bdfdc.chunk.css",
-    "static/js/2.f531d588.chunk.js": "/tireloclient/static/js/2.f531d588.chunk.js",
-    "static/js/2.f531d588.chunk.js.map": "/tireloclient/static/js/2.f531d588.chunk.js.map",
+    "static/js/2.759f8a5b.chunk.js": "/tireloclient/static/js/2.759f8a5b.chunk.js",
+    "static/js/2.759f8a5b.chunk.js.map": "/tireloclient/static/js/2.759f8a5b.chunk.js.map",
     "index.html": "/tireloclient/index.html",
-    "precache-manifest.0ea1609083a8c905644c8f18c663be15.js": "/tireloclient/precache-manifest.0ea1609083a8c905644c8f18c663be15.js",
+    "precache-manifest.0d3c119dc575a902b4850fb5463db304.js": "/tireloclient/precache-manifest.0d3c119dc575a902b4850fb5463db304.js",
     "service-worker.js": "/tireloclient/service-worker.js",
     "static/css/2.920bdfdc.chunk.css.map": "/tireloclient/static/css/2.920bdfdc.chunk.css.map",
     "static/css/main.37da6ac9.chunk.css.map": "/tireloclient/static/css/main.37da6ac9.chunk.css.map",
-    "static/js/2.f531d588.chunk.js.LICENSE.txt": "/tireloclient/static/js/2.f531d588.chunk.js.LICENSE.txt",
+    "static/js/2.759f8a5b.chunk.js.LICENSE.txt": "/tireloclient/static/js/2.759f8a5b.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/tireloclient/static/media/Web 720.4c5b7068.png",
+    "static/media/banner.jpeg": "/tireloclient/static/media/banner.fc618e55.jpeg",
     "static/media/ceo.jpeg": "/tireloclient/static/media/ceo.dbb9e2e9.jpeg",
     "static/media/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png": "/tireloclient/static/media/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.d6ca2ed0.png",
     "static/media/christina-wocintechchat-com-4PU-OC8sW98-unsplash.png": "/tireloclient/static/media/christina-wocintechchat-com-4PU-OC8sW98-unsplash.bc534a6b.png",
@@ -37,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.f5cf2e3c.js",
     "static/css/2.920bdfdc.chunk.css",
-    "static/js/2.f531d588.chunk.js",
+    "static/js/2.759f8a5b.chunk.js",
     "static/css/main.37da6ac9.chunk.css",
-    "static/js/main.00dd584c.chunk.js"
+    "static/js/main.990fa07f.chunk.js"
   ]
 }
