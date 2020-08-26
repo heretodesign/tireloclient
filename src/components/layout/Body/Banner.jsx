@@ -33,8 +33,8 @@ const Banner = () => {
                   
                   <div class="column">
                     <div className="content" id="contentSide">
-                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</h3>
-                      <ColorPara className="subtitle has-text-left is-2">Competitive Advantages</ColorPara>
+                      {/* <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</h3>
+                      <ColorPara className="subtitle has-text-left is-2">Competitive Advantages</ColorPara> */}
                     </div>
                   </div>
                   <div class="column is-half">
