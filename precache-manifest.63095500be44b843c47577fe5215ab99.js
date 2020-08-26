@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "132f365597dd6108e8d8a09a531fe733",
+    "revision": "d803c0b9a902e111fe4e9723414fddfd",
     "url": "/tireloclient/index.html"
   },
   {
-    "revision": "66079d99e9429db6665f",
+    "revision": "7fce158c86bd8a5fb916",
     "url": "/tireloclient/static/css/2.920bdfdc.chunk.css"
   },
   {
-    "revision": "4a14ef67f72a3e35984d",
+    "revision": "5376480238d09a653c7c",
     "url": "/tireloclient/static/css/main.37da6ac9.chunk.css"
   },
   {
-    "revision": "66079d99e9429db6665f",
-    "url": "/tireloclient/static/js/2.759f8a5b.chunk.js"
+    "revision": "7fce158c86bd8a5fb916",
+    "url": "/tireloclient/static/js/2.225a37ee.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/tireloclient/static/js/2.759f8a5b.chunk.js.LICENSE.txt"
+    "url": "/tireloclient/static/js/2.225a37ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a14ef67f72a3e35984d",
-    "url": "/tireloclient/static/js/main.6a93f36e.chunk.js"
+    "revision": "5376480238d09a653c7c",
+    "url": "/tireloclient/static/js/main.14b6d6d8.chunk.js"
   },
   {
     "revision": "c2f991b2eda1d11989ff",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tireloclient/static/media/Web 720.4c5b7068.png"
   },
   {
-    "revision": "fc618e55c7c4c98b11c5a7942c1fb982",
-    "url": "/tireloclient/static/media/banner.fc618e55.jpeg"
+    "revision": "84812099c05329792e6fecb18d66a241",
+    "url": "/tireloclient/static/media/ban.84812099.png"
   },
   {
     "revision": "dbb9e2e963ff362f2f17d8e8bf7e0964",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a3adc4b5719b52b198a9f4ca82be590",
     "url": "/tireloclient/static/media/dimitry-anikin-ATyawSn-NsE-unsplash.3a3adc4b.png"
+  },
+  {
+    "revision": "0af0cf488f360d2f1a6ea2f8160ee8a9",
+    "url": "/tireloclient/static/media/elderly.0af0cf48.jpg"
   },
   {
     "revision": "2d45a589c9b20f50fa6ebec602028e3d",

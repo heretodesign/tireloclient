@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/tireloclient/static/css/main.37da6ac9.chunk.css",
-    "main.js": "/tireloclient/static/js/main.6a93f36e.chunk.js",
-    "main.js.map": "/tireloclient/static/js/main.6a93f36e.chunk.js.map",
+    "main.js": "/tireloclient/static/js/main.14b6d6d8.chunk.js",
+    "main.js.map": "/tireloclient/static/js/main.14b6d6d8.chunk.js.map",
     "runtime-main.js": "/tireloclient/static/js/runtime-main.f5cf2e3c.js",
     "runtime-main.js.map": "/tireloclient/static/js/runtime-main.f5cf2e3c.js.map",
     "static/css/2.920bdfdc.chunk.css": "/tireloclient/static/css/2.920bdfdc.chunk.css",
-    "static/js/2.759f8a5b.chunk.js": "/tireloclient/static/js/2.759f8a5b.chunk.js",
-    "static/js/2.759f8a5b.chunk.js.map": "/tireloclient/static/js/2.759f8a5b.chunk.js.map",
+    "static/js/2.225a37ee.chunk.js": "/tireloclient/static/js/2.225a37ee.chunk.js",
+    "static/js/2.225a37ee.chunk.js.map": "/tireloclient/static/js/2.225a37ee.chunk.js.map",
     "index.html": "/tireloclient/index.html",
-    "precache-manifest.1d3567dca49f7ddc95e08169b2cd33c8.js": "/tireloclient/precache-manifest.1d3567dca49f7ddc95e08169b2cd33c8.js",
+    "precache-manifest.63095500be44b843c47577fe5215ab99.js": "/tireloclient/precache-manifest.63095500be44b843c47577fe5215ab99.js",
     "service-worker.js": "/tireloclient/service-worker.js",
     "static/css/2.920bdfdc.chunk.css.map": "/tireloclient/static/css/2.920bdfdc.chunk.css.map",
     "static/css/main.37da6ac9.chunk.css.map": "/tireloclient/static/css/main.37da6ac9.chunk.css.map",
-    "static/js/2.759f8a5b.chunk.js.LICENSE.txt": "/tireloclient/static/js/2.759f8a5b.chunk.js.LICENSE.txt",
+    "static/js/2.225a37ee.chunk.js.LICENSE.txt": "/tireloclient/static/js/2.225a37ee.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/tireloclient/static/media/Web 720.4c5b7068.png",
-    "static/media/banner.jpeg": "/tireloclient/static/media/banner.fc618e55.jpeg",
+    "static/media/ban.png": "/tireloclient/static/media/ban.84812099.png",
     "static/media/ceo.jpeg": "/tireloclient/static/media/ceo.dbb9e2e9.jpeg",
     "static/media/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png": "/tireloclient/static/media/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.d6ca2ed0.png",
     "static/media/christina-wocintechchat-com-4PU-OC8sW98-unsplash.png": "/tireloclient/static/media/christina-wocintechchat-com-4PU-OC8sW98-unsplash.bc534a6b.png",
@@ -23,6 +23,7 @@
     "static/media/christina-wocintechchat-o-Q8IgAlmHAUA-unsplash.png": "/tireloclient/static/media/christina-wocintechchat-o-Q8IgAlmHAUA-unsplash.e03e0cdd.png",
     "static/media/coo.jpeg": "/tireloclient/static/media/coo.a8f5386f.jpeg",
     "static/media/dimitry-anikin-ATyawSn-NsE-unsplash.png": "/tireloclient/static/media/dimitry-anikin-ATyawSn-NsE-unsplash.3a3adc4b.png",
+    "static/media/elderly.jpg": "/tireloclient/static/media/elderly.0af0cf48.jpg",
     "static/media/emily-rusch-6dCicDMhMjk-unsplash.png": "/tireloclient/static/media/emily-rusch-6dCicDMhMjk-unsplash.2d45a589.png",
     "static/media/finance.jpeg": "/tireloclient/static/media/finance.03a65c51.jpeg",
     "static/media/jay-skyler-4vkqO73C7O8-unsplash.jpg": "/tireloclient/static/media/jay-skyler-4vkqO73C7O8-unsplash.5de12760.jpg",
@@ -38,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.f5cf2e3c.js",
     "static/css/2.920bdfdc.chunk.css",
-    "static/js/2.759f8a5b.chunk.js",
+    "static/js/2.225a37ee.chunk.js",
     "static/css/main.37da6ac9.chunk.css",
-    "static/js/main.6a93f36e.chunk.js"
+    "static/js/main.14b6d6d8.chunk.js"
   ]
 }
