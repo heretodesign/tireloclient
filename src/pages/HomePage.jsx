@@ -9,11 +9,11 @@ import OurServices from '../components/layout/Body/OurServices'
 import Market from '../components/layout/Body/Market'
 import Markets from '../components/layout/Body/Markets'
 import AboutUs from '../components/layout/Body/AboutUs'
-import Testimonials from '../components/layout/Body/Testimonials'
 import Header from '../components/layout/Header/Header'
 import Vision from '../components/layout/Body/Vision';
 import Advantages from '../components/layout/Body/Advantages';
 import Banner from '../components/layout/Body/Banner';
+import Community from '../components/layout/Body/Community';
 
 const HomePage = () => {
     return (
@@ -28,9 +28,8 @@ const HomePage = () => {
             <br />
             <Market />
             <br />
-            {/* <Testimonials /> */}
             <Markets />
-            <br />
+            <Community />
             <br />
             <br />
             <Founder />

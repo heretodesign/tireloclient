@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components'
-// import img from '../../../assets/tomas-williams-pgg-_RJY6hN3E-unsplash.png'
-import img from '../../../assets/banner.jpeg'
+import img from '../../../assets/ban.png'
 
 const Section = styled.section`
 	background-image: url(${img});
 	background-position: center center;
 	background-repeat:  no-repeat;
-	background-size:  cover;
+	background-size: 100% 100%;
 	position: relative;
 	height: 100vh;
 `
@@ -30,16 +29,15 @@ const Banner = () => {
               </div>
               <div className="content">
                 <div class="columns">
-                  
                   <div class="column">
                     <div className="content" id="contentSide">
                       {/* <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</h3>
                       <ColorPara className="subtitle has-text-left is-2">Competitive Advantages</ColorPara> */}
                     </div>
                   </div>
-                  <div class="column is-half">
-                    {/* <img className="content" src={imgOffice} id="imgCover" alt="office" /> */}
-                  </div>
+                  {/* <div class="column is-half">
+                    <img className="content" src={imgOffice} id="imgCover" alt="office" />
+                  </div> */}
                 </div>
               </div>
             </div>
