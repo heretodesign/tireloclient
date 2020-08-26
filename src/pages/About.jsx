@@ -162,9 +162,9 @@ const About = () => {
                       <div className="content" id="contentSide">
                         <TopPara className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Team</TopPara>
                         <AboutGet className="subtitle has-text-left">Meet the Team</AboutGet>
-                        <CardParagraph className="has-text-left">
+                        {/* <CardParagraph className="has-text-left">
                           We are passionate, driven individuals with a lot of team spirit and a shared appreciation
-                        </CardParagraph>
+                        </CardParagraph> */}
                       </div>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ const About = () => {
                       <div class="column is-one-quarter">
                         <div class="card card-shadow">
                           <div class="card-image">
-                              <img src={finance} alt="Placeholder image" />
+                            <img src={finance} alt="Placeholder image" />
                           </div>
                           <div class="card-content">
                             <div class="media">
@@ -199,7 +199,7 @@ const About = () => {
                               <div class="media-content">
                                 <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Marketing Executive</Link>
                                 <CardParagraph className="has-text-left">
-                                  Meet Brenda
+                                  Meet Same Thamage
                                 </CardParagraph>
                               </div>
                             </div>

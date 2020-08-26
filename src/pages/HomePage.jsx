@@ -13,12 +13,14 @@ import Testimonials from '../components/layout/Body/Testimonials'
 import Header from '../components/layout/Header/Header'
 import Vision from '../components/layout/Body/Vision';
 import Advantages from '../components/layout/Body/Advantages';
+import Banner from '../components/layout/Body/Banner';
 
 const HomePage = () => {
     return (
         <>
             <Header />
             <Cards />
+            <Banner />
             <OurServices />
             <Vision />
             <Advantages />
