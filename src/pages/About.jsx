@@ -7,6 +7,10 @@ import imgOffice from '../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplas
 import newD from '../assets/christina-wocintechchat-o-Q8IgAlmHAUA-unsplash.png'
 import mine from '../assets/christina-wocintechchat-com-4PU-OC8sW98-unsplash.png'
 import kaelo from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplash.png'
+import coo from '../assets/coo.jpeg'
+import ceo from '../assets/ceo.jpeg'
+import finance from '../assets/finance.jpeg'
+import marketing from '../assets/marketing.jpeg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDesktop, faIndustry, faChalkboardTeacher, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
@@ -29,6 +33,10 @@ const HeaderTitle = styled.p`
 const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
+`
+const AboutPara = styled.p`
+  font-size: 1.2rem;
+  color: #003468;
 `
 const TopPara = styled.p`
   color: #9aa8bd;
@@ -63,7 +71,21 @@ const CardTit = styled.p`
   color: #003468;
   font-weight: bold;
 `
-
+const AboutGet = styled.p`
+  font-size: 2.6rem;
+  margin-top: 0px;
+  color: #011240;
+`
+const AboutRole = styled.p`
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #003468;
+  text-align: center;
+  text-decoration: underline;
+`
+const colorStyle = {
+  color: '#011240',
+}
 const About = () => {
     return (
         <>
@@ -80,11 +102,21 @@ const About = () => {
                           <TopPara className="subtitle is-6 has-text-left is-uppercase">Why we exist</TopPara>
                           <HeaderTitle className="subtitle has-text-left is-2">About Us</HeaderTitle>
                           <MainPara className="has-text-left">
+                            Seth Resources (Pty) Ltd, is a Botswana company founded in 2015; The company is incorporated under Botswana Law (100% citizen owned), to offer customers the widest range of services 
+                            in respect of Procurement and Logistics of Oil & gas Derivatives including the storage, 
+                            handling and distribution (Transportation) of various products according to the needs of the users and also expands the activities out of Botswana boundaries. 
+                            <br />
+                            <br />
+                              {/* The company has found it suitable to adhere calling by the Government of Botswana to perform different levels of investment, Product and service availability,
+                              right quantity, good quality and meet standards of service, fair pricing and reasonable cost of products and services.                          
+                             */}
+                             </MainPara>
+                          {/* <MainPara className="has-text-left">
                             Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Pty) Ltd established in 2015, whose core business is to Supply and Transport Gas and Liquid Fuels thoughout Africa and the rest of the world.
                             <br />
                             <br />
                             The company has associate offices in Africa, Middle East and Europe which together offer a unique blend of trading, international banking, structured finances, and marketing experience to the benefit of our client base.
-                          </MainPara>
+                          </MainPara> */}
                         </div>
                       </div>
                       <div class="column is-half">
@@ -124,6 +156,101 @@ const About = () => {
           <section className="section is-paddingless-horizontal" id="foundersSection">
             <div className="container grid is-large" id="founderWords">
               <div className="firstsections">
+                <div className="content">
+                  <div class="columns">
+                    <div class="column">
+                      <div className="content" id="contentSide">
+                        <TopPara className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Team</TopPara>
+                        <AboutGet className="subtitle has-text-left">Meet the Team</AboutGet>
+                        <CardParagraph className="has-text-left">
+                          We are passionate, driven individuals with a lot of team spirit and a shared appreciation
+                        </CardParagraph>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="columns">
+                    <div class="column">
+                    <div className="content">
+                    <div class="columns">
+                      <div class="column is-one-quarter">
+                        <div class="card card-shadow">
+                          <div class="card-image">
+                              <img src={finance} alt="Placeholder image" />
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-content">
+                                <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Executive Director of Finance</Link>
+                                <CardParagraph className="has-text-left">
+                                  Meet Tirelo
+                                </CardParagraph>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-one-quarter">
+                        <div class="card">
+                          <div class="card-image">
+                              <img src={marketing} alt="Placeholder image" />
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-content">
+                                <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Marketing Executive</Link>
+                                <CardParagraph className="has-text-left">
+                                  Meet Brenda
+                                </CardParagraph>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-one-quarter">
+                        <div class="card">
+                          <div class="card-image">
+                              <img src={coo} alt="Placeholder image" />
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-content">
+                                <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Chief Operations Officer</Link>
+                                <CardParagraph className="has-text-left">
+                                  Meet Keabetswe T. Rannoane
+                                </CardParagraph>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="column is-one-quarter">
+                        <div class="card">
+                          <div class="card-image">
+                              <img src={ceo} alt="Placeholder image" />
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-content">
+                                <Link class="title is-6 is-underlined has-text-centered" style={AboutRoles}>Chief Executive Officer (C.E.O)</Link>
+                                <CardParagraph className="has-text-left">
+                                  Meet Brian Mmusi
+                                </CardParagraph>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="section is-paddingless-horizontal" id="foundersSection">
+            <div className="container grid is-large" id="founderWords">
+              <div className="firstsections">
                   <div className="content">
                     <div class="columns">
                       <div class="column">
@@ -132,6 +259,48 @@ const About = () => {
                         </div>
                       </div>
                     </div>
+                    <div class="columns">
+                      <div class="column">
+                        <div className="content">
+                          <AboutPara className="subtitle has-text-left">
+                            <br />Seth Resources (Pty) Ltd, has found it suitable to adhere calling by the Government of Botswana to perform different levels of investment, 
+                            Product and service availability, right quantity, good quality and meet standards of service, fair pricing and reasonable cost 
+                            of products and services. <br /><br />The Company intends to set up an autonomous business unit whose focus is to position Seth Resources 
+                            (Pty) Ltd as a major player in the international market for petroleum (Oil) trading. This unit intends to operate profitably 
+                            from day one as this will increase profitably and maintain company growth which will return finance the Petroleum purchasing 
+                            and Transportations of Petroleum products operation of the company. <br /><br />Hence turning Botswana into energy hub in the region.
+                            Botswana opens the door to a massive market in SADC, provides access to South Africa, Zambia, Namibia, Lesotho and Swaziland. 
+                            Botswana is committed to sound fiscal policy, economic freedom and has a steady and dramatic growth rate. Seth Resources is 
+                            strategically positioned to meet the supply demand of petroleum products in the SADC region, through Botswana Offices and Ghanzi
+                            Logistics Base which will be located in Western part of the country and cover Botswana Zambia, Malawi, Tanzania and Palapye 
+                            Logistics Base will be located in Central part of Botswana to cover Zimbabwe, Zambia, Swaziland and Lesotho petroleum products 
+                            markets. With the compilation of Kazungula Bridge project under way, the project is set to open up the transport corridor between
+                            Zambia and Botswana. <br /><br />This North-South corridor is the busiest of all regional corridors in the SADC region, linking landlocked 
+                            countries to the port of Durban, and Walvis Bay the regional hub for export and import. It will mostly benefit businesses engaged
+                            in the mining, agriculture and service sectors. It will also boost economies of SADC countries by linking South Africa's port city
+                            of Durban and Namibia’s port Walvis Bay to landlocked Botswana, Zambia, Malawi, DRC and Tanzania. The handover of the project to
+                            the two governments is expected in March 2021.
+                            <br /><br />The company further intends to spread its services to the rest of southern Africa as this will be ground breaking business move that
+                            will change the history of southern Africa completely: it will bring international sales/trading, aggregation, supply chain functions and many other things to Botswana. It is therefore our belief that Batswana should be ready for this move and make efforts to contribute to its sustainability.
+                          </AboutPara>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </section>
+          <section className="section is-paddingless-horizontal" id="foundersSection">
+            <div className="container grid is-large" id="founderWords">
+              <div className="firstsections">
+                  <div className="content">
+                    {/* <div class="columns">
+                      <div class="column">
+                        <div className="content" id="contentSide">
+                          <Inside className="subtitle is-2 has-text-centered">Inside About Us</Inside>
+                        </div>
+                      </div>
+                    </div> */}
                     <br />
                     <div className="content">
                       <div class="columns">
@@ -384,6 +553,12 @@ const About = () => {
 const cardTitle = {
   color: '#003468',
   textDecoration: 'underline',
+  textAlign: 'center',
+  marginBottom: '10px'
+}
+const AboutRoles = {
+  color: '#003468',
+  fontSize: '1rem',
   textAlign: 'center',
   marginBottom: '10px'
 }
