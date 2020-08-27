@@ -91,8 +91,6 @@ const AboutGet = styled.p`
   font-size: 2.6rem;
   margin-top: 0px;
   color: #003468;
-
-
 `
 const AboutRole = styled.p`
   font-size: 2.6rem;

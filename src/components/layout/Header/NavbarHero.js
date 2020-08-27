@@ -178,7 +178,7 @@ const NavbarHero = () => {
               <div className="content" id="landingForm">
                 <div className="columns">
                   <div className="column is-one-quarter">
-                    <a className="button is-medium has-test-small is-fullwidth" id="landBtn">Talk to sales</a>
+                    <Link to="/contact-us" className="button is-medium has-test-small is-fullwidth" id="landBtn">Talk to sales</Link>
                   </div>
                 </div>
               </div>

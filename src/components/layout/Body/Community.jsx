@@ -11,6 +11,18 @@ const ParagraphSty = styled.p`
 const colorStyle = {
   color: '#003468'
 }
+const AboutTitle = styled.p`
+  font-size: 2.6rem;
+  color: #003468;
+  font-family: 'Open Sans', sans-serif;
+
+  @media (max-width: 768px) { 
+    color: #003468;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+	}
+`
 const AboutGet = styled.p`
   font-size: 2.6rem;
   margin-top: 0px;
@@ -29,7 +41,7 @@ const Community = () => {
                   <div class="column">
                     <div className="content">
                       <AboutGet className="subtitle has-text-left is-uppercase" id="headTitle">COMMUNITY PARTNERSHIP</AboutGet>
-                      <p className="subtitle has-text-left is-2" style={colorStyle}>Philanthropic Endeavor</p>
+                      <AboutTitle className="subtitle has-text-left is-2">Philanthropic Endeavor</AboutTitle>
                       <ParagraphSty className="has-text-left">
                         We’re deeply invested in leaving our communities better, we have adopted Theopathy Elderly Care Association which is an NGO that aims at improving the well-being 
                         of frail elderlies affected by among other diseases: Diabetes, High Blood Pressure, Kidney Diseases, Stroke disease etc.
