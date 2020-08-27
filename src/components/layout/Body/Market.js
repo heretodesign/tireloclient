@@ -25,8 +25,8 @@ const AdvTitle = styled.p`
 const ServicesPara = styled.p`
   font-size: 1.1rem;
   font-weight: 600;
-  margin-top: 0px;
   color: #003468;
+  margin-top: -10px;
   font-family: 'Open Sans', sans-serif;
 `
 

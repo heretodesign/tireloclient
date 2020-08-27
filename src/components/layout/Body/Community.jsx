@@ -4,11 +4,12 @@ import imgOffice from '../../../assets/elderly.jpg'
 
 const ParagraphSty = styled.p`
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: -10px;
   color: #003468;
 
   @media (max-width: 768px) { 
     text-align: center;
+    margin-top: -10px;
     color: #003468;
 	}
 `

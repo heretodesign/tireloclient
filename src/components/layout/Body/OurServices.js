@@ -6,13 +6,14 @@ import styled from 'styled-components'
 
 const ServicesParagraph = styled.p`
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: -10px;
   color: #003468;
   font-family: 'Open Sans', sans-serif;
 
   @media (max-width: 768px) { 
     text-align: center;
     color: #003468;
+    margin-top: -10px;
     font-family: 'Open Sans', sans-serif;
 	}
 `

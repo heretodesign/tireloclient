@@ -5,12 +5,13 @@ import styled from 'styled-components'
 
 const VisionParagraph = styled.p`
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: -10px;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   @media (max-width: 768px) { 
     text-align: center;
     color: #fff;
+    margin-top: -10px;
     font-family: 'Open Sans', sans-serif;
 	}
 `
