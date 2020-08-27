@@ -23,6 +23,7 @@ const ParagraphStyle = styled.p`
   font-size: 1.2rem;
   color: #fff;
   margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
 `
 
 const H4 = styled.p`

@@ -30,7 +30,13 @@ const ServicesPara = styled.p`
   margin-top: 0px;
   color: #003468;
   font-family: 'Open Sans', sans-serif;
-
+`
+const MarketRegion = styled.p`
+  font-size: 1.2rem;
+  margin-top: 0px;
+  color: #003468;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
 `
 const ServicesMenu = styled.p`
   font-size: 1.2rem;
@@ -117,8 +123,14 @@ const Markets = () => {
                         <AdvParagraph className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Who are our partners and clients</AdvParagraph>
                         <AdvTitle className="subtitle has-text-left is-2">Intended Markets </AdvTitle>
                         <ServicesPara className="has-text-left">
-                          As we continue to evolve and widen our reach within the southern hemisphere, our partnerships and valued customers have increased exponentially. 
-                          <br /><br />Our growing clients base are in these following industry sectors. 
+                          As we continue to evolve and widen our reach within the southern hemisphere and beyond.
+                          <br /><br />
+                          Our growing partners base are in these following geographic regions:
+                          <br /><br />
+                          <MarketRegion>Asia: China & Singapore</MarketRegion>
+                          <MarketRegion>Middle-East: Dubai & Oman </MarketRegion>
+                          <br />
+                          Furthermore, our valued customers have increased exponentially. Our client base span across these following industry sectors. 
                         </ServicesPara>
                       </div>
                     </div>

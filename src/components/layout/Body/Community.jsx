@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom"
 import styled from 'styled-components'
 import imgOffice from '../../../assets/elderly.jpg'
 
@@ -31,6 +30,18 @@ const AboutGet = styled.p`
   color: #011240;
   font-family: 'Open Sans', sans-serif;
 `
+const FBKLink = styled.a`
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #003468;
+  font-family: 'Open Sans', sans-serif;
+  &:hover {
+    color: #003468;
+    // color: #fba502;
+    font-weight: bolder;
+  };
+`
 
 const Community = () => {
   return (
@@ -50,6 +61,14 @@ const Community = () => {
                         <br /><br />The aim is to relieve the care giver by providing around the clock day care and transitional care for those discharged from hospitals whom the care giver is still adjusting to caring for.
                         <br /><br /> They do wellness activities including health screening for diabetes and hypertension nationwide.
                         <br /><br />Building stronger community together.
+                        <br /><br />
+                        <FBKLink 
+                          href="https://www.facebook.com/Theopathy-Elderly-Care-Association-2254158004833728/" 
+                          class="title is-underlined has-text-centered" 
+                          target="_blank"
+                          >
+                            Read more about the NGO
+                        </FBKLink>
                       </ParagraphSty>
                     </div>
                   </div>

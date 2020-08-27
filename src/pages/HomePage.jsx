@@ -30,8 +30,6 @@ const HomePage = () => {
             <br />
             <Markets />
             <Community />
-            <br />
-            <br />
             <Founder />
             {/* <Founders /> */}
             <br />
