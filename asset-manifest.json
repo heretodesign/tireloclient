@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tireloclient/static/css/main.9d0b6993.chunk.css",
-    "main.js": "/tireloclient/static/js/main.0032bcd6.chunk.js",
-    "main.js.map": "/tireloclient/static/js/main.0032bcd6.chunk.js.map",
+    "main.js": "/tireloclient/static/js/main.85b851fb.chunk.js",
+    "main.js.map": "/tireloclient/static/js/main.85b851fb.chunk.js.map",
     "runtime-main.js": "/tireloclient/static/js/runtime-main.f5cf2e3c.js",
     "runtime-main.js.map": "/tireloclient/static/js/runtime-main.f5cf2e3c.js.map",
     "static/css/2.920bdfdc.chunk.css": "/tireloclient/static/css/2.920bdfdc.chunk.css",
     "static/js/2.225a37ee.chunk.js": "/tireloclient/static/js/2.225a37ee.chunk.js",
     "static/js/2.225a37ee.chunk.js.map": "/tireloclient/static/js/2.225a37ee.chunk.js.map",
     "index.html": "/tireloclient/index.html",
-    "precache-manifest.a30c57b537cd33c287ae3c18d7b61e1c.js": "/tireloclient/precache-manifest.a30c57b537cd33c287ae3c18d7b61e1c.js",
+    "precache-manifest.eeb54b0e5eaf148f6bb21bd121eebaeb.js": "/tireloclient/precache-manifest.eeb54b0e5eaf148f6bb21bd121eebaeb.js",
     "service-worker.js": "/tireloclient/service-worker.js",
     "static/css/2.920bdfdc.chunk.css.map": "/tireloclient/static/css/2.920bdfdc.chunk.css.map",
     "static/css/main.9d0b6993.chunk.css.map": "/tireloclient/static/css/main.9d0b6993.chunk.css.map",
@@ -41,6 +41,6 @@
     "static/css/2.920bdfdc.chunk.css",
     "static/js/2.225a37ee.chunk.js",
     "static/css/main.9d0b6993.chunk.css",
-    "static/js/main.0032bcd6.chunk.js"
+    "static/js/main.85b851fb.chunk.js"
   ]
 }
