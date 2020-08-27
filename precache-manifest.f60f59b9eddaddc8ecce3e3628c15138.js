@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "534f8efbcd19fbff3874dbc62eaf8bb7",
+    "revision": "9b2b1b0775e1fbee9aaa6ea2fed3eb9c",
     "url": "/tireloclient/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tireloclient/static/css/2.920bdfdc.chunk.css"
   },
   {
-    "revision": "a3758c290bbe48cd9e84",
+    "revision": "b82e499b4ab2e8be0059",
     "url": "/tireloclient/static/css/main.9d0b6993.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tireloclient/static/js/2.225a37ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3758c290bbe48cd9e84",
-    "url": "/tireloclient/static/js/main.621a8203.chunk.js"
+    "revision": "b82e499b4ab2e8be0059",
+    "url": "/tireloclient/static/js/main.dbc0de71.chunk.js"
   },
   {
     "revision": "c2f991b2eda1d11989ff",
