@@ -1,27 +1,55 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-// import { Button, Columns} from "react-bulma-components/full"
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import imgOffice from '../../../assets/vladimir-patkachakov-ZAP1duyEIR4-unsplash.jpg'
+import styled from 'styled-components'
+
+const AdvParagraph = styled.p`
+  font-size: 14px;
+  color: #9aa8bd;
+  letter-spacing: 1.2px;
+`
+const AdvTitle = styled.p`
+  font-size: 2.6rem;
+  color: #003468;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -10px;
+
+  @media (max-width: 768px) { 
+    color: #003468;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+	}
+`
+const AdvUl = styled.ul`
+  font-size: 1.1rem;
+  margin-top: 20px;
+  color: #003468;
+`
+const ServicesPara = styled.p`
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0px;
+  color: #003468;
+`
 
 const Market = () => {
   return (
     <>
      <section className="section is-paddingless-horizontal" id="market-section">
         <div className="container grid is-large" id="contAboutPage">
-            <div className="firstsection">
-                <div className="content">
-                  <h4 className="subtitle is-3 has-text-left has-text-weight-semibold" id="headingAbout" style={textColor}>
-                    Product Range and Availability
-                  </h4>
-                </div><br />
+            <div className="firstssection">
                 <div className="content">
                   <div className="columns">
                     <div className="column">
-                      
+                      <AdvParagraph className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Resources Availability</AdvParagraph>
+                      <AdvTitle className="subtitle is-3 has-text-left has-text-weight-semibold" id="headingAbout">
+                        Product Range and Availability
+                      </AdvTitle>
                       <div className="columns">
                         <div className="column is-half">
-                          <h6 id="marketTitle">Diesel 50ppm</h6>
+                          <ServicesPara id="marketTitle">Diesel 50ppm</ServicesPara>
                           <p id="marketPara">
                             Off-Grid (South Africa)<br />
                             Beird and Matota Deports (Mozambique)<br />
@@ -30,7 +58,7 @@ const Market = () => {
                           </p>
                         </div>
                         <div className="column">
-                          <h6 id="marketTitle">Diesel 500ppm</h6>
+                          <ServicesPara id="marketTitle">Diesel 500ppm</ServicesPara>
                           <p id="marketPara">
                             Off-Grid (South Africa)<br />
                             Beird and Matota Deports (Mozambique)<br />
@@ -42,7 +70,7 @@ const Market = () => {
                       </div>
                       <div className="columns">
                         <div className="column is-half">
-                          <h6 id="marketTitle">Lead Replacement Petrol 93 (ULP93)</h6>
+                          <ServicesPara id="marketTitle">Lead Replacement Petrol 93 (ULP93)</ServicesPara>
                           <p id="marketPara">
                             Off-Grid (South Africa)<br />
                             Road Tanker<br />
@@ -50,7 +78,7 @@ const Market = () => {
                           </p>
                         </div>
                         <div className="column">
-                          <h6 id="marketTitle">Lead Replacement Petrol 95 (ULP95)</h6>
+                          <ServicesPara>Lead Replacement Petrol 95 (ULP95)</ServicesPara>
                           <p id="marketPara">
                             Off-Grid (South Africa)<br />
                             Road Tanker<br />
@@ -60,42 +88,35 @@ const Market = () => {
                       </div>
                       <div className="columns">
                         <div className="column is-half">
-                          <h6 id="marketTitle">Liquefied Natural Gas (LNG)</h6>
+                          <ServicesPara>Liquefied Natural Gas (LNG)</ServicesPara>
                           <p id="marketPara">
                             Vessel
                           </p>
                         </div>
                         <div className="column">
-                          <h6 id="marketTitle">Liquefied Natural Gas (LNG)</h6>
+                          <ServicesPara>Liquefied Natural Gas (LNG)</ServicesPara>
                           <p id="marketPara">
                             Vessel
                           </p>
                         </div>
                       </div>
                       <div className="columns">
-                        <div className="column is-half">
-                          <h6 id="marketTitle">Jet Fuel</h6>
+                        <div className="column is-one-third">
+                          <ServicesPara>Jet Fuel</ServicesPara>
                           <p id="marketPara">
                             Vessel
                           </p>
                         </div>
-                        <div className="column">
-                          <h6 id="marketTitle">Crude</h6>
+                        <div className="column is-one-third">
+                          <ServicesPara>Crude</ServicesPara>
                           <p id="marketPara">
                             Vessel
                           </p>
                         </div>
-                      </div>
-                      <div className="columns">
-                        <div className="column is-half">
-                          <h6 id="marketTitle">Mazut</h6>
+                        <div className="column is-one-third">
+                          <ServicesPara>Mazut</ServicesPara>
                           <p id="marketPara">
                             Vessel
-                          </p>
-                        </div>
-                        <div className="column">
-                          <h6 id="marketTitle"></h6>
-                          <p id="marketPara">
                           </p>
                         </div>
                       </div>
@@ -105,9 +126,9 @@ const Market = () => {
                     </div>
                   </div>
                 </div>
-             </div>
+          </div>
         </div>
-     </section>
+      </section>
     </>
   );
 }

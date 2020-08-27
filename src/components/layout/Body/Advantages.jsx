@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import imgOffice from '../../../assets/shaah-shahidh--subrrYxv8A-unsplash.png'
-
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import styled from 'styled-components'
 
@@ -20,11 +18,6 @@ const AdvTitle = styled.p`
     font-size: 2rem;
     text-align: center;
 	}
-`
-const AdvGet = styled.p`
-  font-size: 2.6rem;
-  margin-top: 0px;
-  color: #011240;
 `
 const AdvUl = styled.ul`
   font-size: 1.1rem;
@@ -72,12 +65,5 @@ const Advantages = () => {
     </>
   );
 }
-
-
-  const pStyle = {
-    color: '#003468',
-    marginTop: '20px',
-    fontSize: '1.1rem'
-  }
 
 export default Advantages;

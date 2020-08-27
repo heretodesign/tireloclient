@@ -17,6 +17,7 @@ const ServicesTitle = styled.p`
   font-size: 2.6rem;
   color: #003468;
   font-family: 'Open Sans', sans-serif;
+  
   @media (max-width: 768px) { 
     color: #003468;
     font-family: 'Open Sans', sans-serif;
@@ -43,7 +44,6 @@ const OurServices = () => {
                       <ServicesGet className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</ServicesGet>
                       <ServicesTitle className="subtitle has-text-left is-2">Get to know us</ServicesTitle>
                       <ServicesParagraph className="has-text-left">
-                        
                         Seth Resources (Pty) Ltd, is a Botswana company founded in 2015; The company is incorporated under Botswana Law (100% citizen owned), to offer customers the widest range of services 
                         in respect of Procurement and Logistics of Oil & gas Derivatives including the storage, 
                         handling and distribution (Transportation) of various products according to the needs of the users and also expands the activities out of Botswana boundaries. 
