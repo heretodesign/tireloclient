@@ -5,16 +5,48 @@ import imgfice from '../../../assets/josue-isai-ramos-figueroa-n2NBgIx3A28-unspl
 import newD from '../../../assets/jay-skyler-4vkqO73C7O8-unsplash.jpg'
 import mine from '../../../assets/juniperphoton-KKFKrOu3BVc-unsplash.png'
 import buyer from '../../../assets/sippakorn-yamkasikorn-0aJOTBQfEFE-unsplash.jpg'
+import styled from 'styled-components'
 
+const AdvParagraph = styled.p`
+  font-size: 14px;
+  color: #9aa8bd;
+  letter-spacing: 1.2px;
+`
+const AdvTitle = styled.p`
+  font-size: 2.6rem;
+  color: #003468;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -10px;
+
+  @media (max-width: 768px) { 
+    color: #003468;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+	}
+`
+const ServicesPara = styled.p`
+  font-size: 1.2rem;
+  margin-top: 0px;
+  color: #003468;
+  font-family: 'Open Sans', sans-serif;
+
+`
+const ServicesMenu = styled.p`
+  font-size: 1.2rem;
+  margin-top: 0px;
+  color: #003468;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+
+`
 const Markets = () => {
   return (
     <>
       <section className="section is-paddingless-horizontal">
         <div className="container grid is-large">
-            <div className="firstsection">
-                <div className="content">
-                    {/* <p className="subtitle is-6 has-text-left has-text-grey has-text-weight-semibold is-uppercase">Your sgdfgsdf logistics solution</p> */}
-                </div>
+            <div className="firstssection">
                 <div className="content">
                   <div class="columns">
                   <div className="column">
@@ -28,7 +60,7 @@ const Markets = () => {
                             <div class="card-content">
                               <div class="media">
                                 <div class="media-content">
-                                  <p class="title is-5 has-text-centered" style={colorStyle}>Governments</p>
+                                  <ServicesMenu class="title is-5 has-text-centered">Governments</ServicesMenu>
                                 </div>
                               </div>
                             </div>
@@ -42,7 +74,7 @@ const Markets = () => {
                             <div class="card-content">
                               <div class="media">
                                 <div class="media-content">
-                                  <p class="title is-5 has-text-centered" style={colorStyle}>Mining</p>
+                                  <ServicesMenu class="title is-5 has-text-centered">Mining</ServicesMenu>
                                 </div>
                               </div>
                             </div>
@@ -58,7 +90,7 @@ const Markets = () => {
                             <div class="card-content">
                               <div class="media">
                                 <div class="media-content">
-                                  <p class="title is-5 has-text-centered" style={colorStyle}>Commercial</p>
+                                  <ServicesMenu class="title is-5 has-text-centered">Commercial</ServicesMenu>
                                 </div>
                               </div>
                             </div>
@@ -72,7 +104,7 @@ const Markets = () => {
                             <div class="card-content">
                               <div class="media">
                                 <div class="media-content">
-                                  <p class="title is-5 has-text-centered" style={colorStyle}>Wholesale Buyers</p>
+                                  <ServicesMenu class="title is-5 has-text-centered">Wholesale Buyers</ServicesMenu>
                                 </div>
                               </div>
                             </div>
@@ -81,13 +113,13 @@ const Markets = () => {
                       </div>
                     </div>
                     <div class="column is-half">
-                      <div className="content marketproduct" id="contentSide">
-                        <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Who are our partners and clients</h3>
-                        <p className="subtitle has-text-left is-2" style={colorStyle}>Intended Markets </p>
-
-                        <p className="has-text-left" style={paragraphStyle}>
-                          As we continue to evolve and widen our reach within the southern hemisphere, our partnerships and valued customers have increased exponentially. <br /><br />Our growing clients base are in these following industry sectors. 
-                        </p>
+                      <div className="content">
+                        <AdvParagraph className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Who are our partners and clients</AdvParagraph>
+                        <AdvTitle className="subtitle has-text-left is-2">Intended Markets </AdvTitle>
+                        <ServicesPara className="has-text-left">
+                          As we continue to evolve and widen our reach within the southern hemisphere, our partnerships and valued customers have increased exponentially. 
+                          <br /><br />Our growing clients base are in these following industry sectors. 
+                        </ServicesPara>
                       </div>
                     </div>
                   </div>
@@ -99,17 +131,4 @@ const Markets = () => {
   );
 }
 
-const textColor = {
-  color: '#003468'
-}
-
-const paragraphStyle = {
-  fontSize: '1.2rem',
-  color: '#003468',
-  marginBottom: '10px'
-}
-
-const colorStyle = {
-  color: '#003468'
-}
 export default Markets;

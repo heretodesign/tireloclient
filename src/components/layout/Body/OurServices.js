@@ -8,16 +8,19 @@ const ServicesParagraph = styled.p`
   font-size: 1.2rem;
   margin-top: 10px;
   color: #003468;
+  font-family: 'Open Sans', sans-serif;
+
   @media (max-width: 768px) { 
     text-align: center;
     color: #003468;
+    font-family: 'Open Sans', sans-serif;
 	}
 `
 const ServicesTitle = styled.p`
   font-size: 2.6rem;
   color: #003468;
   font-family: 'Open Sans', sans-serif;
-  
+
   @media (max-width: 768px) { 
     color: #003468;
     font-family: 'Open Sans', sans-serif;

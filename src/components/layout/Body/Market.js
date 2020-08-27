@@ -27,6 +27,7 @@ const ServicesPara = styled.p`
   font-weight: 600;
   margin-top: 0px;
   color: #003468;
+  font-family: 'Open Sans', sans-serif;
 `
 
 const Market = () => {
