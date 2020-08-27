@@ -6,7 +6,6 @@ import 'react-bulma-components/dist/react-bulma-components.min.css'
 import styled from 'styled-components'
 
 const AdvParagraph = styled.p`
-  color: #003468;
   font-size: 1.2rem;
   margin-top: 10px;
 `
@@ -37,8 +36,8 @@ const Advantages = () => {
               <div className="content">
                 <div class="columns">
                   <div class="column">
-                    <div className="content" id="contentSide">
-                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</h3>
+                    <div className="content">
+                      <AdvParagraph className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</AdvParagraph>
                       <AdvTitle className="subtitle has-text-left is-2">Competitive Advantages</AdvTitle>
                         <ul class="menu-list" style={pStyle}>
                             <ul style={pStyle}>

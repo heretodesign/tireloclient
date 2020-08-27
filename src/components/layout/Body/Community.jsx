@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import imgOffice from '../../../assets/elderly.jpg'
 
 const ParagraphSty = styled.p`
-  color: #003468;
   font-size: 1.2rem;
   margin-top: 10px;
 
