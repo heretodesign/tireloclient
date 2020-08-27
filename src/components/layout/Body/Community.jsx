@@ -7,10 +7,11 @@ const ParagraphSty = styled.p`
   color: #003468;
   font-size: 1.2rem;
   margin-top: 10px;
+
+  @media (max-width: 768px) { 
+    text-align: center;
+	}
 `
-const colorStyle = {
-  color: '#003468'
-}
 const AboutTitle = styled.p`
   font-size: 2.6rem;
   color: #003468;

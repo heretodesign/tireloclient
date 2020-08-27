@@ -3,19 +3,43 @@ import { Link } from "react-router-dom"
 import imgOffice from '../../../assets/shaah-shahidh--subrrYxv8A-unsplash.png'
 
 import 'react-bulma-components/dist/react-bulma-components.min.css'
+import styled from 'styled-components'
 
+const AdvParagraph = styled.p`
+  color: #003468;
+  font-size: 1.2rem;
+  margin-top: 10px;
+`
+const AdvTitle = styled.p`
+  font-size: 2.6rem;
+  color: #003468;
+  font-family: 'Open Sans', sans-serif;
+
+  @media (max-width: 768px) { 
+    color: #003468;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+	}
+`
+const AdvGet = styled.p`
+  font-size: 2.6rem;
+  margin-top: 0px;
+  color: #011240;
+  font-family: 'Open Sans', sans-serif;
+`
 const Advantages = () => {
   return (
     <>
       <section className="section is-paddingless-horizontal" id="servicesPage">
         <div className="container grid is-large" id="contAboutPage">
-          <div className="firstsection">
+          <div className="firstssection">
               <div className="content">
                 <div class="columns">
                   <div class="column">
                     <div className="content" id="contentSide">
                       <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</h3>
-                      <p className="subtitle has-text-left is-2" style={colorStyle}>Competitive Advantages</p>
+                      <AdvTitle className="subtitle has-text-left is-2">Competitive Advantages</AdvTitle>
                         <ul class="menu-list" style={pStyle}>
                             <ul style={pStyle}>
                                 <li><p style={pStyle}>Vast intellectual capital in the industry </p></li>
