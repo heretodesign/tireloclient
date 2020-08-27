@@ -1,38 +1,52 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import imgOffice from '../../../assets/s-o-c-i-a-l-c-u-t-1RT4txDDAbM-unsplash.jpg'
-// import imgOffice from '../../../assets/christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg'
-
 import 'react-bulma-components/dist/react-bulma-components.min.css'
+import styled from 'styled-components'
+
+const ServicesParagraph = styled.p`
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #003468;
+  @media (max-width: 768px) { 
+    text-align: center;
+    color: #003468;
+	}
+`
+const ServicesTitle = styled.p`
+  font-size: 2.6rem;
+  color: #003468;
+  font-family: 'Open Sans', sans-serif;
+  @media (max-width: 768px) { 
+    color: #003468;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+	}
+`
+const ServicesGet = styled.p`
+  margin-top: 0px;
+  color: #011240;
+  font-family: 'Open Sans', sans-serif;
+`
 
 const OurServices = () => {
   return (
     <>
       <section className="section is-paddingless-horizontal" id="servicesPage">
         <div className="container grid is-large" id="contAboutPage">
-          <div className="firstsection">
-              <div className="content">
-                  <p className="subtitle is-6 has-text-left has-text-grey has-text-weight-semibold is-uppercase">
-                  
-                  </p>
-              </div>
+          <div className="firstssection">
               <div className="content">
                 <div class="columns">
-                  
                   <div class="column">
-                    <div className="content" id="contentSide">
-                      <h3 className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</h3>
-                      <p className="subtitle has-text-left is-2" style={colorStyle}>Get to know us</p>
-
-                      <p className="has-text-left" style={paragraphStyle}>
+                    <div className="content">
+                      <ServicesGet className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</ServicesGet>
+                      <ServicesTitle className="subtitle has-text-left is-2">Get to know us</ServicesTitle>
+                      <ServicesParagraph className="has-text-left">
                         
                         Seth Resources (Pty) Ltd, is a Botswana company founded in 2015; The company is incorporated under Botswana Law (100% citizen owned), to offer customers the widest range of services 
                         in respect of Procurement and Logistics of Oil & gas Derivatives including the storage, 
                         handling and distribution (Transportation) of various products according to the needs of the users and also expands the activities out of Botswana boundaries. 
-                            
-                        {/* Seth Energy Resources is a privately held Energy Company and division of Seth Resources (Pty) Ltd 
-                        established in 2015, whose core business is to Supply and Transport Gas and Liquid Fuels thoughout Africa and the rest of the world.
-                        <br /> */}
                         <br />
                         <br />
                         <Link 
@@ -41,10 +55,7 @@ const OurServices = () => {
                           style={cardTitle}>
                             Read More
                         </Link>
-
-                        {/* The company has associate offices in Africa, Middle East and Europe which together offer a unique blend of trading, international banking, 
-                        structured finances, and marketing experience to the benefit of our client base. */}
-                      </p>
+                      </ServicesParagraph>
                     </div>
                   </div>
                   <div class="column is-half">
@@ -66,15 +77,6 @@ const cardTitle = {
   ':hover': {
     color: '#fba502'
   }
-}
-
-const paragraphStyle = {
-  fontSize: '1.2rem',
-  color: '#003468'
-}
-
-const colorStyle = {
-  color: '#003468'
 }
 
 export default OurServices;
