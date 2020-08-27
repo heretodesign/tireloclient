@@ -9,34 +9,34 @@ const BtmFooter = () => {
     <footer className="section footer-btm">
         <div className="container content has-text-centered">
             <div className="columns">
-                <div className="column is-1">
+                <div className="column is-2">
                     <div className="firstFooter">
-                        <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter"></h1>
+                        <h1 className="title is-4 has-text-weight-bold has-text-centered is-uppercase" id="mainFooter"><Link to="/" id="mainFooter"> Home </Link></h1>
                     </div>
                 </div>
                 <div className="column is-2">
                     <div className="firstFooter">
-                        <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter"><Link to="/" id="mainFooter"> Home </Link></h1>
+                        <h1 className="title is-4 has-text-weight-bold has-text-centered is-uppercase" id="mainFooter"><Link to="/" id="mainFooter"> Solutions </Link></h1>
                     </div>
                 </div>
                 <div className="column is-2">
                     <div className="firstFooter">
-                        <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter"><Link to="/about-us" id="mainFooter"> About Us </Link></h1>
+                        <h1 className="title is-4 has-text-weight-bold has-text-centered is-uppercase" id="mainFooter"><Link to="/about-us" id="mainFooter"> About Us </Link></h1>
                     </div>
                 </div>
                 <div className="column is-2">
                     <div className="firstFooter">
-                        <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter">Logistic Knowledge</h1>
+                        <h1 className="title is-4 has-text-weight-bold has-text-centered is-uppercase" id="mainFooter">Logistic Knowledge</h1>
                     </div>
                 </div>
                 <div className="column is-2">
                     <div className="firstFooter">
-                    <h1 className="title is-4 has-text-weight-bold has-text-left is-uppercase" id="mainFooter">Security</h1>
+                    <h1 className="title is-4 has-text-weight-bold has-text-centered  is-uppercase" id="mainFooter">Careers <Link to="/careers-at-srp" className="is-small hiring-btn is-active">Join Us</Link></h1>
                     </div>
                 </div>
-                <div className="column is-3">
+                <div className="column is-2">
                     <div className="firstFooter">
-                    <h1 className="title is-4 has-text-weight-bold has-text-left  is-uppercase" id="mainFooter">Careers <Link to="/careers-at-srp" className="is-small hiring-btn is-active">we're hiring</Link></h1>
+                    <h1 className="title is-4 has-text-weight-bold has-text-centered is-uppercase" id="mainFooter">Social Media</h1>
                     </div>
                 </div>
             </div>
