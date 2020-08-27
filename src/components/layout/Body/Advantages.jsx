@@ -25,8 +25,18 @@ const AdvGet = styled.p`
   font-size: 2.6rem;
   margin-top: 0px;
   color: #011240;
-  font-family: 'Open Sans', sans-serif;
 `
+const AdvUl = styled.ul`
+  font-size: 1.1rem;
+  margin-top: 20px;
+  color: #003468;
+`
+const AdvPara = styled.p`
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #003468;
+`
+
 const Advantages = () => {
   return (
     <>
@@ -39,15 +49,15 @@ const Advantages = () => {
                     <div className="content">
                       <AdvParagraph className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Introduction to the Company</AdvParagraph>
                       <AdvTitle className="subtitle has-text-left is-2">Competitive Advantages</AdvTitle>
-                        <ul class="menu-list" style={pStyle}>
-                            <ul style={pStyle}>
-                                <li><p style={pStyle}>Vast intellectual capital in the industry </p></li>
-                                <li><p style={pStyle}>Competitive pricing by virtue of negotiated supply agreements and streamlined overhead structure </p></li>
-                                <li><p style={pStyle}>We engage and understand our Clients specific requirements and have the capacity to provide supply-side solutions specifically tailored to meet each Buyers criterion.</p></li>
-                                <li><p style={pStyle}>A proactive rather than reactive approach to business and our Clients requirements.</p></li>
-                                <li><p style={pStyle}>Management structured to expedient decision making</p></li>
-                            </ul>
-                        </ul>
+                        <AdvUl class="menu-list">
+                            <AdvUl>
+                                <li><AdvPara>Vast intellectual capital in the industry </AdvPara></li>
+                                <li><AdvPara>Competitive pricing by virtue of negotiated supply agreements and streamlined overhead structure </AdvPara></li>
+                                <li><AdvPara>We engage and understand our Clients specific requirements and have the capacity to provide supply-side solutions specifically tailored to meet each Buyers criterion.</AdvPara></li>
+                                <li><AdvPara>A proactive rather than reactive approach to business and our Clients requirements.</AdvPara></li>
+                                <li><AdvPara>Management structured to expedient decision making</AdvPara></li>
+                            </AdvUl>
+                        </AdvUl>
                         <br />
                     </div>
                   </div>
@@ -63,9 +73,6 @@ const Advantages = () => {
   );
 }
 
-const colorStyle = {
-  color: '#003468'
-}
 
   const pStyle = {
     color: '#003468',
