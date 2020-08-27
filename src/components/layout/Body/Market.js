@@ -22,11 +22,6 @@ const AdvTitle = styled.p`
     text-align: center;
 	}
 `
-const AdvUl = styled.ul`
-  font-size: 1.1rem;
-  margin-top: 20px;
-  color: #003468;
-`
 const ServicesPara = styled.p`
   font-size: 1.1rem;
   font-weight: 600;
@@ -37,16 +32,14 @@ const ServicesPara = styled.p`
 const Market = () => {
   return (
     <>
-     <section className="section is-paddingless-horizontal" id="market-section">
+      <section className="section is-paddingless-horizontal" id="market-section">
         <div className="container grid is-large" id="contAboutPage">
             <div className="firstssection">
                 <div className="content">
                   <div className="columns">
                     <div className="column">
                       <AdvParagraph className="subtitle is-6 has-text-left is-uppercase" id="headTitle">Resources Availability</AdvParagraph>
-                      <AdvTitle className="subtitle is-3 has-text-left has-text-weight-semibold" id="headingAbout">
-                        Product Range and Availability
-                      </AdvTitle>
+                      <AdvTitle className="subtitle has-text-left is-2">Product Range and Availability</AdvTitle>
                       <div className="columns">
                         <div className="column is-half">
                           <ServicesPara id="marketTitle">Diesel 50ppm</ServicesPara>
@@ -133,7 +126,4 @@ const Market = () => {
   );
 }
 
-const textColor = {
-  color: '#003468'
-}
 export default Market;
