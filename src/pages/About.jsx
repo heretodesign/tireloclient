@@ -325,7 +325,7 @@ const About = () => {
                                 <div class="media-content">
                                   <Link class="title is-4 is-underlined has-text-centered" style={cardTitle}>Who we are</Link>
                                   <CardParagraph className="has-text-left">
-                                    Find out about our company, our business, our team at Seth Resource Petroleum, and how we are working to power progress together with more and cleaner energy solutions.
+                                    Find out about our company, our business, our team at Seth Resources, and how we are working to power progress together with more and cleaner energy solutions.
                                   </CardParagraph>
                                 </div>
                               </div>
@@ -456,7 +456,7 @@ const About = () => {
                                 <div class="media-content">
                                   <Link to="/careers-at-srp" class="title is-4 is-underlined has-text-centered" style={cardTitle}>Careers</Link>
                                   <CardParagraph className="has-text-left">
-                                    Discover the impact you can make with a career at Seth Resources Petroleum.
+                                    Discover the impact you can make with a career at Seth Resources.
                                   </CardParagraph>
                                 </div>
                               </div>
