@@ -30,6 +30,7 @@ const HeaderTitle = styled.p`
 const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
+  margin-top: -20px;
 `
 const TopPara = styled.p`
   color: #9aa8bd;

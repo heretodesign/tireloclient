@@ -53,7 +53,7 @@ const BtmFooter = () => {
                                 <p className="has-text-centered has-text-weight-light">
                                     <a href="#" className="has-text-centered" id="mainFooter">© 2020 Seth Resources Petroleum. All rights reserved.</a>
                                 </p>
-                                <p class="has-text-centered is-medium">Botswana | BWP</p>
+                                <p className="has-text-centered is-medium">Botswana | BWP</p>
                             </div>
                         </div>
                     </div>

@@ -34,6 +34,7 @@ const HeaderTitle = styled.p`
 const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
+  margin-top: -20px;
 `
 const AboutPara = styled.p`
   font-size: 1.2rem;

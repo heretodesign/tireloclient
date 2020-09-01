@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
@@ -6,6 +6,9 @@ import imgOffice from '../assets/christina-wocintechchat-com-1Ym8pU4gewk-unsplas
 import Navbar from '../components/layout/Header/Navbar'
 import { faAddressCard, faCloud, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const Section = styled.section`
   background: #003468;
@@ -23,6 +26,7 @@ const HeaderTitle = styled.p`
 const MainPara = styled.p`
   font-size: 1.2rem;
   color: #fff;
+  margin-top: -20px;
 `
 const TopPara = styled.p`
   color: #9aa8bd;
@@ -62,11 +66,138 @@ const Response = styled.p`
 `
 
 
-const Apply = () => {
+const Apply = ({ history }) => {
+  const [values, setValues] = useState({
+    fullname: '',
+    email: '',
+    phonenumber: '',
+    location: '',
+    profile: '',
+    motivation: '',
+    startdate: '',
+    resume: '',
+    buttonText: 'Submit'
+  });
+
+  const { fullname, email, phonenumber, location, profile, motivation, startdate, resume, buttonText } = values;
+
+  const handleChange = (name) => (event) => {
+    console.log(event.target.value)
+    setValues({...values, [name]: event.target.value})
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault()
+    setValues({...values, buttonText: 'Submitting'})
+    // const baseURL = `${process.env.SERVER_APP_API}`
+    axios({
+      method: 'POST',
+      url: 'http://localhost:7000/api/v1/applications',
+      data: {fullname, email, phonenumber, location, profile, motivation, startdate, resume}
+    })
+    .then(response => {
+      console.log('APPLICATION SENT SUCCESSFULLY', response);
+      setValues({...values, fullname: '', phonenumber: '', email: '', location: '', profile: '', motivation: '', startdate: '', resume: '', buttonText: 'Submitted'});
+      toast.success(response.data.message);
+      history.push('/')
+    })
+    .catch(error => {
+      console.log('APPLICATION ERROR', error.response.data);
+      setValues({...values, buttonText: 'Submit'});
+      toast.error(error.response.data.error);
+    })
+  }
+
+
+  const applyForRole = () => (
+    <form>
+      <div class="field">
+        <div class="control">
+          <input class="input is-info" 
+            type="text" 
+            value={fullname} 
+            onChange={handleChange('fullname')} 
+            placeholder="First & Last Name*" />
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <input class="input is-info" 
+            type="email" 
+            value={email} 
+            onChange={handleChange('email')} 
+            placeholder="Email*" />
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <input class="input is-info" 
+            type="text" 
+            value={phonenumber} 
+            onChange={handleChange('phonenumber')} 
+            placeholder="Phone*" />
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <input class="input is-info" 
+            type="text" 
+            value={location} 
+            onChange={handleChange('location')} 
+            placeholder="Location" />
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <input class="input is-info" 
+            type="text" 
+            value={profile} 
+            onChange={handleChange('profile')} 
+            placeholder="LinkedIn Profile" />
+        </div>
+      </div>
+      <div class="field">
+      <div class="control">
+        <textarea class="textarea is-info" 
+          type="text" 
+          value={motivation} 
+          onChange={handleChange('motivation')} 
+          placeholder="What made you decide to apply for this position?" />
+      </div>
+      </div>
+      <div class="field">
+      <div class="control">
+        <input class="input is-info" 
+          type="text" 
+          value={startdate} 
+          onChange={handleChange('startdate')} 
+          placeholder="possible start date" />
+      </div>
+        <br />
+      <div class="file">
+        <label class="file-label">
+            <input class="file-input is-info" 
+              type="file" 
+              value={resume} 
+              onChange={handleChange('resume')} 
+              name="resume" />
+            <span class="file-cta">
+            <Span class="file-label">
+            <span><FontAwesomeIcon icon={faCloud} size="l" />{' '}</span>{' '}{' '} Upload Resume or CV
+            </Span>
+            </span>
+        </label>
+      </div>
+      <br />
+      <button className="button is-large is-fullwidth" style={bkStyle} onClick={handleSubmit}>{buttonText}</button>
+      </div>
+    </form>
+  )
+
   return (
     <>
-    <Navbar />
-    <Section className="section is-paddingless-horizontal">
+      <Navbar />
+      <Section className="section is-paddingless-horizontal">
       <br />
       <br />
         <div className="container grid is-large">
@@ -181,56 +312,7 @@ const Apply = () => {
                 </div>
                 <div class="columns">
                   <div class="column is-half">
-                    <form>
-                      <div class="field">
-                        <div class="control">
-                          <input class="input is-info" type="text" placeholder="First & Last Name*" />
-                        </div>
-                      </div>
-                      <div class="field">
-                        <div class="control">
-                          <input class="input is-info" type="text" placeholder="Email*" />
-                        </div>
-                      </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input is-info" type="text" placeholder="Phone*" />
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input is-info" type="text" placeholder="Location" />
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <input class="input is-info" type="text" placeholder="LinkedIn Profile" />
-                                </div>
-                            </div>
-                            <div class="field">
-                            <div class="control">
-                                <textarea class="textarea is-info" type="text" placeholder="What made you decide to apply for this position?" />
-                            </div>
-                            </div>
-                            <div class="field">
-                            <div class="control">
-                                <input class="input is-info" type="text" placeholder="possible start date" />
-                            </div>
-                            <br />
-                            <div class="file">
-                            <label class="file-label">
-                                <input class="file-input is-info" type="file" name="resume" />
-                                <span class="file-cta">
-                                <Span class="file-label">
-                                <span><FontAwesomeIcon icon={faCloud} size="l" />{' '}</span>{' '}{' '} Upload Resume or CV
-                                </Span>
-                                </span>
-                            </label>
-                            </div>
-                            <br />
-                            <a className="button is-large is-fullwidth" style={bkStyle}>Submit Application</a>
-                        </div>
-                    </form>
+                   {applyForRole()}
                   </div>
                   <div class="column is-one-third">
                   <div class="card" style={bkStyle}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faAddressCard, faPhone, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard, faPhone, faShieldAlt } from '@fortawesome/free-solid-svg-icons'
 
 const Good = () => {
     return (

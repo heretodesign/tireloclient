@@ -35,7 +35,8 @@ const HomePage = () => {
             <br />
             <br />
             <br />
-            <Good />
+            {/* <Good /> */}
+            <Good /> 
             <ContactUs />
         </>
     );
