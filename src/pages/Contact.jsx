@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import ApiService from '.././services/ApiService'
 
 const Section = styled.section`
   background: #003468;
@@ -66,10 +67,11 @@ const Contact = ({ history }) => {
     phonenumber: '',
     email: '',
     message: '',
+    error: '',
     buttonText: 'Submit'
   });
 
-  const { fullname, phonenumber, email, message, buttonText } = values;
+  const { fullname, phonenumber, email, message, error, buttonText } = values;
 
   const handleChange = (name) => (event) => {
     console.log(event.target.value)
@@ -78,18 +80,25 @@ const Contact = ({ history }) => {
 
   const handleSubmit = event => {
     event.preventDefault()
+
     setValues({...values, buttonText: 'Submitting'})
     // const baseURL = `${process.env.SERVER_APP_API}`
-    axios({
-      method: 'POST',
-      url: 'http://localhost:7000/api/v1/contacts',
-      data: {fullname, phonenumber, email, message}
-    })
+    // axios({
+    //   method: 'POST',
+    //   url: 'http://localhost:7000/api/v1/contacts',
+    //   data: {fullname, phonenumber, email, message}
+    // })
+    ApiService.createContactUs(fullname, phonenumber, email, message)
     .then(response => {
-      console.log('EMAIL SENT SUCCESSFULLY', response);
-      setValues({...values, fullname: '', phonenumber: '', email: '', message: '', buttonText: 'Submitted'});
-      toast.success(response.data.message);
-      history.push('/')
+      if (response.error) {
+        setValues({ ...values, error: response.error })
+      } else {
+        console.log('EMAIL SENT SUCCESSFULLY', response);
+        setValues({...values, fullname: '', phonenumber: '', email: '', message: '', buttonText: 'Submitted'});
+        toast.success(response.data.message);
+        history.push('/')
+      }
+      
     })
     .catch(error => {
       console.log('CONTACT US ERROR', error.response.data);
@@ -98,46 +107,52 @@ const Contact = ({ history }) => {
     })
   }
 
+  const showError = () => (
+    <div className="alert has-text-danger-" style={{ display: error ? '' : 'none' }}>
+        {error}
+    </div>
+  )
+
   const contactUsForm = () => (
     <form>
       <div className="field">
         <div className="control">
           <input className="input is-info" 
-          type="text" 
-          value={fullname} 
-          onChange={handleChange('fullname')} 
-          placeholder="First & Last Name*" 
+            type="text" 
+            value={fullname} 
+            onChange={handleChange('fullname')} 
+            placeholder="First & Last Name*" 
           />
         </div>
       </div>
       <div className="field">
         <div className="control">
           <input className="input is-info" 
-          type="text" 
-          value={phonenumber} 
-          onChange={handleChange('phonenumber')} 
-          placeholder="Phone Number*" 
+            type="text" 
+            value={phonenumber} 
+            onChange={handleChange('phonenumber')} 
+            placeholder="Phone Number*" 
           />
         </div>
       </div>
       <div className="field">
         <div className="control">
           <input className="input is-info" 
-          type="email" 
-          value={email} 
-          onChange={handleChange('email')} 
-          placeholder="Email" 
+            type="email" 
+            value={email} 
+            onChange={handleChange('email')} 
+            placeholder="Email" 
           />
         </div>
       </div>
       <div className="field">
         <div className="control">
-            <textarea className="textarea is-info" 
+          <textarea className="textarea is-info" 
             type="text" 
             value={message} 
             onChange={handleChange('message')} 
             placeholder="message*" 
-            />
+          />
         </div>
         <br />
         <button className="button is-large is-fullwidth" style={bkStyle} onClick={handleSubmit}>{buttonText}</button>
@@ -198,6 +213,7 @@ const Contact = ({ history }) => {
                 </div>
                 <div className="columns">
                   <div className="column is-half">
+                    {showError()}
                     {contactUsForm()}
                   </div>
                   <div className="column is-one-third">
