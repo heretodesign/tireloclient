@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import 'react-bulma-components/dist/react-bulma-components.min.css'
 import { Link } from "react-router-dom"
 import styled from 'styled-components'
@@ -75,31 +75,51 @@ const Apply = ({ history }) => {
     profile: '',
     motivation: '',
     startdate: '',
+    error: '',
     resume: '',
+    formData: '',
     buttonText: 'Submit'
   });
 
-  const { fullname, email, phonenumber, location, profile, motivation, startdate, resume, buttonText } = values;
+  const { fullname, email, phonenumber, location, profile, motivation, 
+    startdate, resume, formData, error, buttonText } = values;
 
   const handleChange = (name) => (event) => {
-    console.log(event.target.value)
-    setValues({...values, [name]: event.target.value})
+    // console.log(event.target.value)
+    // setValues({...values, [name]: event.target.value})
+    // setValues({...values, [name]: event.target.files[0]})
+
+    const value = name === 'photo' ? event.target.files[0] : event.target.value;
+    formData.set(name, value);
+    setValues({ ...values, [name]: value });
   }
 
   const handleSubmit = event => {
     event.preventDefault()
-    setValues({...values, buttonText: 'Submitting'})
+    setValues({ ...values, error: '' });
+
+    // setValues({...values, buttonText: 'Submitting'})
     // const baseURL = `${process.env.SERVER_APP_API}`
+    // let formData = new FormData();
+    // let fileData = event.target.files[0]
+    // formData.append("values", values);
     axios({
       method: 'POST',
+      // headers: {
+      //   "Content-Type": "multipart/form-data",
+      // },
       url: 'http://localhost:7000/api/v1/applications',
       data: {fullname, email, phonenumber, location, profile, motivation, startdate, resume}
     })
     .then(response => {
-      console.log('APPLICATION SENT SUCCESSFULLY', response);
-      setValues({...values, fullname: '', phonenumber: '', email: '', location: '', profile: '', motivation: '', startdate: '', resume: '', buttonText: 'Submitted'});
-      toast.success(response.data.message);
-      history.push('/')
+      if (response.error) {
+        setValues({ ...values, error: response.error })
+      } else {
+        console.log('APPLICATION SENT SUCCESSFULLY', response);
+        setValues({...values, fullname: '', phonenumber: '', email: '', location: '', profile: '', motivation: '', startdate: '', resume: '', buttonText: 'Submitted'});
+        toast.success(response.data.message);
+        history.push('/')
+      }
     })
     .catch(error => {
       console.log('APPLICATION ERROR', error.response.data);
@@ -180,6 +200,8 @@ const Apply = ({ history }) => {
               type="file" 
               value={resume} 
               onChange={handleChange('resume')} 
+              accept=".docx, .pdf, .doc, .png"
+              useRef={resume}
               name="resume" />
             <span class="file-cta">
             <Span class="file-label">
